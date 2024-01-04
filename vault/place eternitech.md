@@ -1,0 +1,4 @@
+---
+Aliases: [ "#place/eternitech" ]
+---
+asdfasdfasfasdfsd

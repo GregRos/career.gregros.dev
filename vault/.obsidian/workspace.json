@@ -13,13 +13,110 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Achievements/databases/database-generalist.md",
+                "file": "Skills/Web UI.md",
+                "mode": "source",
+                "source": false
+              }
+            }
+          },
+          {
+            "id": "e8665a9f0b737269",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "sts-dynamic-start.md",
+                "mode": "source",
+                "source": false
+              }
+            }
+          },
+          {
+            "id": "ef4d02f42eb01dc9",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "sts-dynamic-start.md",
+                "mode": "source",
+                "source": false
+              }
+            }
+          },
+          {
+            "id": "de51311afa883345",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "sts-dynamic-start.md",
+                "mode": "source",
+                "source": false
+              }
+            }
+          },
+          {
+            "id": "05cdacc8eb28d5fb",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "README.md",
+                "mode": "source",
+                "source": false
+              }
+            }
+          },
+          {
+            "id": "81369af9b89d8c95",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "Skills/Browsers.md",
+                "mode": "source",
+                "source": false
+              }
+            }
+          },
+          {
+            "id": "902e0ef2fae03340",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "Basics/Skill.md",
+                "mode": "source",
+                "source": false
+              }
+            }
+          },
+          {
+            "id": "d12abac89ea69bbd",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "Projects/P_Imms/Imms.md",
+                "mode": "source",
+                "source": false
+              }
+            }
+          },
+          {
+            "id": "5f6fd20222f01d8e",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "Skills/Web UI.md",
                 "mode": "source",
                 "source": false
               }
             }
           }
-        ]
+        ],
+        "currentTab": 7
       }
     ],
     "direction": "vertical"
@@ -48,7 +145,7 @@
             "state": {
               "type": "search",
               "state": {
-                "query": "",
+                "query": "tag:#typescript",
                 "matchingCase": false,
                 "explainSearch": false,
                 "collapseAll": false,
@@ -69,7 +166,7 @@
       }
     ],
     "direction": "horizontal",
-    "width": 300
+    "width": 444.50744247436523
   },
   "right": {
     "id": "417cc3f3bcbdd199",
@@ -85,11 +182,11 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Achievements/databases/database-generalist.md",
-                "collapseAll": false,
-                "extraContext": false,
+                "file": "Projects/P_Imms/Imms.md",
+                "collapseAll": true,
+                "extraContext": true,
                 "sortOrder": "alphabetical",
-                "showSearch": false,
+                "showSearch": true,
                 "searchQuery": "",
                 "backlinkCollapsed": false,
                 "unlinkedCollapsed": true
@@ -102,7 +199,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "Achievements/databases/database-generalist.md",
+                "file": "Projects/P_Imms/Imms.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -125,7 +222,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "Achievements/databases/database-generalist.md"
+                "file": "Projects/P_Imms/Imms.md"
               }
             }
           }
@@ -133,11 +230,11 @@
       }
     ],
     "direction": "horizontal",
-    "width": 300,
-    "collapsed": true
+    "width": 388.5
   },
   "left-ribbon": {
     "hiddenItems": {
+      "obsidian-excalidraw-plugin:Create new drawing": false,
       "switcher:Open quick switcher": false,
       "graph:Open graph view": false,
       "canvas:Create new canvas": false,
@@ -146,43 +243,46 @@
       "command-palette:Open command palette": false
     }
   },
-  "active": "6e3a3af34201afe1",
+  "active": "c380220dd8929c1f",
   "lastOpenFiles": [
-    "Achievements/databases/schema-designer.md",
-    "Achievements/databases/query-optimizer.md",
-    "Achievements/databases/graph-db-initiate.md",
-    "Achievements/codebases/continuous-integrator.md",
-    "Achievements/linux/desktop-specialization.md",
-    "Achievements/linux/novice-compiler.md",
-    "Achievements/frontend/css-initiaite.md",
-    "Achievements/codebases/bringer-of-order.md",
-    "Achievements/codebases/package-architect.md",
-    "Achievements/codebases/gitmaster.md",
-    "Achievements/infrastructure/terraformer.md",
-    "Achievements/infrastructure/orchestrator.md",
-    "Achievements/infrastructure/dedicated-hosting-initiate.md",
-    "Achievements/infrastructure",
-    "Achievements/frontend/react-initiate.md",
-    "Achievements/frontend",
-    "Achievements/dotnet/stackoverflow-nerd.md",
-    "Achievements/dotnet/gui-craftsman.md",
-    "Achievements/dotnet/dotnet_aspnet-journeyman.md",
-    "Achievements/dotnet",
-    "Achievements/dev-processes/toolsmith.md",
-    "Achievements/dev-processes/phone-a-friend.md",
-    "Achievements/dev-processes/software-entymologist.md",
-    "Achievements/dev-processes/jira-conjurer.md",
+    "Projects/P_Imms/Achievements.md",
+    "Projects/P_Imms/Imms.md",
+    "Projects/P_Parjs/Achievements.md",
+    "Projects/P_Parjs/Parjs.md",
+    "Projects/P_Micro/FieldEditor.md",
+    "Projects/P_Patchwork/Patchwork.md",
+    "Projects/P_Patchwork/Achievements.md",
+    "Projects/P_Imms/Lessons.md",
+    "Basics/Project.md",
+    "Skills/Web UI.md",
+    "Projects/P_Wampus/Lessons.md",
+    "Projects/P_Wampus/Achievements.md",
+    "Projects/P_Preszr/Preszr.md",
+    "Projects/P_Preszr/Lessons.md",
+    "Projects/P_Preszr/Achievements.md",
+    "Projects/P_Wampus/Wampus.md",
+    "Projects/P_Perdido/Perdido.md",
+    "Projects/P_Perdido/Achievements.md",
+    "Skills/Web Mastery.md",
+    "Places/P_Reflectiz/Reflectiz.md",
+    "Places/P_Eternitech",
+    "Places/P_Appdome",
+    "Places/P_Reflectiz",
+    "Places/P_Eternitech/Eternitech.md",
+    "Places/P_Appdome/Appdome.md",
+    "Projects/P_Preszr/PreszrFlow.canvas",
+    "Projects/P_Pres.md",
+    "Projects/P_Wampus",
+    "Projects/P_Parjs",
+    "Projects/P_Preszr",
+    "Projects/P_Perdido",
+    "Projects/P_Patchwork",
+    "Projects/P_Micro",
+    "Projects/P_Imms",
+    "Untitled 1.canvas",
+    "Untitled.canvas",
+    "Excalidraw/Drawing 2024-01-04 16.38.22.excalidraw.md",
     "Achievements/dev-processes/debugging-mastermind.md",
-    "Achievements/dev-processes/crash-investigator.md",
-    "Achievements/dev-processes",
-    "Achievements/design/naming-fetishist.md",
-    "Achievements/design/interfaces_cli-craftsman.md",
-    "Achievements/design",
-    "Achievements/typescript/typescript-mastery.md",
-    "Achievements/typescript",
-    "Achievements/systems",
-    "Achievements/purejs",
-    "Achievements/paradigms",
-    "Achievements/open-source"
+    "reflectiz.md"
   ]
 }

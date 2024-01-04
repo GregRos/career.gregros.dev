@@ -1,0 +1,701 @@
+[
+    {
+        "id": "codebases/bringer-of-order",
+        "title": "️ Bringer of Order",
+        "tags": [
+            "codebases",
+            "systems"
+        ],
+        "icon": "🏛",
+        "text": {
+            "type": "markdown",
+            "content": "Instituted development processes involving:\n\n- Version control\n- Pull requests\n- Code reviews\n- Issue management\n\nAt multiple companies."
+        }
+    },
+    {
+        "id": "codebases/continuous-integrator",
+        "title": "Continuous Integrator",
+        "tags": [
+            "codebases",
+            "systems",
+            "devops"
+        ],
+        "icon": "⚡",
+        "text": {
+            "type": "markdown",
+            "content": "I’ve set up CI/CD on multiple automation or deployment platforms:\n\n- Bitbucket Pipelines\n- GitHub Actions\n- Google Cloudbuild\n\nDeploying different codebases:\n\n- Node.js\n- Various client-sides\n- C#\n\nTo different environments:\n\n- Debian, Ubuntu, Alpine\n- Windows Server\n- Kubernetes, Docker"
+        }
+    },
+    {
+        "id": "codebases/gitmaster",
+        "title": "Gitmaster",
+        "tags": [
+            "codebases",
+            "dev-processes"
+        ],
+        "icon": "📂",
+        "text": {
+            "type": "markdown",
+            "content": "Expert on the Git version control system, including advanced knowledge about the system’s inner workings and experience using different clients – graphical and otherwise.\n\nI’ve done complex merges and rebases, helped countless developers with version control issues, and attempted to impart my knowledge to others. I’ve also designed version control development processes.\n\nI’ve used and implemented both branching and forking models, set guidelines for PR structure and content, and decided on how PRs are merged."
+        }
+    },
+    {
+        "id": "codebases/package-architect",
+        "title": "Package Architect",
+        "tags": [
+            "codebases",
+            "systems"
+        ],
+        "icon": "📐",
+        "text": {
+            "type": "markdown",
+            "content": "Reorganized a codebase into a package architecture spanning a dozen or so interlinked packages, with carefully planned out dependency structures.\n\nPublished [22 public packages](https://www.npmjs.com/~gregros \"‌\"), many of which are carefully designed, fully documented, and thoroughly tested libraries.\n\nI’m really, really good at working with package-based codebases and I can make you one too."
+        }
+    },
+    {
+        "id": "databases/database-generalist",
+        "title": "️ Database Generalist",
+        "tags": [
+            "databases",
+            "systems"
+        ],
+        "icon": "🗂",
+        "text": {
+            "type": "markdown",
+            "content": "Worked with multiple database systems, thoroughly learning most of them:\n\n- Microsoft SQL\n- Postgres\n- MySQL\n- SQLite\n\nI’ve used several ORM frameworks, as well as query builders like Knex."
+        }
+    },
+    {
+        "id": "databases/exotic-query-proficiency",
+        "title": "Exotic Query Proficiency",
+        "tags": [
+            "databases",
+            "systems",
+            "rdbms"
+        ],
+        "icon": "🔭",
+        "text": {
+            "type": "markdown",
+            "content": "Written all kinds of exotic queries for some reason or another. I’ve done dynamic SQL, deeply recursive queries for processing tree data, and meta-queries about database structures."
+        }
+    },
+    {
+        "id": "databases/graph-db-initiate",
+        "title": "Graph DB Initiate",
+        "tags": [
+            "databases"
+        ],
+        "icon": "🌲",
+        "text": {
+            "type": "markdown",
+            "content": "I’ve researched graph databases search such Neo4j, Memgraph, and Amazon Neptune for integration into a production system."
+        }
+    },
+    {
+        "id": "databases/query-optimizer",
+        "title": "Query Optimizer",
+        "tags": [
+            "databases",
+            "systems"
+        ],
+        "icon": "♋",
+        "text": {
+            "type": "markdown",
+            "content": "I’ve optimized queries based on the query plan, ancient database lore, opposite day logic, astrology, and the promises of long-dead gods."
+        }
+    },
+    {
+        "id": "databases/schema-designer",
+        "title": "Schema Designer",
+        "tags": [
+            "databases",
+            "systems",
+            "design"
+        ],
+        "icon": "🌌",
+        "text": {
+            "type": "markdown",
+            "content": "I’ve designed database schemas from scratch, deciding on naming conventions, table structure, index placement, how the database is queried, and so forth. I’ve used both ORM and hand-written SQL queries."
+        }
+    },
+    {
+        "id": "design/interfaces_cli-craftsman",
+        "title": "️ CLI Craftsman",
+        "tags": [
+            "programming-interfaces",
+            "design"
+        ],
+        "icon": "🎖",
+        "text": {
+            "type": "markdown",
+            "content": "I’ve designed CLIs for lots of different command-line development tools over the years."
+        }
+    },
+    {
+        "id": "design/naming-fetishist",
+        "title": "️ Naming Fetishist",
+        "tags": [
+            "development-processes",
+            "systems"
+        ],
+        "icon": "🏷",
+        "text": {
+            "type": "markdown",
+            "content": "Set up and guided the formation of system-wide naming conventions for:\n\n- Classes, objects, and interfaces\n- Cloud resources\n- Web APIs\n- Organizational entities, such as public queues and code repositories."
+        }
+    },
+    {
+        "id": "dev-processes/crash-investigator",
+        "title": "Crash Investigator",
+        "tags": [
+            "dev-processes",
+            "programs"
+        ],
+        "icon": "🕵️",
+        "text": {
+            "type": "markdown",
+            "content": "Designed processes for investigating crashes, bugs, and errors in third-party block box components, where little information is given to the caller."
+        }
+    },
+    {
+        "id": "dev-processes/debugging-mastermind",
+        "title": "Debugging Mastermind",
+        "tags": [
+            "programs",
+            "dev-processes"
+        ],
+        "icon": "🛣️",
+        "text": {
+            "type": "markdown",
+            "content": "Designed debugging processes for a complex system with unique challenges, where no such processes existed and the potential bugs were largely unknown.\n\nThese processes allowed other developers and even less technical staff to diagnose issues without my assistance.\n\n"
+        }
+    },
+    {
+        "id": "dev-processes/jira-conjurer",
+        "title": "Jira Conjurer",
+        "tags": [
+            "development-processes",
+            "systems"
+        ],
+        "icon": "🔄",
+        "text": {
+            "type": "markdown",
+            "content": "Set up issue tracking processes, mainly using Jira, involving:\n\n- Projects\n- Workflows\n- Releases\n- Bug reporting standards\n\nAt multiple companies."
+        }
+    },
+    {
+        "id": "dev-processes/phone-a-friend",
+        "title": "️ Phone a Friend",
+        "tags": [
+            "development-processes",
+            "systems"
+        ],
+        "icon": "☎",
+        "text": {
+            "type": "markdown",
+            "content": "Years of helping developments with everything ranging from setting up their environment to version control issues and the usage of advanced technologies.\n\nPlus live debugging sessions."
+        }
+    },
+    {
+        "id": "dev-processes/software-entymologist",
+        "title": "Software Entymologist",
+        "tags": [
+            "dev-processes",
+            "programs"
+        ],
+        "icon": "🔬",
+        "text": {
+            "type": "markdown",
+            "content": "Designed processes for reporting, categorizing, and managing bugs in a large-scale production system. Used a hybrid model to allow bug reports to be accessible to non-technical staff, while also providing full technical documentation for future development purposes."
+        }
+    },
+    {
+        "id": "dev-processes/toolsmith",
+        "title": "Toolsmith",
+        "tags": [
+            "development-processes",
+            "systems"
+        ],
+        "icon": "🧰🔨",
+        "text": {
+            "type": "markdown",
+            "content": "Wrote many special-purpose development tools, such as:\n\n- Tools for setting up development environments\n- A tool for getting specific, commonly needed information out of a DB and the cloud logging system.\n- Template-based generators for new packages and microservices"
+        }
+    },
+    {
+        "id": "frontend/css-initiaite",
+        "title": "️ CSS Initiaite",
+        "tags": [
+            "frontend",
+            "programs"
+        ],
+        "icon": "🖌",
+        "text": {
+            "type": "markdown",
+            "content": "I’ve worked with CSS, using advanced layout systems such as `flexbox`, advanced selector like `:not` and `:is`, naming conventions such as BEM, etc."
+        }
+    },
+    {
+        "id": "frontend/react-initiate",
+        "title": "React Initiate",
+        "tags": [
+            "frontend",
+            "programs"
+        ],
+        "icon": "🌱",
+        "text": {
+            "type": "markdown",
+            "content": "I’ve used React on commercial projects"
+        }
+    },
+    {
+        "id": "infrastructure/dedicated-hosting-initiate",
+        "title": "Dedicated Hosting Initiate",
+        "tags": [
+            "infrastructure",
+            "systems"
+        ],
+        "icon": "💾",
+        "text": {
+            "type": "markdown",
+            "content": "I’ve set up a dedicated, physical Linux server from scratch using a remote management systems (HP iLO) and SSH."
+        }
+    },
+    {
+        "id": "infrastructure/orchestrator",
+        "title": "Orchestrator",
+        "tags": [
+            "architecture-integration",
+            "specifics"
+        ],
+        "icon": "☸",
+        "text": {
+            "type": "markdown",
+            "content": "I’ve orchestrated a complex system in Kubernetes, with elements such as deployments, services, autoscalers, PVCs, ConfigMaps, network policies, and so on, while maintaining high code quality standards.\n\nI’ve tried both Helm and Kustomize in an effort to reduce code duplication.\n\nI’ve debugged microservices through Kubernetes and automated the process of setting up this sort of development environment."
+        }
+    },
+    {
+        "id": "infrastructure/terraformer",
+        "title": "️ Infrastructure Automator",
+        "tags": [
+            "architecture-integration",
+            "specifics"
+        ],
+        "icon": "🏗",
+        "text": {
+            "type": "markdown",
+            "content": "I’ve turned cloud resources into Terraform modules, making it possible to version an entire system consisting of VM instances, instance templates, groups, networks, and autoscalers.\n\nI used Terraform control flow and structure to automate infrastructure deployment, allowing rapidly expanding a complex architecture into new regions."
+        }
+    },
+    {
+        "id": "dotnet/dotnet_aspnet-journeyman",
+        "title": "ASP.NET Journeyman",
+        "tags": [
+            "net",
+            "programs"
+        ],
+        "icon": "💼",
+        "text": {
+            "type": "markdown",
+            "content": "Years of experience developing and maintaining commercial projects using `ASP.NET` technologies in several industries, like tourism and eCommmerce.\n\nUsed several different `ASP.NET` front-facing technologies in different projects, including:\n\n- WebForms\n- MVC and Razor templating"
+        }
+    },
+    {
+        "id": "dotnet/gui-craftsman",
+        "title": "GUI Craftsman",
+        "tags": [
+            "windows",
+            "systems"
+        ],
+        "icon": "📐",
+        "text": {
+            "type": "markdown",
+            "content": "Spent most of my childhood building various kinds of desktop applications for Windows, using both Windows Forms and WPF."
+        }
+    },
+    {
+        "id": "dotnet/stackoverflow-nerd",
+        "title": "StackOverflow Nerd",
+        "tags": [
+            "net",
+            "specifics"
+        ],
+        "icon": "🧠",
+        "text": {
+            "type": "markdown",
+            "content": "[Several years of activity](https://stackoverflow.com/search?q=user%3A1333004+%5Bc%23%5D+is%3Aanswer \"‌\") on StackOverflow primarily answering complex .NET-related questions."
+        }
+    },
+    {
+        "id": "linux/desktop-specialization",
+        "title": "️ Desktop Linux Specialization",
+        "tags": [
+            "linux",
+            "specifics"
+        ],
+        "icon": "🖥",
+        "text": {
+            "type": "markdown",
+            "content": "I’ve configured lots of different desktop Linux environments, using different frontends like X11, LXQt, KDP, GNOME, and so on. I’ve customized their appearance and configurations and created reusable machine images.\n\nI’ve also set up remote desktop tools, like FreeRDP and NoMachine to be used as part of development workflows."
+        }
+    },
+    {
+        "id": "linux/dvanced-integrator",
+        "title": "️ Advanced Integrator",
+        "tags": [
+            "linux",
+            "specifics"
+        ],
+        "icon": "⚙",
+        "text": {
+            "type": "markdown",
+            "content": "I’ve configured advanced subsystems or hardware components, such as:\n\n- VPNs – OpenVPN, strongSwan IPSec\n- CUDA/NVIDIA GPUs for non-graphical purposes\n- RAIDs\n- LVM"
+        }
+    },
+    {
+        "id": "linux/greater-remoting",
+        "title": "️ Greater Remoting",
+        "tags": [
+            "linux",
+            "systems"
+        ],
+        "icon": "🦹‍♂",
+        "text": {
+            "type": "markdown",
+            "content": "I’ve worked with Linux systems using a range of tools and systems:\n\n- Remote desktop solutions\n- SSH, with tools like `byobu` and `tmux`\n- Server management interfaces and dashboards like HP iLO"
+        }
+    },
+    {
+        "id": "linux/internet-security-initiate",
+        "title": "️ Network Security Initiate",
+        "tags": [
+            "linux",
+            "specifics"
+        ],
+        "icon": "🛡",
+        "text": {
+            "type": "markdown",
+            "content": "I’ve securely configured web and network-related services and programs on Linux, like:\n\n- Web servers, such as **nginx**, including security components.\n- **SSL** certificates.\n- Security services or components, such as **fail2ban.**\n- **SSHD**\n- File transfer servers such as **FTPS** and **Samba**\n- Firewalls like **ufw**"
+        }
+    },
+    {
+        "id": "linux/novice-compiler",
+        "title": "Novice Compiler",
+        "tags": [
+            "linux",
+            "systems"
+        ],
+        "icon": "👶",
+        "text": {
+            "type": "markdown",
+            "content": "Compiled programs, modules, and plugins from source."
+        }
+    },
+    {
+        "id": "linux/shellmaster",
+        "title": "️ Shellmaster",
+        "tags": [
+            "linux",
+            "specifics"
+        ],
+        "icon": "🖥",
+        "text": {
+            "type": "markdown",
+            "content": "I’ve configured and work with multiple Linux shells. I prefer **fish** for my own terminal but firmly believe scripts should be written in **bash**. I’ve also used **zsh** in the past.\n\nI’ve tried different themes and configurations, as well as writing my own."
+        }
+    },
+    {
+        "id": "networks/http-and-beyond",
+        "title": "HTTP and Beyond",
+        "tags": [
+            "web",
+            "programs"
+        ],
+        "icon": "🦑",
+        "text": {
+            "type": "markdown",
+            "content": "I’ve done in-depth research into the HTTP protocol in order to capture as much information from requests made by web browsers. This research went beyond the protocol itself and into adjacent or foundational protocols, such as TLS and TCP.\n\nMy focus has always been on web traffic sent by browsers, rather than other network-connected devices, but that also means I have extremely in-depth knowledge of how browsers do this."
+        }
+    },
+    {
+        "id": "nodejs/master-of-versions",
+        "title": "Master of Versions",
+        "tags": [
+            "nodejs",
+            "specifics"
+        ],
+        "icon": "🌟",
+        "text": {
+            "type": "markdown",
+            "content": "Closely followed the runtime’s development for over 6 years.\n\n- Migrated runtime versions over a dozen times.\n- Intricate knowledge of the runtime’s evolution.\n\nFrom my experience, the challenge with migrating versions\n"
+        }
+    },
+    {
+        "id": "nodejs/package-savant",
+        "title": "Package Savant",
+        "tags": [
+            "nodejs",
+            "programs"
+        ],
+        "icon": "📦",
+        "text": {
+            "type": "markdown",
+            "content": "I’ve used a vast number of packages to solve a collosal variety of problems.\n\n- Data structure libraries like `immutable`, `d3`\n- HTTP servers like `express`, `hapi`, and `koa`.\n- HTTP clients like `node-fetch` or `zodios`\n- CLI parsers like `yargs`.\n- Utility libraries like `lodash`\n- Multiple test frameworks – `jest`, `mocha`, `jasmine`, `ava`\n- Multiple validators – `Joi`, `zod`, and `ajv`\n- Many many other things"
+        }
+    },
+    {
+        "id": "nodejs/stability-and-performance-expert",
+        "title": "Stability & Performance Expert",
+        "tags": [
+            "nodejs",
+            "specifics"
+        ],
+        "icon": "🕵",
+        "text": {
+            "type": "markdown",
+            "content": "I’ve diagnosed stability and performance issues multiple times at different companies, including:\n\n- External metrics\n- Memory profiling\n- CPU profiling\n- Heapdumps\n- Internal Node.js and v8 APIs\n- Brain\n\nAnd the many, many, many pitfalls around optimization."
+        }
+    },
+    {
+        "id": "observability/observability_bringer-of-metrics",
+        "title": "Bringer of Metrics",
+        "tags": [
+            "observability",
+            "systems"
+        ],
+        "icon": "📊",
+        "text": {
+            "type": "markdown",
+            "content": "I’ve designed and implemented system-wide metrics for describing the state of the system. These metrics include data from a variety of sources:\n\n1. Custom metrics emitted from the application.\n2. Built-in metrics published by the cloud hosting provider.\n3. Metrics from queues and other messaging services\n\nI’ve used histograms, gauges, counters, and general statistical summaries. I used Prometheus and Google Monitoring as backends.\n\nI’ve also written dashboards in Grafana that present said metrics in ways that are easy to read."
+        }
+    },
+    {
+        "id": "observability/sentinel",
+        "title": "Sentinel",
+        "tags": [
+            "observability",
+            "systems",
+            "metrics"
+        ],
+        "icon": "🔔",
+        "text": {
+            "type": "markdown",
+            "content": "Designed and implemented alerts for different metric states, such as job rates, low success rates, specific errors, critical events (crashes and so on), etc. Also created alert reporters that pushed the alerts to slack and other notification channels."
+        }
+    },
+    {
+        "id": "observability/tracemaster",
+        "title": "Tracemaster",
+        "tags": [
+            "observability",
+            "systems"
+        ],
+        "icon": "🔍",
+        "text": {
+            "type": "markdown",
+            "content": "Designed and implemented a distributed tracing system that could track any job as it passed through a different services, making it possible to quickly diagnose issues at every level of the system.\n\nThe system allowed lots of different log messages from different services and components to be associated with the same job.\n\nLog message standardization allowed the system to be fully queryable."
+        }
+    },
+    {
+        "id": "observability/weaver-of-logs",
+        "title": "Weaver of Logs",
+        "tags": [
+            "observability",
+            "systems"
+        ],
+        "icon": "💎",
+        "text": {
+            "type": "markdown",
+            "content": "Implemented logging in a distributed system, including picking a log retention strategy, carefully balancing costs with increased observability.\n\nI’ve also taught developers logging best practices, dealt with dozens of log-related performance and stability issues, designed schemas for log entries to increase searchability, and hand-wrote log formatters with pretty colors and emoji to make them more readable."
+        }
+    },
+    {
+        "id": "open-source/parjs",
+        "title": "parjs",
+        "tags": [
+            "programs",
+            "design",
+            "typescript",
+            "functional-programming",
+            "parsing",
+            "documentation",
+            "open-source"
+        ],
+        "icon": "👑",
+        "text": {
+            "type": "markdown",
+            "content": "Wrote [parjs](https://github.com/GregRos/parjs), a parser-combinator library written in TypeScript. The library is inspired by similar libraries in other languages, such as [FParsec](https://www.quanttec.com/fparsec), but has specific design choices that better reflect the TypeScript and JavaScript languages and ecosystems.\n\nThis library lets you parse any grammar you like, and do so by writing code you can understand. It has advanced features such as state management and some performance optimizations. Like almost everything I do, it has full documentation."
+        }
+    },
+    {
+        "id": "paradigms/anti-purist",
+        "title": "Anti-Purist",
+        "tags": [
+            "patterns-and-paradigms",
+            "programs",
+            "opinion"
+        ],
+        "icon": "🎭",
+        "text": {
+            "type": "markdown",
+            "content": "Paradigms are not answers, they are sets of abstractions that can be used to construct a system. These abstractions are basically separate tools sold as package deals, but you can rarely build anything with a single set of tools.\n\nInstead, several sets of tools – or abstractions – should be used. This is the approach that most languages go with, combining OOP features with functional programming and other disciplines.\n\nThis is what engineering is – taking abstract mathematical principles and turning them into tools for solving real world problems."
+        }
+    },
+    {
+        "id": "paradigms/believer-functional-programming",
+        "title": "Believer (Functional Programming)",
+        "tags": [
+            "patterns-and-paradigms",
+            "programs"
+        ],
+        "icon": "🙏",
+        "text": {
+            "type": "markdown",
+            "content": "I’ve been doing functional programming for around ten years. I don’t remember how I got into it, but I read Okasaki cover to cover and thereafter wrote my own fully documented and tested [persistent data structure library](https://github.com/Gregros/imms \"‌\").\n\nEverything I do has a tinge of functional programming and I embrace FP features wherever I see them.\n\nI've also implemented many other functional programming patterns, such as a [parser combinator](https://github.com/GregRos/parjs \"‌\") library, and a lazy evaluation-focused [utility library](https://github.com/GregRos/lazies \"‌\")."
+        }
+    },
+    {
+        "id": "paradigms/reactive-xpert-rxjs",
+        "title": "Reactive Xpert (`rxjs)`",
+        "tags": [
+            "patterns-and-paradigms",
+            "programs"
+        ],
+        "icon": "⌚",
+        "text": {
+            "type": "markdown",
+            "content": "I’ve used observables on multiple different projects for processing different types of information on totally different platforms:\n\n* `rxjs` to process events from browsers and other purposes\n* `Rx.NET` to process events from a hardware device\n\nI’ve also written an client for the WAMP r\n\nI feel that the technology comes with a hefty learning curve, but that it’s a very powerful tool that can make certain kinds of problems much easier to solve."
+        }
+    },
+    {
+        "id": "paradigms/skeptic-object-oriented-programming",
+        "title": "Skeptic (Object-Oriented Programming)",
+        "tags": [
+            "patterns-and-paradigms",
+            "programs"
+        ],
+        "icon": "🤔",
+        "text": {
+            "type": "markdown",
+            "content": "I’ve been writing in object-oriented languages basically my whole life, which makes me sufficiently qualified to say that some aspects of this paradigm are overblown.\n\nOOP patterns by themselves don’t lead to better code, and in fact some aspects (like methods) emphasize tight coupling that can be avoided using other approaches.\n\nThis is in contrast to functional programming principles, such as immutability, functional composition, and parametric polymorphism, which make code more predictable, powerful, and reusable."
+        }
+    },
+    {
+        "id": "purejs/engine-level-understanding",
+        "title": "Engine-level Understanding",
+        "tags": [
+            "javascript",
+            "specifics"
+        ],
+        "icon": "🔩",
+        "text": {
+            "type": "markdown",
+            "content": "I’ve ventured beyond the JavaScript specification and deep into the V8 engine source code in search of insight into its inner workings.\n\nAs a result, I’ve gained a deep understanding of JavaScript engine internals, (de-)optimizations, architecture, and processing stages."
+        }
+    },
+    {
+        "id": "purejs/mastery-of-specs",
+        "title": "Mastery of Specs",
+        "tags": [
+            "purejs",
+            "programs"
+        ],
+        "icon": "📚🦑",
+        "text": {
+            "type": "markdown",
+            "content": "Worked closely to the ECMA-262 language specification for purposes like instrumenting and analyzing JavaScript source code.\n\nAlso worked with W3C specifications for various Web APIs, such as DOM, Geolocation, and so on."
+        }
+    },
+    {
+        "id": "purejs/mastery-of-syntax-trees",
+        "title": "Mastery of Syntax Trees",
+        "tags": [
+            "low-level-javascript",
+            "programs"
+        ],
+        "icon": "🌳",
+        "text": {
+            "type": "markdown",
+            "content": "I’ve worked on JavaScript source itself, parsing it into an AST and transformed it to get an instrumented version that must be functionally the same.\n\nI did this in a high-scale production environment, where mistakes or uncertainty lead to clients asking really hard questions."
+        }
+    },
+    {
+        "id": "purejs/world-class-debugger",
+        "title": "World-class Debugger",
+        "tags": [
+            "low-level-javascript",
+            "programs"
+        ],
+        "icon": "🔬",
+        "text": {
+            "type": "markdown",
+            "content": "I’ve debugged complex minified and obfuscated scripts, tracing asynchronous code through half a dozen libraries to investigate issues in an nth dependency in a nested iframe in a dynamically evaluated script.\n\nI’ve also done multi-process Node.js programs."
+        }
+    },
+    {
+        "id": "systems/cloud-builder",
+        "title": "️ Cloud Builder",
+        "tags": [
+            "infrastructure",
+            "systems"
+        ],
+        "icon": "☁",
+        "text": {
+            "type": "markdown",
+            "content": "I’ve implemented cloud architectures involving networks, permissions, instances, templates, and so on."
+        }
+    },
+    {
+        "id": "systems/containerizer",
+        "title": "Containerizer",
+        "tags": [
+            "architecture-integration",
+            "specifics",
+            "infrastructure"
+        ],
+        "icon": "🐳",
+        "text": {
+            "type": "markdown",
+            "content": "I’ve containerized codebases based on a machine image or nothing at all."
+        }
+    },
+    {
+        "id": "typescript/grandad",
+        "title": "Grandad",
+        "tags": [
+            "typescript",
+            "specifics"
+        ],
+        "icon": "👴",
+        "text": {
+            "type": "markdown",
+            "content": "Used TypeScript since version 1.0.\n\nIn other words, I was into it before it was cool."
+        }
+    },
+    {
+        "id": "typescript/typescript-all-the-ways",
+        "title": "All the Ways",
+        "tags": [
+            "typescript",
+            "specifics"
+        ],
+        "icon": "🌍",
+        "text": {
+            "type": "markdown",
+            "content": "Years of experience using TypeScript for a huge variety of purposes, platforms, and configurations.\n\n📱 Client-side\n📡 Server-side\n⚖️ platform agnostic\n🎚️ Strict or loose\n🐭 Microservices or 🐘 Monoliths\n\nI’ve done it all."
+        }
+    },
+    {
+        "id": "typescript/typescript-mastery",
+        "title": "Typescript Mastery",
+        "tags": [
+            "typescript",
+            "programs"
+        ],
+        "icon": "☯️",
+        "text": {
+            "type": "markdown",
+            "content": "Deep and comprehensive knowledge of the TypeScript language and its many features and how it compiles to JS."
+        }
+    }
+]
