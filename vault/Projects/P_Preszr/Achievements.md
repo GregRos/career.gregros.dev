@@ -6,13 +6,8 @@
 > > Designed a minimal API that works right out of the box.
 >
 >> [!success] Supports all built-in types
->> Wrote encoders for every single ECMAScript built-in for every known version, but also works with ES2015+.
->
-> > [!success] Watertight error reporting
-> > Wrote dozens of tests for errors and protocol violations to ensure reliability.
+>> Wrote encoders for every single ECMAScript built-in for every known version.
 > 
->> [!success] Fully tested
->>Wrote hundreds of tests for different encoders, failure modes, and protocol violations.
->
->> [!success] Highly extensible
->> Designed a system of custom encoders with varying levels of complexity.
+>> [!success] 90% coverage
+>> Tested encoding and decoding with over 100 payloads and objects.
+

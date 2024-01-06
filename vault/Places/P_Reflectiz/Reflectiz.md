@@ -5,7 +5,32 @@ periods:
 position: Tech Lead
 type: Place
 ---
-The company develops a security scanner that detects client-side vulnerabilities in web applications.
+Reflectiz provides a security scanner that detects client-side vulnerabilities in web applications.
+
+I first joined the company when it numbered only a handful of people. I was tasked with developing a browser-based platform that reported everything a webpage did, including calls to web APIs, changes to the DOM, HTTP requests, and so on
+
+I rejoined the company during a period of growth. In my new role as the company’s tech lead, I grew the platform’s capabilities, deployed new infrastructure, and built development processes.
+
+
+
+As the company kept growing, I widened my focus further. 
+
+
+
+
+I led the deployment of system-wide observability, 
+
+During my second tenure the company grew to over 50 people and dozens of paying clients. In my new role as Tech Lead, I expanded the company’s infrastructure to much greater scales, set up systems ranging from f
+
+During my first iteration (2017-2019) I worked as a senior backend developer. The company numbered only a few people, and I was tasked with developing many of the company’s core technologies from scratch, solving many difficult technical problems along the way.
+
+During my second iteration (2021-now), the company grew to over 50 people and dozens of paying clients. In my position as Tech Lead I continued to develop core technologies, while also overseeing the growth of the company’s infrastructure to massive scale.
+
+
+
+. I continued to develop those same core technologies, while while also making wide-reaching improvements to the company’s systems and processes, as well as mentoring developers.
+
+
 # Scanner
 I led the development of a system that ran, automated, controlled, and monitored #chromium browsers at massive scale on #gcp. The system was written in #typescript on #nodejs.
 ## Instrumentation

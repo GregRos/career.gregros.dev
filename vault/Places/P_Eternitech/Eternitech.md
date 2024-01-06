@@ -1,10 +1,13 @@
 ---
 type: Place
 periods:
-  - 2017-2019
+  - 2016-2017
 position: Full-stack Developer
 ---
-Eternitech was a software shop that wrote and maintained software for various clients. I worked as a full-stack developer.
+Eternitech was a custom software developer (“software shop”) that specialized in web applications. I worked as a full-stack developer.
+
+
+
 # Frontend
 ## Single-page Applications
 Developed single-page applications for clients in various industries, such as tourism and commerce, usually from scratch. 

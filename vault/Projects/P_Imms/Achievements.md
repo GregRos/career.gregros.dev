@@ -8,18 +8,16 @@
 > >[!success] Uniform API
 >> Designed a uniform API spanning five collections and dozens of high-performance operations.
 >
-> > [!success] Minimal code duplication
-> > Used abstractions and code generation to avoid having to write the same member twice.
-> 
-> > [!success] Invisible optimization
-> > Controlled mutation and specialized algorithms for known input types allowed for even better performance.
->
 > > [!success] Rigorous testing and benchmarks
-> > Wrote my own framework to run thousands of integration tests and benchmarks.
+> > Ran hundreds of integration tests and benchmarks with different scenarios and initial states.
 > 
-> > [!success] Error reporting
-> > Wrote dozens of checks and descriptive error messages for common issues.
-> 
-> > [!success] Debugging features
-> > Debugging attributes made the collections feel like first-class citizens in the framework.
+> >[!warning] Scope creep
+>> Placing boundaries on a project early on, to avoid the scope creeping to unmanageable levels.
+>
+>> [!warning] Optimization pitfalls
+>> Chasing peak performance is kind of like chasing a magical unicorn that may not exist. 
+
+
+
+
 

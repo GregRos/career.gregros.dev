@@ -4,5 +4,8 @@
   "obsidian-style-settings",
   "tag-wrangler",
   "obsidian-excalidraw-plugin",
-  "obsidian-git"
+  "obsidian-git",
+  "dataview",
+  "table-editor-obsidian",
+  "templater-obsidian"
 ]

@@ -5,32 +5,41 @@ period:
 link: https://github.com/GregRos/wampus
 role:
   - Lead
-users: "0"
+users: "1"
 contributors: "1"
 platform:
   - Nodejs
   - Browser
 tagline: RPC protocol client for JavaScript
+end-users: --
 ---
-Wampus is a client for the #WAMP JSON-based RPC protocol, written in #typescript. It works for both Node.js and the browser and uses #rxjs in both its interface and implementation.
+> [!infobox]
+> 
+> 
+> # [Wampus](https://github.com/GregRos/wampus)
+> 
+> |  | |
+> | ---- | ---- |
+> | Type | Library |
+> | Platform | #Nodejs #Browser|
+> | Role | Lead |
+> | Period | 2019-2020 |
+> | Users | 1 |
+> | End-users | -- |
+> | Contributors | 1 |
+
+Wampus is a client for the #WAMP JSON-based RPC #protocol, written in #typescript. It works for both Node.js and the browser and uses #rxjs in both its interface and implementation.
+
+WAMP is an schema-less alternative to gRPC with a lot less hassle.
+
+<div style="clear: both; width: 100%"></div>
+<div style="clear: both; width: 100%"></div>
 
 ![[Projects/P_Wampus/Achievements|no-title clean]]
 
-
-# Why I wrote it
-I was using the WAMP protocol for IPC. The most popular client for TypeScript is called [Autobahn](https://github.com/crossbario/autobahn-js)and has multiple problems that I wanted to address.
 # How it works
-Wampus implements the WAMP protocol according to its  [specification](https://wamp-proto.org/wamp_latest_ietf.html)  almost entirely using rxjs, and its interface also makes use of observables. This makes the protocol implementation much more readable than if done by hand. 
+It implements the protocol and provides a convenient API that follows many TypeScript conventions.
 
-That readability is, however, contingent on understanding rxjs, which has a steep learning curve.
-# Userbase
-None. Interest in the WAMP protocol has waned, and I lost interest in this project. However, I still like the protocol and I think this library is one of my strongest accomplishments.
+Internally, most of the protocol is processed via observables (`rxjs`), and the library also exposes observables when it makes sense to do so. In all cases, there is an alternative API that uses events or a similar abstraction. The observables are driven by a central message routing component.
 
-One day I might integrate the protocol into something else, thereby making it relevant again.
-# Features
-- An expressive and powerful API
-- Intelligent async tracing when in development mode
-- A low-level interface for sending crafted protocol messages
-- Support for almost all advanced features.
-- Node.js and browser
-- Tested with high coverage
+I used observables because they make it easier to reason about sequences of messages, impose timeouts, propagate errors, dispose of resources, and so much more.

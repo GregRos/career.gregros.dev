@@ -4,7 +4,10 @@ period:
 position: Sr. Backend Developer
 type: Place
 ---
-Appdome provides a service that bakes security features into existing mobile applications. I worked on the company’s web platform. I worked as a senior backend developer.
+Appdome provides a service that bakes security features into existing mobile applications. I worked on the company’s web platform as a senior backend developer.
+
+![[Places/P_Appdome/Achievements|no-title clean]]
+
 # PR-based model
 I moved the team from a push-based model to a PR-based model with code reviews, CI/CD, and integration with the issue tracker.
 # Features

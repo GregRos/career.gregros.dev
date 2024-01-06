@@ -8,20 +8,44 @@ role:
 users: "1"
 contributors: "1"
 platform:
-  - Any JS
+  - javascript
 tagline: Library for serialization.
+end-users: --
 ---
-Preszr is a serialization-adjacent library written in #typescript for any #javascript environment.
+> [!infobox]
+> 
+> # [Preszr](https://github.com/GregRos/preszr)
+> 
+> |  | |
+> | ---- | ---- |
+> | Type | Library |
+> | Platform | #javascript|
+> | Role | Lead |
+> | Period | 2021-now |
+> | Users | 1 |
+> | End-users | -- |
+> | Contributors | 1 |
+
+
+Preszr is a serialization-adjacent library written in #typescript for any #javascript environment. 
+
+It helps you serialize objects with prototypes and complex reference structures – also known as object graphs – through a carefully designed object #protocol.
+
+Preszr supports all built-in values, including `"strings"`, `ArrayBuffer`, and `100n`, out of the box and can be easily extended to support custom types. This either involves just passing a prototype and having the library sort it out, or at most by writing a few lines of code.
+
+<div style="clear: both; width: 100%"></div>
+<div style="clear: both; width: 100%"></div>
+
 ![[Projects/P_Preszr/Achievements|no-title clean]]
-# Why I wrote it
-I wanted to transfer a tree structure through the network that had classes and other stuff, and I wasn’t satisfied with the existing options.
+
 # How it works
-![[PreszrFlow.canvas|PreszrFlow]]
+![[Preszr-process|center]]
 Preszr takes complex JavaScript objects with references and meaningful prototypes and *encodes* them into a flat array format that can be serialized and sent over the network (or saved to a file).
 
-To get the object back, you need deserialize it back into the flat array format and then *decode* it with Preszr, which will reproduce the original object perfectly.
+To get the object back, you need deserialize it back into the flat array format and then *decode* it with Preszr, which will reproduce the original object perfectly. It supports basic versioning to deal with changes in classes.
 
-In other words, it’s for serializing object graphs.
-# Userbase
-I use it.
+The Preszr format is written to work with any serialization method, but it’s also optimized under the assumption it’s just going to be `JSON.stringify`. So the best of both worlds.
+
+# Users
+Right now it’s just me. But I have plans.
 

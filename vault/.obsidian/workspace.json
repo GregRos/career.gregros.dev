@@ -20,42 +20,6 @@
             }
           },
           {
-            "id": "e8665a9f0b737269",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "sts-dynamic-start.md",
-                "mode": "source",
-                "source": false
-              }
-            }
-          },
-          {
-            "id": "ef4d02f42eb01dc9",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "sts-dynamic-start.md",
-                "mode": "source",
-                "source": false
-              }
-            }
-          },
-          {
-            "id": "de51311afa883345",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "sts-dynamic-start.md",
-                "mode": "source",
-                "source": false
-              }
-            }
-          },
-          {
             "id": "05cdacc8eb28d5fb",
             "type": "leaf",
             "state": {
@@ -97,7 +61,31 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Projects/P_Imms/Imms.md",
+                "file": "Projects/P_Preszr/Preszr.md",
+                "mode": "source",
+                "source": false
+              }
+            }
+          },
+          {
+            "id": "58f637c9ce3bf1bc",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "README.md",
+                "mode": "source",
+                "source": false
+              }
+            }
+          },
+          {
+            "id": "df0606aba580a781",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "Places/P_Appdome/Appdome.md",
                 "mode": "source",
                 "source": false
               }
@@ -116,7 +104,7 @@
             }
           }
         ],
-        "currentTab": 7
+        "currentTab": 6
       }
     ],
     "direction": "vertical"
@@ -182,7 +170,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Projects/P_Imms/Imms.md",
+                "file": "Places/P_Appdome/Appdome.md",
                 "collapseAll": true,
                 "extraContext": true,
                 "sortOrder": "alphabetical",
@@ -199,7 +187,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "Projects/P_Imms/Imms.md",
+                "file": "Places/P_Appdome/Appdome.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -222,15 +210,17 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "Projects/P_Imms/Imms.md"
+                "file": "Places/P_Appdome/Appdome.md"
               }
             }
           }
-        ]
+        ],
+        "currentTab": 3
       }
     ],
     "direction": "horizontal",
-    "width": 388.5
+    "width": 388.5,
+    "collapsed": true
   },
   "left-ribbon": {
     "hiddenItems": {
@@ -240,49 +230,94 @@
       "canvas:Create new canvas": false,
       "daily-notes:Open today's daily note": false,
       "templates:Insert template": false,
-      "command-palette:Open command palette": false
+      "command-palette:Open command palette": false,
+      "table-editor-obsidian:Advanced Tables Toolbar": false,
+      "templater-obsidian:Templater": false
     }
   },
-  "active": "c380220dd8929c1f",
+  "floating": {
+    "id": "c6ed5cb9cf8600ca",
+    "type": "floating",
+    "children": [
+      {
+        "id": "7647630316e9b24e",
+        "type": "window",
+        "children": [
+          {
+            "id": "a5f5543947b18508",
+            "type": "tabs",
+            "children": [
+              {
+                "id": "8eb1ac8402b6460c",
+                "type": "leaf",
+                "state": {
+                  "type": "markdown",
+                  "state": {
+                    "file": "Places/P_Reflectiz/Reflectiz.md",
+                    "mode": "source",
+                    "source": false
+                  }
+                }
+              }
+            ]
+          }
+        ],
+        "direction": "vertical",
+        "x": 1140,
+        "y": 17,
+        "width": 1044,
+        "height": 780,
+        "maximize": true,
+        "zoom": 0
+      }
+    ]
+  },
+  "active": "df0606aba580a781",
   "lastOpenFiles": [
-    "Projects/P_Imms/Achievements.md",
-    "Projects/P_Imms/Imms.md",
-    "Projects/P_Parjs/Achievements.md",
-    "Projects/P_Parjs/Parjs.md",
-    "Projects/P_Micro/FieldEditor.md",
-    "Projects/P_Patchwork/Patchwork.md",
-    "Projects/P_Patchwork/Achievements.md",
-    "Projects/P_Imms/Lessons.md",
-    "Basics/Project.md",
-    "Skills/Web UI.md",
-    "Projects/P_Wampus/Lessons.md",
-    "Projects/P_Wampus/Achievements.md",
-    "Projects/P_Preszr/Preszr.md",
-    "Projects/P_Preszr/Lessons.md",
-    "Projects/P_Preszr/Achievements.md",
+    "Places/P_Appdome/Achievements.md",
+    "README.md",
     "Projects/P_Wampus/Wampus.md",
+    "Projects/P_Imms/Imms.md",
+    "Projects/P_Micro/FieldEditor.md",
+    "Projects/P_Parjs/Parjs.md",
+    "Projects/P_Patchwork/Patchwork.md",
+    "Projects/P_Preszr/Preszr.md",
+    "Projects/P_Preszr/Preszr-process.md",
     "Projects/P_Perdido/Perdido.md",
-    "Projects/P_Perdido/Achievements.md",
-    "Skills/Web Mastery.md",
+    "Templates/Projectbox.md",
+    "Projects/P_Imms/Icon.png",
+    "Projects/P_Imms/Achievements.md",
+    "Projects/P_Parjs/Achievements.md",
+    "Projects/P_Patchwork/Achievements.md",
+    "Icon.md",
+    "Projects/P_Patchwork/Icon.png",
+    "Templates",
+    "Excalidraw/Drawing 2024-01-06 19.01.18.excalidraw.md",
     "Places/P_Reflectiz/Reflectiz.md",
-    "Places/P_Eternitech",
-    "Places/P_Appdome",
-    "Places/P_Reflectiz",
-    "Places/P_Eternitech/Eternitech.md",
     "Places/P_Appdome/Appdome.md",
-    "Projects/P_Preszr/PreszrFlow.canvas",
-    "Projects/P_Pres.md",
-    "Projects/P_Wampus",
-    "Projects/P_Parjs",
-    "Projects/P_Preszr",
-    "Projects/P_Perdido",
-    "Projects/P_Patchwork",
-    "Projects/P_Micro",
-    "Projects/P_Imms",
-    "Untitled 1.canvas",
+    "Places/P_Eternitech/Eternitech.md",
+    "Projects/P_GregRos.Dev/Achievements.md",
+    "Skills/Web UI.md",
+    "Projects/P_Micro/FieldEditor_GUI.png",
+    "Projects/P_Wampus/Achievements.md",
+    "Projects/P_GregRos.Dev/GregRos.dev.md",
+    "Garden",
+    "Projects/P_GregRos.Dev",
+    "Projects/P_Perdido/Achievements.md",
+    "Projects/P_Micro/SlayTheSpire_DynamicStart.md",
+    "Projects/P_Preszr/Achievements.md",
+    "Pasted image 20240105151856.png",
+    "_/NoInterpreterOrEnvironment.png",
+    "_",
+    "ps39C4.tmp",
+    "psD064.tmp",
+    "ps8472.tmp",
     "Untitled.canvas",
-    "Excalidraw/Drawing 2024-01-04 16.38.22.excalidraw.md",
-    "Achievements/dev-processes/debugging-mastermind.md",
-    "reflectiz.md"
+    "Untitled 1.canvas",
+    "Pasted image 20240104213454.png",
+    "Projects/P_Micro",
+    "Projects/P_Preszr/PreszrFlow.canvas",
+    "Excalidraw",
+    "Places/P_Eternitech"
   ]
 }
