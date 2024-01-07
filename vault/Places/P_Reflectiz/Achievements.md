@@ -1,21 +1,18 @@
-> [!column] Development
-> > [!success] Process management
-> > Wrote process management code.
+> [!column|no-title] Development
+> > [!success] Researched technologies
+> > In #chromium monitoring, automation, and control.
 > 
-> > [!success] Reporting
-> > fdsf
-
-
-
-> [!column] Infrastructure
-> > [!success] Cloud resources
-> > Managed most of the company’s cloud resources and led the deployment of new ones.
+> > [!success] Built platform
+> > Led development on a chromium-based platform using #typescript and #nodejs.
 > 
-> > [!success] Infrastructure to code
-> > Reduced much of the company’s infrastructure to code with tools such as #terraform.
+> > [!success] Set up development processes
+> > Wrote tools, designed interfaces, and set conventions with an emphasis on #DevEx.
 > 
-> > [!success] 
-
-> [!column] DevEx
-> > [!success] asdfasds
-
+> > [!success] Expanded infrastructure
+> > Through #IaC, containerization, and orchestration platforms.
+>
+>> [!success] Integrated #observability
+>> Led deployment of system-wide logging and monitoring.
+>
+>> [!success] Wrote documentation
+>> For every single thing I made.

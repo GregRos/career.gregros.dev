@@ -13,7 +13,6 @@ tagline: Library for serialization.
 end-users: --
 ---
 > [!infobox]
-> 
 > # [Preszr](https://github.com/GregRos/preszr)
 > 
 > |  | |
@@ -26,15 +25,11 @@ end-users: --
 > | End-users | -- |
 > | Contributors | 1 |
 
-
 Preszr is a serialization-adjacent library written in #typescript for any #javascript environment. 
 
 It helps you serialize objects with prototypes and complex reference structures – also known as object graphs – through a carefully designed object #protocol.
 
-Preszr supports all built-in values, including `"strings"`, `ArrayBuffer`, and `100n`, out of the box and can be easily extended to support custom types. This either involves just passing a prototype and having the library sort it out, or at most by writing a few lines of code.
-
-<div style="clear: both; width: 100%"></div>
-<div style="clear: both; width: 100%"></div>
+Preszr supports all built-in values, including `"strings"`, `ArrayBuffer`, and `100n`, out of the box and can be easily extended to support custom types.
 
 ![[Projects/P_Preszr/Achievements|no-title clean]]
 

@@ -13,10 +13,7 @@ link: https://github.com/GregRos/perdido
 > |Type|Server|
 > |Period|2021-now|
 
-
-Perdido is a personal media and gaming server, as well as a dozen other things. I use many of its features throughout the day. It’s a physical machine, a small enterprise server with a 1 Gbit line.
-
-<div style="clear: both; width: 100%"></div>
+Perdido is a personal media and gaming server, as well as a dozen other things. I use many of its features throughout the day. It’s a small enterprise server with a 1 Gbit line.
 
 ![[Projects/P_Perdido/Achievements|clean no-title]]
 

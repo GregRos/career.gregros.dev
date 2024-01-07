@@ -5,18 +5,15 @@ period:
 link: https://github.com/GregRos/Patchwork
 role:
   - Lead
-users: 5-30 (max)
-end-users: 50k - 100k (max)
+users: 5-30
+end-users: 50k - 100k
 contributors: 5 (total)
 platform:
   - dotnet
   - mono
-tagline: Framework for modifying .NET DLLs.
 icon: "[[Projects/P_Patchwork/Icon.png]]"
 ---
-
 > [!infobox]
-> 
 > ![[Icon.png]]
 > # [Patchwork](https://github.com/GregRos/Patchwork)
 > 
@@ -33,8 +30,6 @@ icon: "[[Projects/P_Patchwork/Icon.png]]"
 Patchwork is a framework for injecting custom code into #dotnet DLL files. It’s written in #csharp, for both .NET and #mono. It’s completely cross-platform, and has been used on all major operating systems.
 
 Patchwork was written for game #modding
-
-<div style="clear: both; width: 100%"></div>
 
 ![[Projects/P_Patchwork/Achievements|no-title clean]]
 

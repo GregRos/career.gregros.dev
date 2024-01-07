@@ -14,9 +14,7 @@ platform:
 tagline: High-performance immutable collections for .NET
 icon: "[[Projects/P_Imms/Icon.png]]"
 ---
-
 > [!infobox]
-> 
 > ![[Projects/P_Imms/Icon.png]]
 > # [Imms](https://imms.github.io)
 > 
@@ -30,14 +28,11 @@ icon: "[[Projects/P_Imms/Icon.png]]"
 > | End-users | ? |
 > | Contributors | 1 |
 
-
 Imms is a library of #immutable collections that support a wide variety of operations, written in #csharp. 
 
 I started working on it when there were few competitors. However, by the time I finished, Microsoft released their own package of immutable data structures, and today it’s fully integrated into the framework. 
 
 It made it hard to see anyone using my work after that, so I ended up finishing it but losing interest soon afterwards.
-
-<div style="clear: both; width: 100%"></div>
 
 ![[Projects/P_Imms/Achievements|no-title clean]]
 

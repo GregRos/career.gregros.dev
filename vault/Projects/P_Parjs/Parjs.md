@@ -13,11 +13,6 @@ tagline: Library for building parsers.
 end-users: --
 ---
 > [!infobox]
-> 
-
-> [!infobox]
-> 
-> 
 > # [Parjs](https://github.com/GregRos/parjs)
 > 
 > |  | |
@@ -34,8 +29,6 @@ Parjs is a #typescript library for building #parsers. You can use it in any #jav
 
 Parjs follows the #parser-combinator design popular in #functional languages, where you build parsers for complex languages from basic building block parsers and combinators that change how those parsers are applied.
 
-<div style="clear: both; width: 100%"></div>
-
 ![[Projects/P_Parjs/Achievements|clean no-title]]
 
 # How it works
@@ -47,7 +40,6 @@ Parjs follows the #parser-combinator design popular in #functional languages, wh
 > // 🍕string "fi" ➜ ⚙️exactly 2
 string("fi").pipe(exactly(2));
 > ```
-
 
 # Users
 Parjs has a small but robust userbase. It’s frequently used by people experimenting with programming languages, as well as people who want to parse CJK languages.

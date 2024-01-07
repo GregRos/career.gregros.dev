@@ -1,17 +1,14 @@
 > [!column|no-title]
-> > [!success] Modernized workflows
-> > Introduced PRs and code reviews, set up CI/CD in Jenkins and added JIRA integration.
+> > [!success] Evolved codebases
+> > Continuous refactoring through application of design principles and a focus on software interfaces.
 > 
-> > [!success] End-to-End
-> > Worked closely with teams on every stage of feature development, including design, testing, and maintenance.
+> > [!success] Improved workflows
+> > Introduced PRs and code reviews, contributed to CI/CD, and improved issue tracking.
 > 
-> > [!success] Improved runtimes
-> > Migrated Node.js versions and used profiling to solve performance issues.
+> > [!success] Feature lifecycle
+> > Participated in feature design and specification as well as hands-on development.
 > 
-> > [!success] Refactored a lot
-> > Used basic design principles such as SoC and concepts like middleware. I also improved database schemas. 
-> 
+> > [!success] Managed runtimes
+> > Migrated #nodejs versions, used #profiling to solve performance problems, and fixed dependency issues.
 
 
-
-2

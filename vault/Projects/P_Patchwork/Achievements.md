@@ -1,5 +1,3 @@
-<div style="clear: both; width: 100%"></div>
-
 > [!column|no-title]
 > > [!success] Simple API
 > > Designed a simple API for a highly technical, low-level process.

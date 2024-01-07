@@ -1,15 +1,16 @@
->[!column]
->>[!success] Developed SPAs
-> Developed SPA frontends using #react for companies in industries such as tourism and eCommerce.
+>[!column|no-title]
+>>[!success] Full-stack development
+>  Using #nodejs and #csharp on the server side and #react on the client side, usually with a 50-50 split.
+>
+>> [!success] Maintenance
+>> Maintained and migrated systems using #jquery, #classic-asp, #vba, and other legacy technologies.
+>
+>> [!success] End-to-end
+>> Gathered requirements from clients, managed feedback, participated in feature design, and wrote specifications.
 > 
-> >[!success] End-to-end
-> >Worked closely with clients during every stage of the SDLC.
+> > [!success] From scratch
+> > Built web apps, frontends, and database schemas from scratch, following strong core principles.
 > 
-> > [!success] Multiple backends
-> > Developed and maintained backends using #csharp and #nodejs.
-> 
-> > [!success] Designed database schemas.
-> > Designed database schemas from scratch for companies in industries such as eCommerce.
-> 
+
 
 
