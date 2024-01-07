@@ -33,7 +33,7 @@
     "typescript": "^5.3.2"
   },
   "scripts": {
-    "scss": "sass --watch styles/publish.scss:vault/publish.css styles/electron.scss:vault/.obsidian/snippets/safr.css",
+    "scss": "sass --watch styles/publish.scss:vault/publish.css styles/electron.scss:vault/.obsidian/snippets/gregros.css",
     "tsc": "tsc -p .",
     "tsc-watch": "tsc -w -p ."
   }
