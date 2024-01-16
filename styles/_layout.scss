@@ -1,6 +1,89 @@
 
-
-div.markdown-embed[src$="Achievements"] {
-  clear: both;
+.callout[data-callout="column"] {
   width: 100%;
+  clear: both;
+  padding-top: 15px;
+}
+
+
+.years.years.years.years.years {
+  background: #341a1a;
+  padding-top: 15px;
+  padding-bottom: 15px;
+}
+
+.loc {
+  text-align: center;
+  font-weight: bold;
+  background: black;
+}
+
+.callout.callout.callout.callout.callout[data-callout="infobox"] {
+  @media screen and (max-width: 600px) {
+	width: 100%;
+	max-width: 100%;
+	clear: both;
+	float: unset;
+  }
+  overflow: hidden;
+  border-radius: 5px;
+  box-shadow: 4px 4px 4px black;
+
+  td {
+	padding: 8px;
+  }
+
+  .callout-content.callout-content {
+	overflow: hidden;
+	border: 3px solid rgba(5, 85, 133, 0.83);
+	padding: 0;
+	border-radius: 5px;
+
+  }
+
+
+  span.media-embed {
+	background: #240a3c;
+
+  }
+}
+
+.markdown-rendered.Project, .markdown-source-view.Project {
+  .callout.callout.callout.callout.callout[data-callout="infobox"] {
+
+	font-family: "Comic Sans MS", "Choco Cooky", "Droid Sans", cursive, sans-serif;
+	font-size: 0.9rem;
+
+
+	th {
+	  font-size: 1.5em;
+	  white-space: nowrap;
+	  background: #240a3c;
+
+	  &:last-child {
+		text-align: right;
+	  }
+	}
+  }
+
+
+}
+
+.tree-item-self[data-path="Resources"] {
+  display: none;
+}
+
+.Start.Start.Start.Start.Start {
+  .media-embed, .image-embed {
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+
+	img {
+	  max-width: 300px;
+	  width: 300px;
+	}
+  }
+
 }

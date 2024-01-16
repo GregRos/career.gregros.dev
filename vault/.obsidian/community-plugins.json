@@ -1,11 +1,8 @@
 [
-  "url-into-selection",
   "obsidian-smart-typography",
   "obsidian-style-settings",
   "tag-wrangler",
+  "url-into-selection",
   "obsidian-excalidraw-plugin",
-  "obsidian-git",
-  "dataview",
-  "table-editor-obsidian",
   "templater-obsidian"
 ]

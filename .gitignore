@@ -6,7 +6,7 @@ vault/.obsidian/plugins
 dist/
 # Exclude Day Planner directory placed in vault root
 Day*Planners/*
-
+.parcel-cache/
 # This file is used to keep track of last auto backup/pull
 .obsidian-git-data
 

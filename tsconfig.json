@@ -1,10 +1,16 @@
 {
   "compilerOptions": {
     "target": "ES2022",
-    "module": "NodeNext",
-    "moduleResolution": "Node16",
-    "outDir": "dist",
+    "module": "ES2022",
+    "moduleResolution": "Bundler",
+    "outDir": "vault",
     "rootDir": "src",
+    "noEmit": true,
+
+    "lib": [
+      "ES2022",
+      "DOM"
+    ],
     "strict": false,
     "jsx": "react",
     "sourceMap": true,

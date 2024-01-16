@@ -1,0 +1,156 @@
+@import url('https://fonts.googleapis.com/css2?family=Oswald&display=swap');
+
+body {
+  background: #2d2c2c;
+}
+
+
+
+.timeline {
+  a {
+	text-decoration: inherit;
+	color: inherit;
+  }
+
+  &__name {
+
+	align-self: self-start;
+	justify-self: safe center;
+	place-self: center;
+	text-align: center;
+	background: #410909;
+	color: white;
+	padding: 3px;
+	font-size: 1.2rem;
+	margin-top: -40px;
+	border: 2px solid black;
+	border-radius: 5px;
+	border-bottom: 0;
+	border-bottom-left-radius: 0;
+	border-bottom-right-radius: 0;
+  }
+
+  &__year {
+	top: 0;
+	width: 100%;
+	background: #410909;
+  }
+
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: flex-start;
+  font-family: 'Oswald', sans-serif;
+  margin-top: 50px;
+
+  &__before, &__after {
+	&__columns {
+	  display: flex;
+
+	}
+  }
+
+  &__year {
+	margin: 0;
+	padding: 0;
+	width: 100%;
+	height: 90%;
+	min-width: 40px;
+	border: 1px solid white;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	background: #410909;
+	color: white;
+	border-radius: 5px;
+  }
+}
+
+.tcol {
+
+  max-width: 70px;
+  margin-right: 7px;
+  height: 100%;
+  padding: 0;
+
+  position: relative;
+
+  &__event {
+	height: 100%;
+	border: 1px solid white;
+	border-radius: 5px;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	color: white;
+	padding-left: 5px;
+	padding-right: 5px;
+	box-shadow: 5px 5px 5px 0 #000000;
+
+	&:hover {
+	  border: 1px solid #ff0000;
+	  margin: -3px;
+	  padding: 3px;
+	}
+
+	&__text {
+
+	}
+
+	&__tooltip {
+	  display: none;
+	  position: absolute;
+	  bottom: 100%;
+	  left: 50%;
+	  transform: translateX(-50%);
+	  padding: 8px;
+	  background-color: #333;
+	  color: #fff;
+	  border-radius: 4px;
+	  white-space: nowrap;
+	  pointer-events: none;
+	  box-shadow: 0 0 5px rgba(0, 0, 0, 0.3);
+	}
+
+	&:hover &__tooltip {
+	  opacity: 0.8;
+	  pointer-events: none;
+	  display: block;
+	}
+
+	&--Library {
+	  background: #7f2121;
+	}
+
+	&--Framework {
+	  background: #213c7f;
+	}
+
+	&--Server {
+	  background: #217f21;
+	}
+
+	&--Appdome {
+	  background: #7f7f21;
+	}
+
+	&--Reflectiz {
+	  background: #7f2121;
+	}
+
+	&--Eternitech {
+	  background: #28818b;
+	}
+  }
+
+  &__positioner {
+	width: 100%;
+
+	&:hover {
+
+	  z-index: 100;
+	}
+  }
+}
