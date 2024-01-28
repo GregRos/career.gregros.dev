@@ -42,12 +42,6 @@ Patchwork was written for game #modding
 > 
 > > [!success] Up to 100k end-users
 > > Framework’s usefulness attested by tens of thousands of gamers.
-> 
-> > [!warning] Success is the first step
-> > Widespread adoption needs to be nurtured with constant maintenance for it to last.
-> 
-> > [!warning] Just use zip
-> > If you need a special format for something, just use zip and change the extension.
 # How it works
 ```mermaid
 flowchart LR

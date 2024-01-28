@@ -5,13 +5,11 @@ position: Full-stack Developer
 link: https://web.archive.org/web/20191121230742/http://eternitech.com/contact
 desc: Solutions Provider
 location: Ramat Gan, Israel
+cssclasses:
+  - Place
 ---
 > [!infobox]
-> 
-> ## [Eternitech](https://web.archive.org/web/20191121230742/http://eternitech.com/contact)
-> <div class=loc>Ramat Gan, Israel</div>
->
-> | Years | Role |
+> | [Eternitech](https://web.archive.org/web/20191121230742/http://eternitech.com/contact) | Ramat Gan, Israel |
 > | ---- | ---- |
 > | 16 — 17 | Full-stack Developer
 

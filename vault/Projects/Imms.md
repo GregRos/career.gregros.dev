@@ -45,21 +45,15 @@ I did however achieve much higher performance.
 >
 > > [!success] Rigorous testing
 > > Ran hundreds of consistency tests to make sure it works.
-> 
-> >[!warning] Scope creep
->> Place boundaries on a project early on, to avoid the scope creeping to unmanageable levels.
->
->> [!warning] Optimization pitfalls
->> Chasing peak performance is kind of like chasing a magical unicorn that may not exist. 
 # How it works
 The library is massive in terms of scope, complexity, and just lines of code. However, that scale is carefully structured to be maintainable and readable. 
 
 It’s divided into several components:
-1. An abstraction layer that provides generic implementations for many operations, `Imms.Abstract`.
-2. The actual data structures in `Imms.Collections.Implementation`.
-3. The code in `Imms.Collections` that combines them.
+1. An abstraction layer that provides generic implementations for various operations.
+2. The data structure implementations.
+3. Wrappers combining the two.
 
-The library maintains strict separation between the implementations and the APIs. The exposed collection objects are actually wrappers from `Imms.Collections` and hold references to data structures from the `Implementation` namespace.
+The library maintains strict separation between the implementations and the APIs.
 ## Data structures
 The library implements the following data structures:
 

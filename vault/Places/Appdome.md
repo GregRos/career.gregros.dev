@@ -5,12 +5,11 @@ position: Sr. Backend Developer
 link: https://web.archive.org/web/20200408003453/https://www.appdome.com/
 desc: Development Platform
 location: Tel Aviv, Israel
+cssclasses:
+  - Place
 ---
 > [!infobox]
-> ## [Appdome](https://web.archive.org/web/20200408003453/https://www.appdome.com/)
-> <div class=loc>Tel-Aviv, Israel</div>
-> 
-> | Years | Role |
+> | [Appdome](https://web.archive.org/web/20200408003453/https://www.appdome.com/) | Tel-Aviv, Israel |
 > | ---- | ---- |
 > | 19 — 20 | Sr. Backend Developer
 

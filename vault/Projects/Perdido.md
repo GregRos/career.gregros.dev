@@ -13,7 +13,7 @@ desc: Personal server in lots of things
 > |[Perdido](https://github.com/GregRos/perdido) |Server |
 > |-|-|
 > |Platform| #linux |
-> |Language | #python #bash #fish|
+> |Language | #python #bash |
 > |Period|2021-now|
 
 Perdido is a personal media and gaming server, as well as a dozen other things. I use many of its features throughout the day. It’s a small enterprise server with a 1 Gbit line.

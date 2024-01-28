@@ -48,8 +48,5 @@ Parjs is a library for building #parsers for parsing any language using the #par
 > // 🍕string "fi" ➜ ⚙️exactly 2
 string("fi").pipe(exactly(2));
 > ```
-
 # Users
-Parjs has a small but robust userbase. It’s frequently used by people experimenting with programming languages.
-
-The Unicode parsing turned out to be a major draw, and many people use the package to parse CJK languages.
+Parjs has a growing userbase and the library is under active development, with several contributors. The Unicode parsing turned out to be a major draw, and many people use the package to parse CJK languages.

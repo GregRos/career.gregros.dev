@@ -10,6 +10,6 @@ export async function embedTimeline(
 ) {
     const data = await getTypedData(getData);
     createRoot(root).render(
-        <Timeline events={data} yearHeight={45} afterName="Projects" beforeName="Work" />
+        <Timeline events={data} yearHeight={50} afterName="Projects" beforeName="Work" />
     );
 }

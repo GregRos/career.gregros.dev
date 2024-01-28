@@ -20,13 +20,12 @@ null*
 .DS_Store
 node_modules/
 *.map
-*.css
 *.log
 .maybe-resources/
 vault/Resources
 
 # defaults for JetBrains
-
+vault/publish.*
 *.iml
 *.ipr
 *.iws

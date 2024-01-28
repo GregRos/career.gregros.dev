@@ -4,8 +4,6 @@ import { ContactProps } from "./contact/props";
 import React from "react";
 import { createRoot } from "react-dom/client";
 
-document.body.classList.add("slrvb-b");
-
 function makeNoIndex() {
     const noindex = document.createElement("meta");
     noindex.name = "robots";
