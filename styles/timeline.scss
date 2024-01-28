@@ -14,7 +14,11 @@
 	place-self: center;
 	text-align: center;
 	color: white;
-	font-size: 1.6rem;
+	font-size: 1.4rem;
+
+  }
+
+  &__name, &__year {
 	margin-top: -30px;
 	border: 0;
 	padding-bottom: 3px;
@@ -24,11 +28,11 @@
   }
 
   &__after &__name {
-	background: #4a662e;
+	background: rgb(76, 94, 59);
   }
 
   &__before &__name {
-	background: #7e86ff;
+	background: rgb(35, 39, 77);
   }
 
   &__year {
@@ -56,11 +60,11 @@
   }
 
   &__after {
-	background: linear-gradient(to bottom, #4a662e, #00f0);
+	background: linear-gradient(to bottom, rgb(45, 75, 45), rgba(0, 0, 255, 0));
   }
 
   &__before {
-	background: linear-gradient(to bottom, #7e86ff, #fff0);
+	background: linear-gradient(to bottom, rgba(16, 20, 67, 0.82), rgba(255, 255, 255, 0));
   }
 
   &__year {
@@ -81,8 +85,11 @@
 }
 
 .tcol {
-
-  max-width: 80px;
+  @media (max-width: 768px) {
+	max-width: 70px;
+	margin-left: 0;
+  }
+  max-width: 200px;
   margin-right: 3px;
   margin-left: 2px;
   height: 100%;
@@ -110,8 +117,10 @@
 	}
 
 	&__text {
-	  font-size: 1rem;
-
+	  font-size: 1.5rem;
+	  @media (max-width: 768px) {
+		font-size: 0.9rem;
+	  }
 	}
 
 	&__tooltip {
@@ -136,7 +145,7 @@
 	}
 
 	&--Library {
-	  background: #27873f;
+	  background: #2c5135;
 	}
 
 	&--Framework {
@@ -163,9 +172,12 @@
   &__positioner {
 	width: 100%;
 
+
 	&:hover {
 
 	  z-index: 100;
 	}
   }
 }
+
+
