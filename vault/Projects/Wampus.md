@@ -20,12 +20,12 @@ cssclasses:
 > | ---- | ---- |
 > | Platform | #javascript|
 > | Language | #typescript|
-> | Role | Lead |
-> | Period | 2019-2020 |
+> | Role | Founder |
+> | Period | 2019 – 2020 |
 > | Users | 1 |
 > | Contributors | 1 |
 
-Wampus is a client for the #WAMP RPC #protocol. It supports both #nodejs (through the `ws` package) and the browser. WAMP is an schema-less alternative to gRPC with a lot less hassle.
+Wampus is a client for the #WAMP RPC #protocol. It supports both #nodejs (through the `ws` package) and the browser (through `WebSocket`). WAMP is an schema-less alternative to gRPC with a lot less hassle.
 > [!column|no-title flex]
 > > [!success] Elegant API
 > > Built an observable-based API that’s readable, powerful, and concise.
@@ -41,6 +41,5 @@ Wampus is a client for the #WAMP RPC #protocol. It supports both #nodejs (throug
 > 
 # How it works
 It implements the protocol and provides a convenient API that follows many TypeScript conventions. Using observables made the complicated message flows easier to code.
-
 # Userbase
 Right now, only me. I feel like the library needs more work.

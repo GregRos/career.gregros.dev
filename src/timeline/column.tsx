@@ -28,10 +28,16 @@ export function TimelineEventColumn(props: {
                         e.preventDefault();
                         navigateTo(event.location);
                     }}
+                    onMouseOver={e => {
+                        window.publish.render.onInternalLinkMouseover(
+                            e.nativeEvent,
+                            e.currentTarget as HTMLAnchorElement,
+                            event.location.replace(".md", "")
+                        );
+                    }}
                 >
                     <div className={`tcol__event tcol__event--${event.className}`}>
                         <span className="tcol__event__text">{event.text}</span>
-                        <span className="tcol__event__tooltip">{event.description}</span>
                     </div>
                 </a>
             ),

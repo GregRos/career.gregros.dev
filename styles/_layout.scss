@@ -22,26 +22,35 @@ $rainbow-gradient: linear-gradient(
 $success-gradient: linear-gradient(45deg, rgba(64, 130, 54, 0.26), rgba(20, 82, 20, 0.23));
 $todo-gradient: linear-gradient(45deg, rgba(107, 108, 180, 0.34), rgba(34, 20, 91, 0.57));
 $other-gradient: linear-gradient(45deg, rgba(210, 116, 216, 0.34), rgba(48, 8, 54, 0.57));
+$last-gradient: linear-gradient(45deg, rgba(255, 88, 0, 0.34), rgba(57, 22, 2, 0.34));
 .Start.Start.Start.Start.Start.Start .callout[data-callout="recite"] {
   border: 0;
   text-align: left;
   border-image: unset;
   position: relative;
+  margin-top: -10px;
   --callout-icon: none !important;
 
-  &[data-callout-metadata~="bg-green"] {
+  &[data-callout-metadata~="pane1"] {
 	background: $success-gradient;
 	z-index: 1;
+	margin-top: 10px;
   }
 
-  &[data-callout-metadata~="bg-blue"] {
-	background: $todo-gradient;
+  &[data-callout-metadata~="pane2"] {
+	background: $other-gradient;
 	z-index: 2;
   }
 
-  &[data-callout-metadata~="bg-red"] {
-	background: $other-gradient;
+  &[data-callout-metadata~="pane3"] {
+	background: $todo-gradient;
 	z-index: 3;
+  }
+
+  &[data-callout-metadata~="pane4"] {
+	background: $last-gradient;
+	z-index: 4;
+	margin-bottom: 10px;
   }
 }
 
@@ -255,7 +264,7 @@ $other-gradient: linear-gradient(45deg, rgba(210, 116, 216, 0.34), rgba(48, 8, 5
 
 @media (max-width: 750px) {
   .markdown-preview-sizer.markdown-preview-sizer.markdown-preview-sizer {
-	padding:0 12px;
+	padding: 0 12px;
   }
   .nav-view-outer {
 	.tree-item-self.mod-collapsible {
@@ -333,7 +342,7 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 $stripe-gradient-wide: linear-gradient(57deg, #f00 25%, #fff 20%);
-$stripe-gradient:linear-gradient(45deg, #f00 55%, #fff 10%);
+$stripe-gradient: linear-gradient(45deg, #f00 55%, #fff 10%);
 .site-body-left-column-site-logo {
   margin: 0;
 
@@ -342,6 +351,7 @@ $stripe-gradient:linear-gradient(45deg, #f00 55%, #fff 10%);
 .site-body-left-column {
   padding: 0;
 }
+
 .site-body-left-column-site-name.site-body-left-column-site-name {
   background-image: $stripe-gradient;
   text-align: center;

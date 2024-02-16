@@ -84,3 +84,77 @@ fabric.properties
 .idea/caches/build_file_checksums.ser
 
 vault/.obsidian/workspace.json
+# General
+*.log
+*.aux
+*.dvi
+*.lof
+*.lot
+*.bit
+*.idx
+*.glo
+*.bbl
+*.bcf
+*.ilg
+*.toc
+*.ind
+*.out
+*.blg
+*.brf
+*.fls
+*.fdb_latexmk
+*.synctex.gz
+*.run.xml
+*-blx.bib
+*.alg
+*.acr
+*.acn
+*.glg
+*.gls
+*.ist
+*.sbl
+*.slg
+*.snm
+*.nav
+*.dpth
+*.md5
+*.auxlock
+*.tikz
+*.tikzdict
+*.tfm
+*.mp
+*.mpx
+*.lua
+*.luacode
+*.pdfsync
+*.thm
+*.vrb
+*.xdy
+*.upa
+*.upb
+*.pyg
+*.end
+*.mw
+*.figlist
+*.dep
+*.dpth
+
+# LuaLaTeX specific
+*.lualatex
+*.lualatexmk
+
+# Compiled main document(s)
+*.pdf
+
+# Editor backups and temporary files
+*~
+*.bak
+*.swp
+*.tmp
+
+# OS generated files
+.DS_Store
+Thumbs.db
+
+# Directory to hold auto-generated figures or other assets (optional)
+/generated_figures/

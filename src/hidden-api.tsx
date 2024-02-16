@@ -4,6 +4,9 @@ declare global {
             nav: {
                 treeView: any;
             };
+            render: {
+                onInternalLinkMouseover(e: MouseEvent, link: HTMLAnchorElement, path: string): void;
+            };
             site: {
                 cache: {
                     cache: Record<string, any>;

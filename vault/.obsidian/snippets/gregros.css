@@ -1951,19 +1951,26 @@ body:not(.default-callout-quote) .callout.callout[data-callout=quote] > .callout
   text-align: left;
   border-image: unset;
   position: relative;
+  margin-top: -10px;
   --callout-icon: none !important;
 }
-.Start.Start.Start.Start.Start.Start .callout[data-callout=recite][data-callout-metadata~=bg-green] {
+.Start.Start.Start.Start.Start.Start .callout[data-callout=recite][data-callout-metadata~=pane1] {
   background: linear-gradient(45deg, rgba(64, 130, 54, 0.26), rgba(20, 82, 20, 0.23));
   z-index: 1;
+  margin-top: 10px;
 }
-.Start.Start.Start.Start.Start.Start .callout[data-callout=recite][data-callout-metadata~=bg-blue] {
-  background: linear-gradient(45deg, rgba(107, 108, 180, 0.34), rgba(34, 20, 91, 0.57));
+.Start.Start.Start.Start.Start.Start .callout[data-callout=recite][data-callout-metadata~=pane2] {
+  background: linear-gradient(45deg, rgba(210, 116, 216, 0.34), rgba(48, 8, 54, 0.57));
   z-index: 2;
 }
-.Start.Start.Start.Start.Start.Start .callout[data-callout=recite][data-callout-metadata~=bg-red] {
-  background: linear-gradient(45deg, rgba(210, 116, 216, 0.34), rgba(48, 8, 54, 0.57));
+.Start.Start.Start.Start.Start.Start .callout[data-callout=recite][data-callout-metadata~=pane3] {
+  background: linear-gradient(45deg, rgba(107, 108, 180, 0.34), rgba(34, 20, 91, 0.57));
   z-index: 3;
+}
+.Start.Start.Start.Start.Start.Start .callout[data-callout=recite][data-callout-metadata~=pane4] {
+  background: linear-gradient(45deg, rgba(255, 88, 0, 0.34), rgba(57, 22, 2, 0.34));
+  z-index: 4;
+  margin-bottom: 10px;
 }
 
 .callout[data-callout=column] {

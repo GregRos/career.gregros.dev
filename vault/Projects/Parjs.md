@@ -20,14 +20,14 @@ cssclasses:
 > | ---- | ---- |
 > | Platform | #javascript|
 > | Language| #typescript |
-> | Role | Lead |
-> | Period | 2018-now |
-> | Users | 100-1000 |
+> | Role | Founder |
+> | Period | 2018 – Present |
+> | Downloads | 16K+/month on [NPM](https://www.npmjs.com/package/parjs) |
 > | Contributors | 5 |
 
 Parjs is a library for building #parsers for parsing any language using the #parser-combinator pattern. It’s inspired by Parsec and FParsec, but with an API that follows JavaScript conventions.
 > [!column|no-title flex]
-> > [!success] Faithful adaptation
+> > [!success] Faithful API
 > > Adapted the time-honored parser combinator pattern, attested by 100s of invested users.
 > 
 > > [!success] 50+ building blocks
@@ -48,5 +48,5 @@ Parjs is a library for building #parsers for parsing any language using the #par
 > // 🍕string "fi" ➜ ⚙️exactly 2
 string("fi").pipe(exactly(2));
 > ```
-# Users
-Parjs has a growing userbase and the library is under active development, with several contributors. The Unicode parsing turned out to be a major draw, and many people use the package to parse CJK languages.
+# Userbase
+Parjs has a growing userbase and the library is under active development, with multiple active contributors. It has 16K+ monthly downloads on npm and growing. The Unicode parsing turned out to be a major draw, and many people use the package to parse CJK languages.

@@ -13,10 +13,10 @@ cssclasses:
 > | ---- | ---- |
 > | 19 — 20 | Sr. Backend Developer
 
-Appdome provides a service that bakes security features into existing mobile applications. 
+Appdome provides a development platform that bakes security features into existing mobile applications. 
 > [!column|no-title flex]
 > > [!success] Codebases
-> > Continuously refactored codebase based on strong design principles.
+> > Continuously refactored codebase based on strong design principles, reducing duplication and improving maintability.
 > 
 > > [!success] Workflows
 > > Introduced PRs and code reviews, contributed to CI/CD, and improved issue tracking.
@@ -25,7 +25,7 @@ Appdome provides a service that bakes security features into existing mobile app
 > > Migrated #nodejs versions, used #profiling to solve performance problems, and fixed dependency issues
 > 
 > > [!success] End-to-end
-> > Developed features, participated in their design, and wrote specifications.
+> > Participated in feature design, specification, and development.
 > 
 
 

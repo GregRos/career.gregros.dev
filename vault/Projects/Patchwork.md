@@ -21,10 +21,10 @@ desc: Framework for modifying .NET DLLs in C#
 > | ---- | ---- |
 > | Platform | #dotnet #mono |
 > | Language| #csharp |
-> | Role | Lead |
-> | Period | 2015-2018 |
-> | Users | 13-30 |
-> | End-users | 50k-100k |
+> | Role | Founder |
+> | Period | 2015 – 2018 |
+> | Users | 10 – 30 |
+> | End-users | 50k – 100k |
 > | Contributors | 5 |
 
 Patchwork is a framework for injecting custom code into #dotnet DLL files. It’s written in #csharp, for both .NET and #mono. It’s completely cross-platform, and has been used on all major operating systems.

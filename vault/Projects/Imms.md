@@ -25,14 +25,15 @@ desc: Immutable data structures in C#
 > | ---- | ---- |
 > | Platform | #dotnet #mono|
 > | Language | #csharp #fsharp |
-> | Role | Lead |
-> | Period | 2012-2016 |
-> | Users | ? |
+> | Role | Founder |
+> | Period | 2012 – 2016 |
+> | Downloads | 10K on [NuGet](https://www.nuget.org/packages/Imms#versions-body-tab) |
 > | Contributors | 2 |
+> | Try It | [Replit (C#)](https://replit.com/@GregRos/ImmsSandbox#collections/mixed.cs) |
 
-Imms is a library of high performance #immutable collections that support a wide variety of operations, written in #csharp. By the time I finished developing it Microsoft had released their own package and integrated it into the framework.
+Imms is a library of high performance #immutable collections for .NET. These are collections that can’t be modified. Instead, they support operators that return a new collection with modifications, kind of like how $+$ works in math. These kinds of collections are popular in #functional languages.
 
-I did however achieve much higher performance.
+That is, doing $1 + 2 = 3$ doesn’t modify $1$ or $2$. It only returns a new mathematical object. 
 > [!column|no-title flex]
 > > [!success] Optimal complexity
 > > Achieved by taking algorithms straight out of research papers.
@@ -46,26 +47,22 @@ I did however achieve much higher performance.
 > > [!success] Rigorous testing
 > > Ran hundreds of consistency tests to make sure it works.
 # How it works
-The library is massive in terms of scope, complexity, and just lines of code. However, that scale is carefully structured to be maintainable and readable. 
+![[Imms-Architecture.svg]]
+The library has three layers.
+## Implementation layer (Blue)
+These are implementations of the different data structures. 
+- **FTree** – A highly optimized variant 2-3-4 [finger tree](https://en.wikipedia.org/wiki/Finger_tree) with advanced algorithms.
+- **HashedAvlTree** – A hash-based AVL tree.
+- **SortedAvlTree** – A sorted AVL tree.
+The library used to have an array-mapped trie and hash array-mapped trie, but I got rid of them because their performance didn’t justify the added complexity.
+## Abstract layer (Green)
+I planned the library to provide 2 variants for sets and maps (sorted and hashed), for all collections to provide high-performance and strongly typed LINQ method overrides, and additional functionality besides.
 
-It’s divided into several components:
-1. An abstraction layer that provides generic implementations for various operations.
-2. The data structure implementations.
-3. Wrappers combining the two.
-
-The library maintains strict separation between the implementations and the APIs.
-## Data structures
-The library implements the following data structures:
-
-1. `FTree`, a heavily optimized variant 2-3-4 finger tree. Used for `ImmList`.
-2. `HashedAvlTree` and `OrderedAvlTree`, used to implement sets and maps.
-
-The library used to have additional data structures, but I got rid of them because their performance didn’t justify the added complexity.
-1. `TrieVector`, an array-mapped Trie.
-2. `TrieDictionary`, a hashed array-mapped Trie.
-
-# Users 
-Has 10,000 downloads on [NuGet](https://www.nuget.org/packages/Imms#versions-body-tab).
+I knew a lot of these operations would be shared among the different variants and I wanted to avoid code duplication. That’s why I made an abstraction layer, inspired by Scala’s collection API. It’s a lot less sophisticated but it still let me avoid writing out the same algorithms twice in most cases.
+## Collection layer (Pinkish)
+These are the collections that combine the two layers above. They contain instances of data structures and extend classes from the abstract layer. This combination lets me avoid code duplication.
+# Userbase
+Has 10,000 downloads on.
 
 
 

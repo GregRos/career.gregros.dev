@@ -1,0 +1,14 @@
+QuoteStyle = Logical
+TabSize = 4
+CmdLine
+{
+    -n8 # ignore dash length
+    -n46 # ignore math mode char
+    -n41 # allow tex commands
+    -n26 # space punctuation blah
+}
+VerbEnvir
+{
+    verbatim comment listing verbatimtab rawhtml errexam picture texdraw
+    filecontents pgfpicture tikzpicture minted lstlisting IPA luacode
+}

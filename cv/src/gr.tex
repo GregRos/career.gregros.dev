@@ -1,0 +1,269 @@
+% %%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% PRELUDE (NOT RENDERED)
+% %%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\documentclass[a4paper,11pt]{article}
+
+\usepackage{latexsym}
+\usepackage[empty]{fullpage}
+\usepackage{titlesec}
+\usepackage{marvosym}
+\usepackage[usenames,dvipsnames]{color}
+\usepackage{verbatim}
+\usepackage{enumitem}
+\usepackage[hidelinks]{hyperref}
+\usepackage{fancyhdr}
+\usepackage[english]{babel}
+\usepackage{tabularx}
+\usepackage{graphicx}
+\usepackage{hyperref}
+\usepackage{enumitem}
+\usepackage[sfdefault]{noto-sans}
+
+\makeatletter
+\DeclareRobustCommand*{\https}{\hyper@normalise\https@}
+\def\https@#1{\underline{\lowercase{\hyper@linkurl{\Hurl{#1}}{https://#1}}}}
+\DeclareRobustCommand*{\mailto}{\hyper@normalise\mailto@}
+\def\mailto@#1{\underline{\lowercase{\hyper@linkurl{\Hurl{#1}}{mailto:#1}}}}
+\makeatother
+
+\pagestyle{fancy}
+\fancyhf% % clear all header and footer fields
+\fancyfoot%
+\setlength{\footskip}{4.09pt}
+\renewcommand{\headrulewidth}{0pt}
+\renewcommand{\footrulewidth}{0pt}
+
+% Adjust margins
+\addtolength{\oddsidemargin}{-0.5in}
+\addtolength{\evensidemargin}{-0.5in}
+\addtolength{\textwidth}{1in}
+\addtolength{\topmargin}{-.5in}
+\addtolength{\textheight}{1.0in}
+
+\urlstyle{same}
+ 
+\raggedbottom%
+\raggedright%
+\setlength{\tabcolsep}{0in}
+
+\titleformat{\section}{
+	\vspace{-4pt}\scshape\raggedright\large
+}{}{0em}{}[\color{black}\titlerule{} \vspace{-5pt}]
+
+% Ensure that generate pdf is machine readable/ATS parsable
+\pdfgentounicode=1
+
+\newcommand{\sharplang}[1]{%
+    {\settoheight{\dimen0}{#1}#1\kern-.05em \resizebox{!}{\dimen0}{\raisebox{\depth}{\#}}}%
+}
+\newlist{sectionList}{itemize}{1}%
+\setlist[sectionList]{%
+    leftmargin=0.15in, 
+    label={}
+}%
+
+\newlist{itemList}{itemize}{1}%
+\setlist[itemList]{%
+    leftmargin=10pt, 
+    before=\small,
+    after=\vspace{-5pt}, 
+    label={\textbullet},
+    itemsep=1pt
+}%
+
+\newlist{skillList}{description}{1}%
+\setlist[skillList]{%
+    itemsep=1pt,
+    labelindent=12pt,
+    parsep=0pt,
+    before=\small,
+    after=\vspace{-5pt}
+}
+
+\newcommand{\placeblock}[4]{%
+    \vspace{-2pt}\item%
+    \begin{tabular*}{0.97\textwidth}[t]{l@{\extracolsep{\fill}}r}%
+        \textbf{#1} & #2 \\%
+        \textit{\small#3} & \textit{\small #4} \\%
+    \end{tabular*}\vspace{-7pt}%
+}%
+
+\newenvironment*{place}[4]{%
+    \placeblock{#1}{#2}{#3}{#4}
+    \begin{itemList}
+}{%
+    \end{itemList}
+}%
+
+\newenvironment*{project}[2]{%
+    \item%
+	\begin{tabular*}{0.97\textwidth}{l@{\extracolsep{\fill}}r}%
+		\small#1 & #2 \\%
+	\end{tabular*}\vspace{-7pt}%
+    \begin{itemList}%
+    }{%
+    \end{itemList}%
+}
+
+% %%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% IDENTIFYING INFORMATION MACROS
+% %%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\newcommand{\myname}{Greg Rosenbaum}
+\newcommand{\myphone}{+972 54-328-3246}
+\newcommand{\myemail}{work.gregr@gmail.com}
+\newcommand{\mygithub}{GregRos}
+\newcommand{\mylinkedin}{greg-ros}
+\newcommand{\mywebsite}{career.gregros.dev}
+
+\newcommand{\eternitech}{Eternitech}
+\newcommand{\reflectiz}{Reflectiz}
+\newcommand{\appdome}{Appdome}
+
+\newcommand{\parjs}{Parjs}
+\newcommand{\imms}{Imms}
+
+\newcommand{\technion}{Technion}
+
+\newcommand{\ramatgan}{Ramat Gan, Israel}
+\newcommand{\telaviv}{Tel Aviv}
+\newcommand{\haifa}{Haifa, Israel}
+\newif\ifanon%
+
+\ifanon%
+\renewcommand{\myname}{My Name}
+\renewcommand{\myphone}{+972 XX-XXX-XXXX}
+\renewcommand{\myemail}{work.gregr@gmail.com}
+\renewcommand{\mywebsite}{career.my-site.dev}
+\renewcommand{\mygithub}{my-github}
+\renewcommand{\mylinkedin}{www.linkedin.com/in/my-linked-in}
+\renewcommand{\eternitech}{CompanyA}
+\renewcommand{\reflectiz}{CompanyB}
+\renewcommand{\appdome}{CompanyC}
+
+\renewcommand{\parjs}{parser-lib}
+\renewcommand{\imms}{collection-lib}
+
+\renewcommand{\technion}{Top Institution}
+
+\renewcommand{\ramatgan}{Place1}
+\renewcommand{\telaviv}{Place2}
+\renewcommand{\haifa}{Place3}
+\fi
+
+% %%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% HEADER STRUCTURE
+% %%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\newcommand{\header}{%
+    \begin{center}
+        \textbf{\Huge \normalshape{} \myname} \\
+        \vspace{1pt}
+        \small \myphone{} $|$ \mailto{\myemail} $|$
+        \https{\mywebsite} $|$
+        \https{linkedin.com/in/greg-ros}
+    \end{center}%
+}
+
+\newcommand{\tagline}{%
+    \begin{center}
+        \vspace{-5pt}
+        \small \textit{I love building things.}
+        \vspace{-20pt}
+    \end{center}
+}
+\newenvironment{jobReflectizLead}{%
+    \begin{place}{Company Technical Lead}{Jan 2021 -- Present}{\reflectiz}{\ramatgan}
+}{%
+    \end{place}
+}
+\newenvironment{jobAppdome}{%
+    \begin{place}{Senior Backend Developer}{Jul 2019 -- Oct 2020}{\appdome}{\telaviv}
+}{
+    \end{place}
+}
+\newenvironment{jobReflectizDev}{%
+    \begin{place}
+        {Senior Backend Developer}{May 2017 -- Feb 2019}
+        {\reflectiz}{\ramatgan}
+}{%
+    \end{place}
+}
+
+\newenvironment{jobEternitech}{%
+    \begin{place}{Full Stack Developer}{Jan 2016 -- May 2017}
+        {\eternitech}{\ramatgan}%
+}{%
+    \end{place}
+}
+\begin{document}
+% %%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% DOCUMENT START
+% %%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\header%
+\tagline%
+
+\section{Experience}
+\begin{sectionList}
+ 
+    \begin{jobReflectizLead}
+        \item Broad technological leadership role reporting directly to company founders.
+        \item Greatly expanded architecture of a Chromium-based platform$^\star$.
+        \item Designed a data pipeline processing 100+ MB/sec of JSON-encoded graph data.
+        \item Led deployment of system health and throughput metrics across 10+ services.
+        \item Ported existing infrastructure to IaC, scaled by \texttimes30+, and expanded into new regions.
+        \item Set code conventions and conducted code reviews across multiple codebases.
+        \item Designed browser automation DSL and dev tools checked by the TypeScript compiler.
+        \item Wrote CLI tools and microservices used by multiple teams built on a backbone of NPM packages.
+    \end{jobReflectizLead}
+
+    \begin{jobAppdome}
+        \item Solved scalability, dependency, migration, performance, and memory issues in Node.js.
+        \item Modernized development processes by introducing PRs and code reviews.
+        \item Continuously refactored codebase in line with best practices.
+        \item Participated in feature design, specification, and testing.
+    \end{jobAppdome}
+
+    \begin{jobReflectizDev}
+        \item Built Chromium-based platform$^\star$ in TypeScript on Node.js.
+        \item Wrote code monitoring all browser activity, including JS, HTML, CSS, Web APIs, iframes, HTTP, etc.
+        \item Flexible program architecture allowed company to pivot based on market opportunities.
+        \item Leveraged multi-process parallelism for throughput and consistency in perf-sensitive workloads.
+        \item Designed a testable program architecture with strong SoC, using DI for loose coupling.
+    \end{jobReflectizDev}
+    \begin{jobEternitech}
+        \item Built SPAs for clients with \sharplang{C}, Node.js backends, React frontend, and MSSQL.\@
+        \item Maintained existing apps using ASP.NET (MVC/Web Forms), JQuery, Classic ASP, etc.
+        \item Gathered requirements, wrote specifications, received feedback, provided support, etc.
+    \end{jobEternitech}
+\end{sectionList}%
+
+
+%-----------PROJECTS-----------
+\section{Projects}
+\begin{sectionList}%
+    \begin{project}{\textbf{\parjs} $|$ \emph{TypeScript, JavaScript} $|$ \https{\mywebsite/parjs}}{2018 -- Present}
+        \item Developed parser building library following the parser combinator pattern, e.g. Parsec (Haskell).
+        \item Hand-wrote 50+ parsers and combinators, plus a separate package for Unicode char recognition.
+        \item Library is popular in its domain with 16K+ monthly downloads and multiple active contributors.
+    \end{project}
+    \begin{project}{\textbf{\imms} $|$ \emph{\sharplang{C}, \sharplang{F}} $|$ \https{\mywebsite/imms}}{2012 -- 2016}
+        \item High performance immutable collection library in \sharplang{C}, rigorously tested in \sharplang{F}.
+        \item Achieved optimal complexity by taking data structures and algorithms from research papers.
+        \item Maximized performance using low-level optimizations via benchmarking and CPU profiling.
+    \end{project}
+\end{sectionList}%
+
+\section{Skills}
+\begin{skillList}
+    \item[Spoken:] English (native), Hebrew (native)
+    \item[Written:] TypeScript, JavaScript, Python, Bash, \sharplang{C}, \sharplang{F}, Scala, Kotlin, Rust, \LaTeX, \dots
+    \item[Platforms:] Node.js, .NET, Linux, Windows, Azure, GCP, K8s, Docker, \dots
+    \item[Databases:] MSSQL, PostgreSQL, MongoDB, Memgraph
+\end{skillList}
+
+\section{Education}
+\begin{sectionList}%
+    \placeblock{BSc in Computer Science (Incomplete)}{2013 -- 2015}{\technion}{\haifa}
+\end{sectionList}
+
+%-------------------------------------------
+\end{document}%

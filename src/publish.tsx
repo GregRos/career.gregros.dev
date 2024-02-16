@@ -17,6 +17,13 @@ history.pushState = function () {
     window.dispatchEvent(new Event("pushstate"));
 };
 
+function makeGtm() {
+    const gtm = document.createElement("script");
+    gtm.src = "https://career.gregros.dev/g_t_m.js";
+    gtm.async = true;
+    return gtm;
+}
+
 function embedNonContent() {
     const hasNoIndex = document.head.querySelector("meta[name=robots]");
     const isPlaces = window.location.pathname.includes("Places");
@@ -25,6 +32,7 @@ function embedNonContent() {
     } else if (!isPlaces && hasNoIndex) {
         document.head.removeChild(hasNoIndex);
     }
+
     renderNavHeader();
     renderNavFooter();
 }
@@ -41,7 +49,7 @@ async function onNavigate() {
 
 const contact: ContactProps = {
     email: "work.gregr@gmail.com",
-    linkedin: "https://www.linkedin.com/in/greg-rosenbaum-663066145"
+    linkedin: "https://www.linkedin.com/in/greg-ros"
 };
 
 function getContactHtml() {
