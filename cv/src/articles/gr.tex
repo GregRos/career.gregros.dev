@@ -1,0 +1,121 @@
+\documentclass[a4paper,11pt]{article}
+
+\input{../utils/preamble.tex}
+\input{../utils/names.tex}
+\newcommand{\eternitech}{Eternitech}
+\newcommand{\reflectiz}{Reflectiz \textemdash{}  SaaS }
+\newcommand{\appdome}{Appdome \textemdash{}  SaaS}
+\newcommand{\sentto}{Transmit Security}
+
+\input{../utils/jobenvs.tex}
+
+\lhead{\small\color{gray}@\sentto}
+
+\begin{document}
+\header%
+\tagline%
+
+\section{Experience}
+\begin{sectionList}
+ 
+    \begin{jobReflectizLead}
+        %\item Broad technological leadership role reporting directly to company founders.
+        \item Led R\&D of Chromium-based development platform$^\star$, a security scanner for web apps.
+        \item Translated business requirements to research objectives and development roadmaps.
+        \item Provided guidance and technological leadership and mentorship to multiple teams.
+        \item Demonstrated mastery of all web technologies and protocols through the lens of browser development.
+        \item Designed interfaces for numerous API endpoints and services.
+        \item Evangelized TypeScript across the company and wrote a package infrastructure used by multiple teams.
+        \item Used express and koa for various APIs.
+        \item Deployed infrastructure through GCP, K8s, and IaC tools.
+        \item Wrote 10+ micro-services and CLI tools in Python and Bash used across multiple teams. 
+        %\item Worked on a stateless + distributed system, with 100+ instances across 7 regions running 10+ services.
+        %\item Integrated system-wide observability across 100+ instances of 10+ services, plus grafana dashboards.
+        %\item Leveraged graph theory, walked ASTs, and designed a language for browser automation.
+        %\item Built a data pipeline processing 100+ MB/sec of graph data.
+        %\item Designed a stateless RPC interface for a distributed system.
+        %\item Optimized complex recursive queries in RDBMS (MSSQL).
+        
+        %\item Containerized and orchestrated services, and set up CI/CD pipelines.
+      %  \item Wrote 10+ micro-services and CLI tools in Python and Bash used across multiple teams.
+        %\item Researched and applied technologies such as Rust, WebAssembly, and graph databases.
+
+
+       % 
+       % \item Successfuly integrated rxjs, monitoring, Rust, and IaC into the company's stack.
+       % \item Ability to solve complex problems through determination and creativity.
+       % \item Applied mastery of TypeScript, client-side JavaScript, and Node.js to benefit products and systems.
+        %\item Designed numerous APIs following functional programming principles.
+       % \item Fostered a culture of code quality, testing, and documentation.
+       % \item Led integration of IaC, experimental protocols, and new architectural components.
+      %  \item Set up development workflows involving issue tracking, code reviews, and CI/CD.
+        %\item Directed research into browser automation, monitoring, and control.
+        %\item Ported existing infrastructure to IaC, scaled by \texttimes30+, and expanded into new regions.
+        %\item Translated business requirements to research objectives and development roadmaps.
+        %
+        %\item Deployed cloud networking solutions and complex machine-specific network configurations.
+        %\item Extensive research into the massive Chromium codebase (C++).
+        %\item Developed high performance component in Rust used in internal processes.
+        %\item Set conventions and conducted code reviews across multiple codebases.
+        %\item Wrote CLI tools and microservices used by multiple teams built on a backbone of NPM packages.
+        %\item Company-wide technological leadership role reporting directly to company founders.
+        %\item Wrote 10+ micro-services and CLI tools in Python and Bash used across multiple teams.
+        %\item Integrated observability into 100+ spot instances to understand incidents post mortem.
+        %\item Opimized compute infrastructure for throughput vs cost running perf-sensitive workloads.
+        %\item Hacked together a framework for domain-specific integration tests, used to write 100+ test cases.
+     \end{jobReflectizLead}
+
+    \begin{jobAppdome}
+        \item Developed web application using Node.js, TypeScript, and PostgreSQL.\@
+        \item Maintained internal components in Python and Golang.
+        \item Modernized development processes by introducing PRs and code reviews.
+        \item Designed automation API based on a graphical user interface, for use by clients.
+        \item Continuously refactored codebase in line with best practices.
+        \item Participated in feature design, specification, and testing.
+    \end{jobAppdome}
+
+    \begin{jobReflectizDev}
+        \item Built Chromium-based platform$^\star$ in TypeScript on Node.js.
+        \item Wrote code monitoring all browser activity, including JS, HTML, CSS, Web APIs, iframes, HTTP, etc.
+        \item Flexible program architecture allowed company to pivot based on market opportunities.
+        %\item Leveraged multi-process parallelism for throughput and consistency in perf-sensitive workloads.
+        \item Designed a testable program architecture with strong SoC, using DI for loose coupling.
+    \end{jobReflectizDev}
+    \begin{jobEternitech}
+        \item Built SPAs for clients with \sharplang{C}, Node.js backends, React frontend, and MSSQL.\@
+        \item Maintained existing apps using ASP.NET (MVC/Web Forms), JQuery, Classic ASP, etc.
+        \item Gathered requirements, wrote specifications, received feedback, provided support, etc.
+    \end{jobEternitech}
+\end{sectionList}%
+
+
+%-----------PROJECTS-----------
+\section{Projects}
+\begin{sectionList}%
+    \begin{project}{\textbf{\parjs} $|$ \emph{TypeScript, JavaScript} $|$ \https{\mywebsite/parjs}}{2018 -- Present}
+        \item Developed parser building library following the parser combinator pattern, e.g. Parsec (Haskell).
+        \item Hand-wrote 50+ parsers and combinators, plus a separate package for Unicode char recognition.
+        \item Library is popular in its domain with 16K+ monthly downloads and multiple active contributors.
+    \end{project}
+    \begin{project}{\textbf{\imms} $|$ \emph{\sharplang{C}, \sharplang{F}} $|$ \https{\mywebsite/imms}}{2012 -- 2016}
+        \item High performance immutable collection library in \sharplang{C}, rigorously tested in \sharplang{F}.
+        \item Achieved optimal complexity by taking data structures and algorithms from research papers.
+        \item Maximized performance using low-level optimizations via benchmarking and CPU profiling.
+    \end{project}
+\end{sectionList}%
+
+\section{Skills}
+\begin{skillList}
+    \item[Spoken:] English (native), Hebrew (native)
+    \item[Written:] TypeScript, JavaScript, Python, Bash, \sharplang{C}, \sharplang{F}, C++, Scala, Kotlin, Rust, \LaTeX, \dots
+    \item[Platforms:] Node.js, .NET, Linux, Windows, Azure, GCP, K8s, Docker, \dots
+    \item[Databases:] MSSQL, PostgreSQL, MongoDB, Memgraph
+\end{skillList}
+
+\section{Education}
+\begin{sectionList}%
+    \placeblock{BSc in Computer Science (Incomplete)}{2013 -- 2015}{\technion}{\haifa}
+\end{sectionList}
+
+%-------------------------------------------
+\end{document}%

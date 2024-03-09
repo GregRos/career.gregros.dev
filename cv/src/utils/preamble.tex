@@ -1,0 +1,86 @@
+% %%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% PRELUDE (NOT RENDERED)
+% %%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\usepackage{latexsym}
+\usepackage[empty]{fullpage}
+\usepackage{titlesec}
+\usepackage{marvosym}
+\usepackage[usenames,dvipsnames]{color}
+\usepackage{verbatim}
+\usepackage{enumitem}
+\usepackage[hidelinks]{hyperref}
+\usepackage{fancyhdr}
+\usepackage[english]{babel}
+\usepackage{tabularx}
+\usepackage{graphicx}
+\usepackage{hyperref}
+\usepackage{enumitem}
+\usepackage{xcolor}
+\usepackage[sfdefault]{noto-sans}
+
+\makeatletter
+\DeclareRobustCommand*{\https}{\hyper@normalise\https@}
+\def\https@#1{\underline{\lowercase{\hyper@linkurl{\Hurl{#1}}{https://#1}}}}
+\DeclareRobustCommand*{\mailto}{\hyper@normalise\mailto@}
+\def\mailto@#1{\underline{\lowercase{\hyper@linkurl{\Hurl{#1}}{mailto:#1}}}}
+\makeatother
+
+\input{../utils/margins.tex}
+
+\urlstyle{same}
+ 
+% Ensure that generate pdf is machine readable/ATS parsable
+\pdfgentounicode=1
+
+\newcommand{\sharplang}[1]{%
+    {\settoheight{\dimen0}{#1}#1\kern-.05em \resizebox{!}{\dimen0}{\raisebox{\depth}{\#}}}%
+}
+\newlist{sectionList}{itemize}{1}%
+\setlist[sectionList]{%
+    leftmargin=0.15in, 
+    label={}
+}%
+
+\newlist{itemList}{itemize}{1}%
+\setlist[itemList]{%
+    leftmargin=10pt, 
+    before=\small,
+    after=\vspace{-5pt}, 
+    label={\textbullet},
+    itemsep=1pt
+}%
+
+\newlist{skillList}{description}{1}%
+\setlist[skillList]{%
+    itemsep=1pt,
+    labelindent=12pt,
+    parsep=0pt,
+    before=\small,
+    after=\vspace{-5pt}
+}
+
+\newcommand{\placeblock}[4]{%
+    \vspace{-2pt}\item%
+    \begin{tabular*}{0.97\textwidth}[t]{l@{\extracolsep{\fill}}r}%
+        \textbf{#1} & #2 \\%
+        \textit{\small#3} & \textit{\small #4} \\%
+    \end{tabular*}\vspace{-7pt}%
+}%
+
+\newenvironment*{place}[4]{%
+    \placeblock{#1}{#2}{#3}{#4}
+    \begin{itemList}
+}{%
+    \end{itemList}
+}%
+
+\newenvironment*{project}[2]{%
+    \item%
+    \begin{tabular*}{0.97\textwidth}{l@{\extracolsep{\fill}}r}%
+        \small#1 & #2 \\%
+    \end{tabular*}\vspace{-7pt}%
+    \begin{itemList}%
+    }{%
+    \end{itemList}%
+}
