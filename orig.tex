@@ -1,0 +1,289 @@
+%-------------------------
+% Resume in Latex
+% Author : Jake Gutierrez
+% Based off of: https://github.com/sb2nov/resume
+% License : MIT
+%------------------------
+
+\documentclass[a4paper,11pt]{article}
+
+\usepackage{latexsym}
+\usepackage[empty]{fullpage}
+\usepackage{titlesec}
+\usepackage{marvosym}
+\usepackage[usenames,dvipsnames]{color}
+\usepackage{verbatim}
+\usepackage{luacode}
+\usepackage{enumitem}
+\usepackage[hidelinks]{hyperref}
+\usepackage{fancyhdr}
+\usepackage[english]{babel}
+\usepackage{tabularx}
+\usepackage{graphicx}
+
+
+
+
+%----------FONT OPTIONS----------
+% sans-serif
+% \usepackage[sfdefault]{FiraSans}
+% \usepackage[sfdefault]{roboto}
+% \usepackage[sfdefault]{noto-sans}
+% \usepackage[default]{sourcesanspro}
+
+% serif
+% \usepackage{CormorantGaramond}
+% \usepackage{charter}
+
+
+\pagestyle{fancy}
+\fancyhf{} % clear all header and footer fields
+\fancyfoot{}
+\renewcommand{\headrulewidth}{0pt}
+\renewcommand{\footrulewidth}{0pt}
+
+% Adjust margins
+\addtolength{\oddsidemargin}{-0.5in}
+\addtolength{\evensidemargin}{-0.5in}
+\addtolength{\textwidth}{1in}
+\addtolength{\topmargin}{-.5in}
+\addtolength{\textheight}{1.0in}
+
+\urlstyle{same}
+
+\raggedbottom
+\raggedright
+\setlength{\tabcolsep}{0in}
+
+% Sections formatting
+\titleformat{\section}{
+	\vspace{-4pt}\scshape\raggedright\large
+}{}{0em}{}[\color{black}\titlerule \vspace{-5pt}]
+
+% Ensure that generate pdf is machine readable/ATS parsable
+
+
+%-------------------------
+% Custom commands
+\newcommand{\resumeItem}[1]{
+	\item\small{
+		{#1 \vspace{-2pt}}
+	}
+    }
+
+\newcommand{\sharplang}[1]{%
+    {\settoheight{\dimen0}{#1}#1\kern-.05em \resizebox{!}{\dimen0}{\raisebox{\depth}{\#}}}}
+
+\newcommand{\resumeSubheading}[4]{
+	\vspace{-2pt}\item
+	\begin{tabular*}{0.97\textwidth}[t]{l@{\extracolsep{\fill}}r}
+		\textbf{#1} & #2 \\
+		\textit{\small#3} & \textit{\small #4} \\
+	\end{tabular*}\vspace{-7pt}
+    }
+
+\newcommand{\resumeSubSubheading}[2]{
+	\item
+	\begin{tabular*}{0.97\textwidth}{l@{\extracolsep{\fill}}r}
+		\textit{\small#1} & \textit{\small #2} \\
+	\end{tabular*}\vspace{-7pt}
+    }
+
+
+
+\begin{luacode}
+    URL = require("url")
+    function prettyUrl(arg)
+        local replaced, count = string.gsub(arg, "mailto:", "")
+            if count > 0 then
+            tex.sprint(replaced)
+            return
+        end
+        local url = URL.parse(string.lower(arg))
+        tex.sprint(url.host .. url.path)
+    end
+\end{luacode}
+\renewcommand{\url}[1]{%
+    \href{#1}{\underline{\luadirect{prettyUrl("#1")}}}%
+}
+
+\newcommand{\resumeProjectHeading}[2]{
+	\item
+	\begin{tabular*}{0.97\textwidth}{l@{\extracolsep{\fill}}r}
+		\small#1 & #2 \\
+	\end{tabular*}\vspace{-7pt}
+    }
+
+\newcommand{\resumeSubItem}[1]{\resumeItem{#1}\vspace{-4pt}}
+
+\renewcommand\labelitemii{$\vcenter{\hbox{\tiny$\bullet$}}$}
+
+\newcommand{\resumeSubHeadingListStart}{\begin{itemize}[leftmargin=0.15in, label={}]}
+	\newcommand{\resumeSubHeadingListEnd}{\end{itemize}}
+\newcommand{\resumeItemListStart}{\begin{itemize}}
+	\newcommand{\resumeItemListEnd}{\end{itemize}\vspace{-5pt}}
+
+%-------------------------------------------
+%%%%%%  RESUME STARTS HERE  %%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+
+\begin{document}
+
+	\begin{center}
+		\textbf{\Huge \scshape Greg Rosenbaum} \\ \vspace{1pt}
+		\small +972 54-328-3246 $|$ \url{mailto:work.gregr@gmail.com} $|$
+		\url{https://career.gregros.dev}  $|$
+		\url{https://github.com/GregRos}
+	\end{center}
+
+
+	%-----------EXPERIENCE-----------
+	\section{Experience}
+	\resumeSubHeadingListStart
+
+	\resumeSubheading
+	{Company Technical Lead}{Jan. 2021 -- Present}
+	{Reflectiz}{Ramat Gan, Israel}
+	\resumeItemListStart
+    \resumeItem{
+        Led development of Chromium-based platform while substantially contributing to surrounding services.
+    }
+    \resumeItem{
+        Designed a DSL for browser automation used by a team of developers.
+    }
+    \resumeItem{
+        Designed a fault-aware processing pipeline that handled $30+$ different failure cases.
+    }
+    \resumeItem{
+        Ported GCP infrastructure to Terraform, scaled by $\times30+$, and expanded into new regions.
+    }
+	\resumeItem{
+		Integrated observability into $100+$ spot instances to understand incidents post mortem.
+	}
+    \resumeItem{
+        Led investigations into $20+$ incidents across $5+$ monolithic services using DB and monitoring.
+    }
+    \resumeItem{
+        Refactored code in 5 monolithic services into 10+ packages in a carefully planned architecture.
+    }
+    \resumeItem{
+        Wrote 10+ micro-services, command-line tools, and libraries used by teams.
+    }
+    \resumeItem{
+        Hacked together a custom framework for domain-specific integration tests, used to write $100+$ test cases.
+    }
+	\resumeItem{
+		Continuously optimized compute infrastructure for throughput vs cost running perf-sensitive workloads.
+	}
+    \resumeItem{
+        Set code conventions, wrote templates, integrated CI/CD, provided technical oversight, etc.
+    }
+	\resumeItemListEnd
+
+	\resumeSubheading{
+        Senior Backend Developer
+    }{Jul. 2019 -- Oct. 2020}
+	{Appdome}{Tel Aviv, Israel}
+	\resumeItemListStart
+    \resumeItem{Provided technical guidance for a team of developers while participating in multiple stages of SDLC.}
+    \resumeItem{
+        Refactored $20+$ functions and components based on strong design principles.
+    }
+    \resumeItem{
+        Solved scalability, dependency, migration, performance, and memory issues in Node.js.
+    }
+    \resumeItem{
+        Added infrastructure as required, such as Redis.
+    }
+    \resumeItem{
+        Participated in feature design, specification, and testing.
+    }
+	\resumeItemListEnd
+
+	\resumeSubheading{
+        Senior Backend Developer
+    }{May 2017 -- Feb 2019}
+	{Reflectiz}{Ramat Gan, Israel}
+	\resumeItemListStart
+    \resumeItem{
+        Built a flexible Chromium-based platform that allowed company to pivot based on market demands.
+   }
+    \resumeItem{
+        Wrote code for monitoring all browser activity, incl. JS, HTML, CSS, Web APIs, iframes, eval, etc.
+    }
+	\resumeItem{
+        Leveraged multi-process parallelism for higher throughput and consistency in perf-sensitive workloads.
+    }
+    \resumeItem{
+        Designed a testable program architecture with strong SoC, using DI for loose coupling.
+    }
+
+    \resumeItem{Wrote complex data processing queries on graph data in MSSQL.}
+
+	\resumeItemListEnd
+
+    \resumeSubheading
+    {Full Stack Developer}{Jan 2016 -- May 2017}
+    {Eternitech}{Ramat Gan, Israel}
+    \resumeItemListStart
+    \resumeItem{
+        Built SPAs for clients with \sharplang{C}, Node.js backends, and React frontend. Usually with MSSQL.
+    }
+    \resumeItem{
+        Maintained existing apps using ASP.NET (MVC/Web Forms), JQuery, Classic ASP, etc.
+    }
+    \resumeItem{
+        Gathered requirements, wrote specifications, received feedback, provided support, etc.
+    }
+    \resumeItemListEnd
+	\resumeSubHeadingListEnd
+
+
+	%-----------PROJECTS-----------
+	\section{Projects}
+	\resumeSubHeadingListStart
+	\resumeProjectHeading
+	{\textbf{Parjs} $|$ \emph{TypeScript, JavaScript} $|$ \url{https://github.com/GregRos/parjs}}{2018 -- Present}
+	\resumeItemListStart
+    \resumeItem{
+        Developed parser building library following the parser combinator pattern, e.g. Parsec (Haskell.)
+    }
+    \resumeItem{
+        Hand-wrote 50+ parsers and combinators, plus a separate package for Unicode char recognition.
+    }
+    \resumeItem{
+        Library is popular in its domain with 4K+ weekly downloads and multiple active contributors.
+    }
+
+	\resumeItemListEnd
+	\resumeProjectHeading
+	{\textbf{Imms} $|$ \emph{\sharplang{C}, \sharplang{F}} $|$ \url{https://imms.github.io}}{2012 -- 2016}
+	\resumeItemListStart
+    \resumeItem{
+        High performance immutable collection library in \sharplang{C}, rigorously tested in \sharplang{F}.
+    }
+    \resumeItem{
+        Achieved optimal complexity by taking data structures and algorithms from research papers.
+    }
+    \resumeItem{
+        Maximized performance using low-level optimizations via benchmarking, CPU profiling, and decompilation.
+    }
+    \resumeItem{
+        Designed powerful and consistent API across 5 collections with an emphasis on DRY and SoC.
+    }
+	\resumeItemListEnd
+	\resumeSubHeadingListEnd
+
+
+
+
+
+	\section{Education}
+	\resumeSubHeadingListStart
+	\resumeSubheading
+	{BSc in Computer Science + Mathematics (Incomplete)}{2013 -- 2015}
+	{Technion}{Haifa, Israel}
+	\resumeSubHeadingListEnd
+
+	%-------------------------------------------
+\end{document}

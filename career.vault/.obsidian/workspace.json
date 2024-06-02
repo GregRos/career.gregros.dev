@@ -1,0 +1,218 @@
+{
+  "main": {
+    "id": "c01389520bf69207",
+    "type": "split",
+    "children": [
+      {
+        "id": "0b0cc9ddc0bf33e6",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "34e987c7b55321ce",
+            "type": "leaf",
+            "state": {
+              "type": "empty",
+              "state": {}
+            }
+          },
+          {
+            "id": "6d242714069975b3",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "Codebases/Untitled.md",
+                "mode": "source",
+                "source": false
+              }
+            }
+          },
+          {
+            "id": "fa7b2f9b91379ea9",
+            "type": "leaf",
+            "state": {
+              "type": "empty",
+              "state": {}
+            }
+          }
+        ],
+        "currentTab": 2
+      }
+    ],
+    "direction": "vertical"
+  },
+  "left": {
+    "id": "08bbefa7af349950",
+    "type": "split",
+    "children": [
+      {
+        "id": "2ad0f99fb7f64992",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "9e49c1ad8afbdb35",
+            "type": "leaf",
+            "state": {
+              "type": "file-explorer",
+              "state": {
+                "sortOrder": "alphabetical"
+              }
+            }
+          },
+          {
+            "id": "4e86d9918b9948dc",
+            "type": "leaf",
+            "state": {
+              "type": "search",
+              "state": {
+                "query": "tag:#cdp",
+                "matchingCase": false,
+                "explainSearch": false,
+                "collapseAll": false,
+                "extraContext": false,
+                "sortOrder": "alphabetical"
+              }
+            }
+          },
+          {
+            "id": "1dc4952b7427b4a3",
+            "type": "leaf",
+            "state": {
+              "type": "bookmarks",
+              "state": {}
+            }
+          }
+        ]
+      }
+    ],
+    "direction": "horizontal",
+    "width": 375.50818634033203
+  },
+  "right": {
+    "id": "417cc3f3bcbdd199",
+    "type": "split",
+    "children": [
+      {
+        "id": "f042feb560eec678",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "c380220dd8929c1f",
+            "type": "leaf",
+            "state": {
+              "type": "backlink",
+              "state": {
+                "collapseAll": true,
+                "extraContext": true,
+                "sortOrder": "alphabetical",
+                "showSearch": true,
+                "searchQuery": "",
+                "backlinkCollapsed": false,
+                "unlinkedCollapsed": true
+              }
+            }
+          },
+          {
+            "id": "9765ee2cd437cd62",
+            "type": "leaf",
+            "state": {
+              "type": "outgoing-link",
+              "state": {
+                "linksCollapsed": false,
+                "unlinkedCollapsed": true
+              }
+            }
+          },
+          {
+            "id": "18d87c0236780e17",
+            "type": "leaf",
+            "state": {
+              "type": "tag",
+              "state": {
+                "sortOrder": "frequency",
+                "useHierarchy": true
+              }
+            }
+          },
+          {
+            "id": "691f9908acd69c8c",
+            "type": "leaf",
+            "state": {
+              "type": "outline",
+              "state": {}
+            }
+          }
+        ]
+      }
+    ],
+    "direction": "horizontal",
+    "width": 200
+  },
+  "left-ribbon": {
+    "hiddenItems": {
+      "switcher:Open quick switcher": false,
+      "graph:Open graph view": false,
+      "canvas:Create new canvas": false,
+      "daily-notes:Open today's daily note": false,
+      "templates:Insert template": false,
+      "command-palette:Open command palette": false,
+      "publish:Publish changes...": false,
+      "templater-obsidian:Templater": false,
+      "obsidian-excalidraw-plugin:Create new drawing": false,
+      "notion-like-tables:Create loom": false
+    }
+  },
+  "active": "fa7b2f9b91379ea9",
+  "lastOpenFiles": [
+    "publish.js",
+    "publish.css",
+    "favicon2.psd",
+    "favicon-32.png",
+    "Using TypeScript to investigate type systems.md",
+    "Templates/Projectbox.md",
+    "Templates/Placebox.md",
+    "Templates",
+    "StaticTimeline.png",
+    "Skills/Software.md",
+    "Skills/Architecture.md",
+    "Skills/Languages.md",
+    "Skills/Infrastructure.md",
+    "Skills",
+    "Resources/Preszr-Flow.svg",
+    "Resources/Patchwork_Icon.png",
+    "Resources/Imms_Icon.png",
+    "Resources/Imms-Architecture.svg",
+    "Resources",
+    "Projects/Micro/SlayTheSpire_DynamicStart.md",
+    "Projects/Micro/FieldEditor_GUI.png",
+    "Projects/Micro/FieldEditor.md",
+    "Projects/Wampus.md",
+    "Projects/Preszr.md",
+    "Projects/Perdido.md",
+    "Projects/Patchwork.md",
+    "Projects/Parjs.md",
+    "Projects/Micro",
+    "Projects/Imms.md",
+    "Projects",
+    "Places/Reflectiz.md",
+    "Places/Eternitech.md",
+    "Places/Appdome.md",
+    "Places",
+    "Pasted image 20240531160124.png",
+    "My Career.md",
+    "Headshot.png",
+    "Codebases/When principles fail.md",
+    "Codebases/What's a type.md",
+    "Codebases/Article Topics.md",
+    "Untitled.md",
+    "Untitled 1.md",
+    "Codebases/Untitled.loom",
+    "Codebases/Untitled.md",
+    "Codebases/Untitled 1.loom",
+    "Resources/Preszr-Flow (1).svg",
+    "Excalidraw/Untitled.canvas",
+    "Untitled.canvas",
+    "Untitled 1.canvas",
+    "Projects/P_Preszr/PreszrFlow.canvas"
+  ]
+}
