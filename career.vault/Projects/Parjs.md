@@ -25,7 +25,7 @@ cssclasses:
 > | Downloads | 16K+/month on [NPM](https://www.npmjs.com/package/parjs) |
 > | Contributors | 5 |
 
-Parjs is a library for building #parsers for parsing any language using the #parser-combinator pattern. It’s inspired by Parsec and FParsec, but with an API that follows JavaScript conventions.
+Parjs is a library for building #parser for parsing any language using the #parser-combinator pattern. It’s inspired by Parsec and FParsec, but with an API that follows JavaScript conventions.
 > [!column|no-title flex]
 > > [!success] Faithful API
 > > Adapted the time-honored parser combinator pattern, attested by 100s of invested users.

@@ -11,24 +11,15 @@
             "id": "34e987c7b55321ce",
             "type": "leaf",
             "state": {
-              "type": "empty",
-              "state": {}
-            }
-          },
-          {
-            "id": "6d242714069975b3",
-            "type": "leaf",
-            "state": {
               "type": "markdown",
               "state": {
-                "file": "Places/Reflectiz.md",
+                "file": "Career.md",
                 "mode": "source",
                 "source": false
               }
             }
           }
-        ],
-        "currentTab": 1
+        ]
       }
     ],
     "direction": "vertical"
@@ -57,7 +48,7 @@
             "state": {
               "type": "search",
               "state": {
-                "query": "tag:#cdp",
+                "query": "tag:#data-structures",
                 "matchingCase": false,
                 "explainSearch": false,
                 "collapseAll": false,
@@ -74,7 +65,8 @@
               "state": {}
             }
           }
-        ]
+        ],
+        "currentTab": 1
       }
     ],
     "direction": "horizontal",
@@ -94,7 +86,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Places/Reflectiz.md",
+                "file": "Career.md",
                 "collapseAll": true,
                 "extraContext": true,
                 "sortOrder": "alphabetical",
@@ -111,7 +103,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "Places/Reflectiz.md",
+                "file": "Career.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -134,7 +126,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "Places/Reflectiz.md"
+                "file": "Career.md"
               }
             }
           }
@@ -158,15 +150,32 @@
       "notion-like-tables:Create loom": false
     }
   },
-  "active": "6d242714069975b3",
+  "active": "34e987c7b55321ce",
   "lastOpenFiles": [
-    "Places/Appdome.md",
-    "Places/Reflectiz.md",
-    "Skills/Software.md",
-    "Skills/Languages.md",
-    "Skills/Infrastructure.md",
+    "CV.pdf",
+    "Career.md",
+    "Projects/Imms.md",
+    "Projects/Parjs.md",
+    "Projects/Patchwork.md",
+    "Projects/Perdido.md",
+    "Projects/Wampus.md",
+    "Projects/Preszr.md",
     "Skills/Architecture.md",
-    "Codebases/Untitled.md",
+    "Skills/Infrastructure.md",
+    "Skills/Languages.md",
+    "Skills/Software.md",
+    "Codebases/types programs.md",
+    "Codebases/Untitled.loom",
+    "Codebases/Untitled 1.md",
+    "Codebases/Untitled 1.loom",
+    "Places/Appdome.md",
+    "Places/Eternitech.md",
+    "Places/Reflectiz.md",
+    "Projects/Micro/SlayTheSpire_DynamicStart.md",
+    "Projects/Micro/FieldEditor_GUI.png",
+    "Projects/Micro/FieldEditor.md",
+    "Templates/Projectbox.md",
+    "StaticTimeline.png",
     "Untitled.md",
     "Untitled 1.md",
     "draft_dataview_engine.md",
@@ -175,36 +184,19 @@
     "favicon2.psd",
     "favicon-32.png",
     "Using TypeScript to investigate type systems.md",
-    "Templates/Projectbox.md",
     "Templates/Placebox.md",
     "Templates",
-    "StaticTimeline.png",
     "Skills",
     "Resources/Preszr-Flow.svg",
     "Resources/Patchwork_Icon.png",
     "Resources/Imms_Icon.png",
     "Resources/Imms-Architecture.svg",
     "Resources",
-    "Projects/Micro/SlayTheSpire_DynamicStart.md",
-    "Projects/Micro/FieldEditor_GUI.png",
-    "Projects/Micro/FieldEditor.md",
-    "Projects/Wampus.md",
-    "Projects/Preszr.md",
-    "Projects/Perdido.md",
-    "Projects/Patchwork.md",
-    "Projects/Parjs.md",
     "Projects/Micro",
-    "Projects/Imms.md",
     "Projects",
-    "Places/Eternitech.md",
-    "Places",
     "Pasted image 20240531160124.png",
-    "My Career.md",
     "Headshot.png",
     "Codebases/When principles fail.md",
-    "Codebases/What's a type.md",
-    "Codebases/Article Topics.md",
-    "Codebases/Untitled.loom",
     "Resources/Preszr-Flow (1).svg",
     "Excalidraw/Untitled.canvas",
     "Untitled.canvas",
