@@ -33,18 +33,7 @@ To maintain the system, I was required to debug client code, often dealing with 
 In the later stages, additional requirements caused me to expand the monitoring layer, which led to closer coupling with the Chromium browser. However, the system still contained many browser-agnostic components.
 
 In addition, I provided support for junior developers using the company’s foundational technologies, such as Node.js, TypeScript, and JavaScript.
-> [!column|no-title flex] 
-> > [!success] Researched technologies
-> > In browser-agnostic monitoring and control.
-> 
-> > [!success] Built system
-> > Using experimental technologies in a production setting.
-> 
-> > [!success] Designed architecture
-> > That was robust, scalable, stateless, and highly distributed.
-> 
-> > [!success] Resolved incidents
-> > Involving misdetections and issues between our system and client webpages.
+
 
 # 2021 — Present
 I rejoined the company during a period of growth. In my new role as the company’s tech lead, I was responsible for both the browser-based system I’d created, as well as the company’s other systems and technologies.

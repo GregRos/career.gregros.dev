@@ -21,22 +21,14 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Codebases/Untitled.md",
+                "file": "Places/Reflectiz.md",
                 "mode": "source",
                 "source": false
               }
             }
-          },
-          {
-            "id": "fa7b2f9b91379ea9",
-            "type": "leaf",
-            "state": {
-              "type": "empty",
-              "state": {}
-            }
           }
         ],
-        "currentTab": 2
+        "currentTab": 1
       }
     ],
     "direction": "vertical"
@@ -102,6 +94,7 @@
             "state": {
               "type": "backlink",
               "state": {
+                "file": "Places/Reflectiz.md",
                 "collapseAll": true,
                 "extraContext": true,
                 "sortOrder": "alphabetical",
@@ -118,6 +111,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
+                "file": "Places/Reflectiz.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -139,7 +133,9 @@
             "type": "leaf",
             "state": {
               "type": "outline",
-              "state": {}
+              "state": {
+                "file": "Places/Reflectiz.md"
+              }
             }
           }
         ]
@@ -162,8 +158,18 @@
       "notion-like-tables:Create loom": false
     }
   },
-  "active": "fa7b2f9b91379ea9",
+  "active": "6d242714069975b3",
   "lastOpenFiles": [
+    "Places/Appdome.md",
+    "Places/Reflectiz.md",
+    "Skills/Software.md",
+    "Skills/Languages.md",
+    "Skills/Infrastructure.md",
+    "Skills/Architecture.md",
+    "Codebases/Untitled.md",
+    "Untitled.md",
+    "Untitled 1.md",
+    "draft_dataview_engine.md",
     "publish.js",
     "publish.css",
     "favicon2.psd",
@@ -173,10 +179,6 @@
     "Templates/Placebox.md",
     "Templates",
     "StaticTimeline.png",
-    "Skills/Software.md",
-    "Skills/Architecture.md",
-    "Skills/Languages.md",
-    "Skills/Infrastructure.md",
     "Skills",
     "Resources/Preszr-Flow.svg",
     "Resources/Patchwork_Icon.png",
@@ -194,9 +196,7 @@
     "Projects/Micro",
     "Projects/Imms.md",
     "Projects",
-    "Places/Reflectiz.md",
     "Places/Eternitech.md",
-    "Places/Appdome.md",
     "Places",
     "Pasted image 20240531160124.png",
     "My Career.md",
@@ -204,11 +204,7 @@
     "Codebases/When principles fail.md",
     "Codebases/What's a type.md",
     "Codebases/Article Topics.md",
-    "Untitled.md",
-    "Untitled 1.md",
     "Codebases/Untitled.loom",
-    "Codebases/Untitled.md",
-    "Codebases/Untitled 1.loom",
     "Resources/Preszr-Flow (1).svg",
     "Excalidraw/Untitled.canvas",
     "Untitled.canvas",
