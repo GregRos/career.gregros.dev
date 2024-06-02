@@ -41,10 +41,11 @@
   "type": "module",
   "scripts": {
     "build:scss": "sass styles/publish.scss:vault/publish.css styles/electron.scss:vault/.obsidian/snippets/gregros.css",
-    "scss": "sass --watch styles/publish.scss:vault/publish.css styles/electron.scss:vault/.obsidian/snippets/gregros.css",
+    "watch:scss": "sass --watch styles/publish.scss:vault/publish.css styles/electron.scss:vault/.obsidian/snippets/gregros.css",
     "build:ts": "esbuild src/publish.tsx --bundle --minify --sourcemap=inline --sources-content=true --target=es2020 --outfile=vault/publish.js",
     "build": "run-p build:scss build:ts",
-    "watch": "esbuild src/publish.tsx --bundle --minify --sourcemap=inline --sources-content=true --target=es2020 --outfile=vault/publish.js --watch",
+    "watch:ts": "esbuild src/publish.tsx --bundle --minify --sourcemap=inline --sources-content=true --target=es2020 --outfile=vault/publish.js --watch",
+    "watch": "run-p watch:scss watch:ts",
     "tsc": "tsc -p .",
     "tsc-watch": "tsc -w -p ."
   }

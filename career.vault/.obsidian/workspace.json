@@ -65,8 +65,7 @@
               "state": {}
             }
           }
-        ],
-        "currentTab": 1
+        ]
       }
     ],
     "direction": "horizontal",
@@ -152,14 +151,14 @@
   },
   "active": "34e987c7b55321ce",
   "lastOpenFiles": [
-    "CV.pdf",
+    "Projects/Preszr.md",
+    "Projects/Perdido.md",
+    "Projects/Patchwork.md",
     "Career.md",
+    "CV.pdf",
     "Projects/Imms.md",
     "Projects/Parjs.md",
-    "Projects/Patchwork.md",
-    "Projects/Perdido.md",
     "Projects/Wampus.md",
-    "Projects/Preszr.md",
     "Skills/Architecture.md",
     "Skills/Infrastructure.md",
     "Skills/Languages.md",
@@ -193,7 +192,6 @@
     "Resources/Imms-Architecture.svg",
     "Resources",
     "Projects/Micro",
-    "Projects",
     "Pasted image 20240531160124.png",
     "Headshot.png",
     "Codebases/When principles fail.md",

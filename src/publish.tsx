@@ -84,16 +84,7 @@ function renderNavFooter() {
 async function renderComponents() {
     await new Promise(resolve => setTimeout(resolve, 300));
 
-    const timelineElement = document.querySelector("img[alt='timeline-mount']")
-        ?.parentElement as HTMLElement;
-    if (!timelineElement) {
-        return;
-    }
-    const div = document.createElement("div");
-    timelineElement.replaceWith(div);
-    if (timelineElement) {
-        await embedTimeline(div, async () => window.publish.site.cache.cache);
-    }
+
 }
 
 window.addEventListener("pushstate", onNavigate);

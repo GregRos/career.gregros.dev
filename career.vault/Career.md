@@ -52,4 +52,4 @@ Hi! I’m Greg. I’ve accomplished a lot in **eight years of professional exper
 > >  #optimized #immutable #data-structures in #csharp made redundant by Microsoft during development! Mine were faster though.
 > 
 > > [!todo] Professional stuff
-> > 8 years of professional experience in software, from developer to tech lead.
+> > 8 years of professional experience in software, from developer to tech lead. Not sure how to present this bit yet! 🤔
