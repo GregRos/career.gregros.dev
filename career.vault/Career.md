@@ -53,3 +53,4 @@ Hi! I’m Greg. I’ve accomplished a lot in **eight years of professional exper
 > 
 > > [!todo] Professional stuff
 > > 8 years of professional experience in software, from developer to tech lead. Not sure how to present this bit yet! 🤔
+ 

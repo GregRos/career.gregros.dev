@@ -25,14 +25,6 @@ function makeGtm() {
 }
 
 function embedNonContent() {
-    const hasNoIndex = document.head.querySelector("meta[name=robots]");
-    const isPlaces = window.location.pathname.includes("Places");
-    if (isPlaces && !hasNoIndex) {
-        document.head.appendChild(makeNoIndex());
-    } else if (!isPlaces && hasNoIndex) {
-        document.head.removeChild(hasNoIndex);
-    }
-
     renderNavHeader();
     renderNavFooter();
 }
