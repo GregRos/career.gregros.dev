@@ -1,142 +1,160 @@
 @charset "UTF-8";
-.callout-icon {
-  align-self: center;
-}
-
-/*Callout Positioning*/
-:not(.is-live-preview) .callout.callout.callout:is([data-callout-metadata~="p+l"],
-[data-callout-metadata~=left]) {
+:not(.is-live-preview) .callout.callout.callout:is([data-callout-metadata~="p+l"], [data-callout-metadata~=left]) {
   float: left;
   margin: unset;
   margin-right: 8px;
 }
 
-:not(.is-live-preview) .callout.callout:is([data-callout-metadata~="p+r"],
-[data-callout-metadata~=right]) {
+:not(.is-live-preview) .callout.callout.callout:is([data-callout-metadata~="p+r"], [data-callout-metadata~=right]) {
   float: right;
   margin: unset;
   margin-left: 8px;
 }
 
-.callout.callout.callout:is([data-callout-metadata~=ctr],
-[data-callout-metadata~=center]) {
+.callout.callout.callout.callout:is([data-callout-metadata~=ctr], [data-callout-metadata~=center]) {
   display: block;
   margin: auto;
   float: unset;
 }
 
-.callout.callout.callout.callout:is([data-callout-metadata~=no-t],
-[data-callout-metadata~=no-title]) > .callout-title {
+.callout.callout.callout.callout:is([data-callout-metadata~=no-t], [data-callout-metadata~=no-title]) > .callout-title {
   display: none;
 }
 
-.callout.callout.callout.callout:is([data-callout-metadata~=s-t],
-[data-callout-metadata~=show-title]) > .callout-title {
+.callout.callout.callout.callout:is([data-callout-metadata~=s-t], [data-callout-metadata~=show-title]) > .callout-title {
   display: flex;
 }
-
-.callout.callout.callout.callout:is([data-callout-metadata~=s-t],
-[data-callout-metadata~=show-title]) > .callout-content > p {
+.callout.callout.callout.callout:is([data-callout-metadata~=s-t], [data-callout-metadata~=show-title]) > .callout-content > p {
   margin-top: 0;
 }
 
-.callout.callout.callout.callout:is([data-callout-metadata~=subtitle],
-[data-callout-metadata~=subt]) .callout-title {
+.callout.callout.callout.callout:is([data-callout-metadata~=subt], [data-callout-metadata~=subtitle]) .callout-title {
   align-content: center;
   align-items: center;
 }
-
-.callout.callout.callout.callout:is([data-callout-metadata~=subtitle],
-[data-callout-metadata~=subt]) .callout-title em {
+.callout.callout.callout.callout:is([data-callout-metadata~=subt], [data-callout-metadata~=subtitle]) .callout-title em {
   display: block;
   font-style: normal;
   font-size: var(--font-small);
   line-height: 12px;
   font-weight: normal;
 }
-
-.callout.callout.callout.callout:is([data-callout-metadata~=subtitle],
-[data-callout-metadata~=subt]) .callout-title em em {
+.callout.callout.callout.callout:is([data-callout-metadata~=subt], [data-callout-metadata~=subtitle]) .callout-title em em {
   font-style: italic;
   display: inline-block;
 }
 
-.callout:is([data-callout-metadata~=no-i],
-[data-callout-metadata~=no-icon]) > .callout-title .callout-icon {
+.callout:is([data-callout-metadata~=no-i], [data-callout-metadata~=no-icon]) > .callout-title .callout-icon {
   width: 0;
   height: 0;
 }
 
-.callout:is([data-callout-metadata~=n-th],
-[data-callout-metadata~=no-table-header]) > .callout-content table {
+.callout:is([data-callout-metadata~=n-th], [data-callout-metadata~=no-table-header]) > .callout-content table {
   margin-bottom: 5px;
 }
-
-.callout:is([data-callout-metadata~=n-th],
-[data-callout-metadata~=no-table-header]) > .callout-content table thead,
-.callout:is([data-callout-metadata~=n-th],
-[data-callout-metadata~=no-table-header]) > .callout-content table th {
+.callout:is([data-callout-metadata~=n-th], [data-callout-metadata~=no-table-header]) > .callout-content table thead,
+.callout:is([data-callout-metadata~=n-th], [data-callout-metadata~=no-table-header]) > .callout-content table th {
   display: none;
 }
 
-.callout:is([data-callout-metadata~=t-w],
-[data-callout-metadata~=table-wide]) table {
+.callout:is([data-callout-metadata~=t-w], [data-callout-metadata~=table-wide]) > .callout-content table {
   width: 100%;
 }
-
-.callout:is([data-callout-metadata~=t-w],
-[data-callout-metadata~=table-wide]) table td {
+.callout:is([data-callout-metadata~=t-w], [data-callout-metadata~=table-wide]) > .callout-content table td {
   width: calc(var(--tbl-w) / 2);
 }
 
-.callout[data-callout-metadata~=table-cell-top] table td {
+.callout:is([data-callout-metadata~=table-cell-top]) table td {
   vertical-align: top;
 }
 
-.callout.callout:is([data-callout-metadata~=t-nmg],
-[data-callout-metadata~=table-no-margin]) table {
+.callout:is([data-callout-metadata~=t-nmg], [data-callout-metadata~=table-no-margin]) table {
   margin-block-start: 0;
   margin-block-end: 0;
 }
 
-.callout[data-callout-metadata~=embed] .callout-content, .callout[data-callout-metadata~=embed] > .callout-content > p {
+.callout:is([data-callout-metadata~=embed]) .callout-content,
+.callout:is([data-callout-metadata~=embed]) > .callout-content > p {
   margin: 0;
   padding: 0;
 }
 
-.callout[data-callout-metadata~=collapse] * {
+.callout:is([data-callout-metadata~=collapse]) * {
   margin: 0 !important;
   padding: 0 !important;
   grid-gap: 0 !important;
 }
 
-.callout.callout.callout:is([data-callout-metadata~=nbrd],
-[data-callout-metadata~=no-border]) {
+.callout:is([data-callout-metadata~=nbrd], [data-callout-metadata~=no-border]) {
   border: 0;
 }
 
-.callout.callout.callout[data-callout-metadata~=clean],
-.callout.callout.callout[data-callout-metadata~=clean] > .callout-content {
+.callout:is([data-callout-metadata~=clean]) {
+  clear: both;
+}
+.callout:is([data-callout-metadata~=clean]),
+.callout:is([data-callout-metadata~=clean]) > .callout-content {
   border: 0;
   box-shadow: none;
   --callout-color: transparent;
   --callout-padding: 0;
 }
 
-.callout.callout.callout[data-callout-metadata~=clean] .callout-content,
-.callout.callout.callout[data-callout-metadata~=clean] > .callout-content .callout-content {
-  padding: 0;
+.callout:is([data-callout-metadata~=txt-l], [data-callout-metadata~=text-left]) > .callout-content > * {
+  text-align: left;
 }
 
-.callout[data-callout-metadata~=clear] {
-  clear: both;
+.callout:is([data-callout-metadata~=txt-r], [data-callout-metadata~=text-right]) > .callout-content {
+  text-align: right;
+}
+
+.callout:is([data-callout-metadata~=txt-c], [data-callout-metadata~=text-center]) > .callout-content {
+  text-align: center;
+}
+
+.callout:is([data-callout-metadata~=ttl-c], [data-callout-metadata~=title-center]) .callout-title {
+  justify-content: center;
+}
+.callout:is([data-callout-metadata~=ttl-c], [data-callout-metadata~=title-center]) .callout-title-inner {
+  display: block;
+  flex: unset;
+}
+
+.callout:is([data-callout-metadata~=text-small], [data-callout-metadata~=txt-s]) > .callout-content > * {
+  font-size: var(--font-smallest);
+}
+
+.callout:is([data-callout-metadata~=txt-r], [data-callout-metadata~=text-right]) > .callout-content {
+  text-align: right;
+}
+
+.callout:is([data-callout-metadata~=txt-c], [data-callout-metadata~=text-center]) > .callout-content {
+  text-align: center;
+}
+
+.callout:is([data-callout-metadata~=ttl-c], [data-callout-metadata~=title-center]) .callout-title {
+  justify-content: center;
+}
+.callout:is([data-callout-metadata~=ttl-c], [data-callout-metadata~=title-center]) .callout-title-inner {
+  display: block;
+  flex: unset;
+}
+
+.callout:is([data-callout-metadata~=text-small], [data-callout-metadata~=txt-s]) > .callout-content > * {
+  --font-text-size: var(--font-smallest);
+  --tag-size: var(--font-smallest);
+  --table-text-size: var(--font-smallest);
+  font-size: var(--font-text-size);
+}
+
+.callout.callout.callout:is([data-callout-metadata~=nbrd], [data-callout-metadata~=no-border]) {
+  border: 0;
 }
 
 .callout #vid {
   text-align: left;
 }
 
-/*--Callout Coloring--*/
 .callout.callout.callout {
   --callout-blue: 82, 139, 212;
   --callout-green: 86, 179, 117;
@@ -150,197 +168,127 @@
   --callout-black: 0, 0, 0;
 }
 
-.callout.callout.callout:is([data-callout-metadata~=color-blue],
-[data-callout-metadata~=c-blue],
-[data-callout-metadata~=background-color-blue],
-[data-callout-metadata~=bg-c-blue]) .callout-title {
+.callout.callout.callout:is([data-callout-metadata~=color-blue], [data-callout-metadata~=c-blue], [data-callout-metadata~=background-color-blue], [data-callout-metadata~=bg-c-blue]) .callout-title {
   --callout-color: var(--callout-blue);
 }
 
-.callout.callout.callout:is([data-callout-metadata~=color-green],
-[data-callout-metadata~=c-green],
-[data-callout-metadata~=background-color-green],
-[data-callout-metadata~=bg-c-green]) .callout-title {
+.callout.callout.callout:is([data-callout-metadata~=color-green], [data-callout-metadata~=c-green], [data-callout-metadata~=background-color-green], [data-callout-metadata~=bg-c-green]) .callout-title {
   --callout-color: var(--callout-green);
 }
 
-.callout.callout.callout:is([data-callout-metadata~=color-orange],
-[data-callout-metadata~=c-orange],
-[data-callout-metadata~=background-color-orange],
-[data-callout-metadata~=bg-c-orange]) .callout-title {
+.callout.callout.callout:is([data-callout-metadata~=color-orange], [data-callout-metadata~=c-orange], [data-callout-metadata~=background-color-orange], [data-callout-metadata~=bg-c-orange]) .callout-title {
   --callout-color: var(--callout-orange);
 }
 
-.callout.callout.callout:is([data-callout-metadata~=color-red],
-[data-callout-metadata~=c-red],
-[data-callout-metadata~=background-color-red],
-[data-callout-metadata~=bg-c-red]) .callout-title {
+.callout.callout.callout:is([data-callout-metadata~=color-red], [data-callout-metadata~=c-red], [data-callout-metadata~=background-color-red], [data-callout-metadata~=bg-c-red]) .callout-title {
   --callout-color: var(--callout-red);
 }
 
-.callout.callout.callout:is([data-callout-metadata~=color-purple],
-[data-callout-metadata~=c-purple],
-[data-callout-metadata~=background-color-purple],
-[data-callout-metadata~=bg-c-purple]) .callout-title {
+.callout.callout.callout:is([data-callout-metadata~=color-purple], [data-callout-metadata~=c-purple], [data-callout-metadata~=background-color-purple], [data-callout-metadata~=bg-c-purple]) .callout-title {
   --callout-color: var(--callout-purple);
 }
 
-.callout.callout.callout:is([data-callout-metadata~=color-gray],
-[data-callout-metadata~=c-gray],
-[data-callout-metadata~=background-color-gray],
-[data-callout-metadata~=bg-c-gray]) .callout-title {
+.callout.callout.callout:is([data-callout-metadata~=color-gray], [data-callout-metadata~=c-gray], [data-callout-metadata~=background-color-gray], [data-callout-metadata~=bg-c-gray]) .callout-title {
   --callout-color: var(--callout-gray);
 }
 
-.callout.callout.callout:is([data-callout-metadata~=color-yellow],
-[data-callout-metadata~=c-yellow],
-[data-callout-metadata~=background-color-yellow],
-[data-callout-metadata~=bg-c-yellow]) .callout-title {
+.callout.callout.callout:is([data-callout-metadata~=color-yellow], [data-callout-metadata~=c-yellow], [data-callout-metadata~=background-color-yellow], [data-callout-metadata~=bg-c-yellow]) .callout-title {
   --callout-color: var(--callout-yellow);
 }
 
-.callout.callout.callout:is([data-callout-metadata~=color-pink],
-[data-callout-metadata~=c-pink],
-[data-callout-metadata~=background-color-pink],
-[data-callout-metadata~=bg-c-pink]) .callout-title {
+.callout.callout.callout:is([data-callout-metadata~=color-pink], [data-callout-metadata~=c-pink], [data-callout-metadata~=background-color-pink], [data-callout-metadata~=bg-c-pink]) .callout-title {
   --callout-color: var(--callout-pink);
 }
 
-.callout.callout.callout:is([data-callout-metadata~=color-brown],
-[data-callout-metadata~=c-brown],
-[data-callout-metadata~=background-color-brown],
-[data-callout-metadata~=bg-c-brown]) .callout-title {
+.callout.callout.callout:is([data-callout-metadata~=color-brown], [data-callout-metadata~=c-brown], [data-callout-metadata~=background-color-brown], [data-callout-metadata~=bg-c-brown]) .callout-title {
   --callout-color: var(--callout-brown);
 }
 
-.callout.callout.callout:is([data-callout-metadata~=color-black],
-[data-callout-metadata~=bg-black],
-[data-callout-metadata~=background-color-black],
-[data-callout-metadata~=bg-c-black]) .callout-title {
-  --callout-color: var(--callout-black) ;
+.callout.callout.callout:is([data-callout-metadata~=color-black], [data-callout-metadata~=bg-black], [data-callout-metadata~=background-color-black], [data-callout-metadata~=bg-c-black]) .callout-title {
+  --callout-color: var(--callout-black);
 }
 
-.callout.callout.callout:is([data-callout-metadata~=color-], [data-callout-metadata~=c-]) {
+.callout.callout.callout:is([data-callout-metadata~=color-], [data-callout-metadata~=c-]) .callout-title {
   --callout-color: var(--callout);
 }
 
-.callout.callout.callout:is([data-callout-metadata~=background-blue],
-[data-callout-metadata~=bg-blue],
-[data-callout-metadata~=background-color-blue],
-[data-callout-metadata~=bg-c-blue]) {
+.callout.callout.callout:is([data-callout-metadata~=background-blue], [data-callout-metadata~=bg-blue], [data-callout-metadata~=background-color-blue], [data-callout-metadata~=bg-c-blue]) {
   background-color: rgba(var(--callout-blue), 10%);
 }
 
-.callout.callout.callout:is([data-callout-metadata~=background-green],
-[data-callout-metadata~=bg-green],
-[data-callout-metadata~=background-color-green],
-[data-callout-metadata~=bg-c-green]) {
+.callout.callout.callout:is([data-callout-metadata~=background-green], [data-callout-metadata~=bg-green], [data-callout-metadata~=background-color-green], [data-callout-metadata~=bg-c-green]) {
   background-color: rgba(var(--callout-green), 10%);
 }
 
-.callout.callout.callout:is([data-callout-metadata~=background-orange],
-[data-callout-metadata~=bg-orange],
-[data-callout-metadata~=background-color-orange],
-[data-callout-metadata~=bg-c-orange]) {
+.callout.callout.callout:is([data-callout-metadata~=background-orange], [data-callout-metadata~=bg-orange], [data-callout-metadata~=background-color-orange], [data-callout-metadata~=bg-c-orange]) {
   background-color: rgba(var(--callout-orange), 10%);
 }
 
-.callout.callout.callout:is([data-callout-metadata~=background-red],
-[data-callout-metadata~=bg-red],
-[data-callout-metadata~=background-color-red],
-[data-callout-metadata~=bg-c-red]) {
+.callout.callout.callout:is([data-callout-metadata~=background-red], [data-callout-metadata~=bg-red], [data-callout-metadata~=background-color-red], [data-callout-metadata~=bg-c-red]) {
   background-color: rgba(var(--callout-red), 10%);
 }
 
-.callout.callout.callout:is([data-callout-metadata~=background-purple],
-[data-callout-metadata~=bg-purple],
-[data-callout-metadata~=background-color-purple],
-[data-callout-metadata~=bg-c-purple]) {
+.callout.callout.callout:is([data-callout-metadata~=background-purple], [data-callout-metadata~=bg-purple], [data-callout-metadata~=background-color-purple], [data-callout-metadata~=bg-c-purple]) {
   background-color: rgba(var(--callout-purple), 10%);
 }
 
-.callout.callout.callout:is([data-callout-metadata~=background-gray],
-[data-callout-metadata~=bg-gray],
-[data-callout-metadata~=background-color-gray],
-[data-callout-metadata~=bg-c-gray]) {
+.callout.callout.callout:is([data-callout-metadata~=background-gray], [data-callout-metadata~=bg-gray], [data-callout-metadata~=background-color-gray], [data-callout-metadata~=bg-c-gray]) {
   background-color: rgba(var(--callout-gray), 10%);
 }
 
-.callout.callout.callout:is([data-callout-metadata~=background-yellow],
-[data-callout-metadata~=bg-yellow],
-[data-callout-metadata~=background-color-yellow],
-[data-callout-metadata~=bg-c-yellow]) {
+.callout.callout.callout:is([data-callout-metadata~=background-yellow], [data-callout-metadata~=bg-yellow], [data-callout-metadata~=background-color-yellow], [data-callout-metadata~=bg-c-yellow]) {
   background-color: rgba(var(--callout-yellow), 10%);
 }
 
-.callout.callout.callout:is([data-callout-metadata~=background-pink],
-[data-callout-metadata~=bg-pink],
-[data-callout-metadata~=background-color-pink],
-[data-callout-metadata~=bg-c-pink]) {
+.callout.callout.callout:is([data-callout-metadata~=background-pink], [data-callout-metadata~=bg-pink], [data-callout-metadata~=background-color-pink], [data-callout-metadata~=bg-c-pink]) {
   background-color: rgba(var(--callout-pink), 10%);
 }
 
-.callout.callout.callout:is([data-callout-metadata~=background-brown],
-[data-callout-metadata~=bg-brown],
-[data-callout-metadata~=background-color-brown],
-[data-callout-metadata~=bg-c-brown]) {
+.callout.callout.callout:is([data-callout-metadata~=background-brown], [data-callout-metadata~=bg-brown], [data-callout-metadata~=background-color-brown], [data-callout-metadata~=bg-c-brown]) {
   background-color: rgba(var(--callout-brown), 10%);
 }
 
-.callout.callout.callout:is([data-callout-metadata~=background-black],
-[data-callout-metadata~=bg-black],
-[data-callout-metadata~=background-color-black],
-[data-callout-metadata~=bg-c-black]) {
+.callout.callout.callout:is([data-callout-metadata~=background-black], [data-callout-metadata~=bg-black], [data-callout-metadata~=background-color-black], [data-callout-metadata~=bg-c-black]) {
   background-color: rgba(var(--callout-black), 10%);
 }
 
-.callout.callout.callout:is([data-callout-metadata~=background-color-blue],
-[data-callout-metadata~=bg-c-blue]) {
+.callout.callout.callout:is([data-callout-metadata~=background-color-blue], [data-callout-metadata~=bg-c-blue]) {
   --callout-color: var(--callout-blue);
 }
 
-.callout.callout.callout:is([data-callout-metadata~=background-color-green],
-[data-callout-metadata~=bg-c-green]) {
+.callout.callout.callout:is([data-callout-metadata~=background-color-green], [data-callout-metadata~=bg-c-green]) {
   --callout-color: var(--callout-green);
 }
 
-.callout.callout.callout:is([data-callout-metadata~=background-color-orange],
-[data-callout-metadata~=bg-c-orange]) {
+.callout.callout.callout:is([data-callout-metadata~=background-color-orange], [data-callout-metadata~=bg-c-orange]) {
   --callout-color: var(--callout-orange);
 }
 
-.callout.callout.callout:is([data-callout-metadata~=background-color-red],
-[data-callout-metadata~=bg-c-red]) {
+.callout.callout.callout:is([data-callout-metadata~=background-color-red], [data-callout-metadata~=bg-c-red]) {
   --callout-color: var(--callout-red);
 }
 
-.callout.callout.callout:is([data-callout-metadata~=background-color-purple],
-[data-callout-metadata~=bg-c-purple]) {
+.callout.callout.callout:is([data-callout-metadata~=background-color-purple], [data-callout-metadata~=bg-c-purple]) {
   --callout-color: var(--callout-purple);
 }
 
-.callout.callout.callout:is([data-callout-metadata~=background-color-gray],
-[data-callout-metadata~=bg-c-gray]) {
+.callout.callout.callout:is([data-callout-metadata~=background-color-gray], [data-callout-metadata~=bg-c-gray]) {
   --callout-color: var(--callout-gray);
 }
 
-.callout.callout.callout:is([data-callout-metadata~=background-color-yellow],
-[data-callout-metadata~=bg-c-yellow]) {
+.callout.callout.callout:is([data-callout-metadata~=background-color-yellow], [data-callout-metadata~=bg-c-yellow]) {
   --callout-color: var(--callout-yellow);
 }
 
-.callout.callout.callout:is([data-callout-metadata~=background-color-pink],
-[data-callout-metadata~=bg-c-pink]) {
+.callout.callout.callout:is([data-callout-metadata~=background-color-pink], [data-callout-metadata~=bg-c-pink]) {
   --callout-color: var(--callout-pink);
 }
 
-.callout.callout.callout:is([data-callout-metadata~=background-color-brown],
-[data-callout-metadata~=bg-c-brown]) {
+.callout.callout.callout:is([data-callout-metadata~=background-color-brown], [data-callout-metadata~=bg-c-brown]) {
   --callout-color: var(--callout-brown);
 }
 
-.callout.callout.callout:is([data-callout-metadata~=background-color-black],
-[data-callout-metadata~=bg-c-black]) {
+.callout.callout.callout:is([data-callout-metadata~=background-color-black], [data-callout-metadata~=bg-c-black]) {
   --callout-color: var(--callout-black);
 }
 
@@ -355,82 +303,82 @@
   --callout-tall: 95%;
 }
 
-.callout.callout.callout[data-callout-metadata~=wmicro] {
+.callout.callout:is([data-callout-metadata~=wmicro]) {
   max-width: unset;
   width: var(--callout-micro);
 }
 
-.callout.callout.callout[data-callout-metadata~=wtiny] {
+.callout.callout:is([data-callout-metadata~=wtiny]) {
   max-width: unset;
   width: var(--callout-tiny);
 }
 
-.callout.callout.callout[data-callout-metadata~=wsmall] {
+.callout.callout:is([data-callout-metadata~=wsmall]) {
   max-width: unset;
   width: var(--callout-small);
 }
 
-.callout.callout.callout[data-callout-metadata~=ws-med] {
+.callout.callout:is([data-callout-metadata~=ws-med]) {
   max-width: unset;
   width: var(--callout-small-med);
 }
 
-.callout.callout.callout[data-callout-metadata~=wm-sm] {
+.callout.callout:is([data-callout-metadata~=wm-sm]) {
   max-width: unset;
   width: var(--callout-med-small);
 }
 
-.callout.callout.callout[data-callout-metadata~=wmed] {
+.callout.callout:is([data-callout-metadata~=wmed]) {
   max-width: unset;
   width: var(--callout-medium);
 }
 
-.callout.callout.callout[data-callout-metadata~=wm-tl] {
+.callout.callout:is([data-callout-metadata~=wm-tl]) {
   max-width: unset;
   width: var(--callout-med-tall);
 }
 
-.callout.callout.callout[data-callout-metadata~=wtall] {
+.callout.callout:is([data-callout-metadata~=wtall]) {
   max-width: unset;
   width: var(--callout-tall);
 }
 
-.callout.callout.callout[data-callout-metadata~=sban], .callout.callout.callout[data-callout-metadata~=wfull] {
+.callout.callout:is([data-callout-metadata~=sban], [data-callout-metadata~=wfull]) {
   width: 100%;
   float: unset;
   max-width: 100%;
 }
 
-.callout.callout.callout[data-callout-metadata~=wtiny-c] {
+.callout.callout:is([data-callout-metadata~=wtiny-c]) {
   width: 19%;
 }
 
-.callout.callout.callout[data-callout-metadata~=wsmall-c] {
+.callout.callout:is([data-callout-metadata~=wsmall-c]) {
   width: 32.4%;
 }
 
-.callout.callout.callout[data-callout-metadata~=ws-med-c] {
+.callout.callout:is([data-callout-metadata~=ws-med-c]) {
   width: 39%;
 }
 
-.callout.callout.callout[data-callout-metadata~=wm-sm-c] {
+.callout.callout:is([data-callout-metadata~=wm-sm-c]) {
   width: 49%;
 }
 
-.callout.callout.callout[data-callout-metadata~=wmed-c] {
+.callout.callout:is([data-callout-metadata~=wmed-c]) {
   width: 59%;
 }
 
-.callout.callout.callout[data-callout-metadata~=wm-tl-c] {
+.callout.callout:is([data-callout-metadata~=wm-tl-c]) {
   width: 79%;
 }
 
-.callout.callout.callout[data-callout-metadata~=wfit] {
+.callout.callout:is([data-callout-metadata~=wfit]) {
   width: fit-content;
   max-width: min-content;
 }
 
-.callout.callout[data-callout-metadata~=static] {
+.callout.callout:is([data-callout-metadata~=static]) {
   --callout-micro: 50px;
   --callout-tiny: 100px;
   --callout-small: 200px;
@@ -441,59 +389,20 @@
   --callout-tall: 700px;
 }
 
-.callout.callout:is([data-callout-metadata~=content-padding-small],
-[data-callout-metadata~=c-p-sm]) {
+.callout.callout:is([data-callout-metadata~=content-padding-small], [data-callout-metadata~=c-p-sm]) {
   --callout-content-padding: 6px;
 }
 
-.callout.callout:is([data-callout-metadata~=content-padding-medium],
-[data-callout-metadata~=c-p-med]) {
+.callout.callout:is([data-callout-metadata~=content-padding-medium], [data-callout-metadata~=c-p-med]) {
   --callout-content-padding: 12px;
 }
 
-.callout.callout:is([data-callout-metadata~=content-padding-large],
-[data-callout-metadata~=c-p-lg]) {
+.callout.callout:is([data-callout-metadata~=content-padding-large], [data-callout-metadata~=c-p-lg]) {
   --callout-content-padding: 24px;
 }
 
-.callout.callout:is([data-callout-metadata~=txt-l],
-[data-callout-metadata~=text-left]) > .callout-content > * {
-  text-align: left;
-}
-
-.callout.callout:is([data-callout-metadata~=txt-r],
-[data-callout-metadata~=text-right]) > .callout-content {
-  text-align: right;
-}
-
-.callout.callout:is([data-callout-metadata~=txt-c],
-[data-callout-metadata~=text-center]) > .callout-content {
-  text-align: center;
-}
-
-.callout.callout:is([data-callout-metadata~=ttl-c],
-[data-callout-metadata~=title-center]) .callout-title {
-  justify-content: center;
-}
-
-.callout.callout:is([data-callout-metadata~=ttl-c],
-[data-callout-metadata~=title-center]) .callout-title-inner {
-  display: block;
-  flex: unset;
-}
-
-.callout.callout:is([data-callout-metadata~=text-small],
-[data-callout-metadata~=txt-s]) > .callout-content > * {
-  --font-text-size: var(--font-smallest);
-  --tag-size: var(--font-smallest);
-  --table-text-size: var(--font-smallest);
-  font-size: var(--font-text-size);
-}
-
 /*Infobox*/
-:is(.is-mobile:not(.is-tablet),
-.is-mobile:not(.is-tablet) .is-live-preview,
-.is-live-preview) .callout[data-callout~=infobox]:not([data-callout-metadata~=mobile]) > .callout-content {
+:is(.is-mobile:not(.is-tablet), .is-mobile:not(.is-tablet) .is-live-preview, .is-live-preview) .callout[data-callout~=infobox]:not([data-callout-metadata~=mobile]) > .callout-content {
   float: unset !important;
   max-width: 100%;
   margin: 0 !important;
@@ -563,31 +472,38 @@
   background-color: transparent;
 }
 
-.callout.callout[data-callout~=infobox] .callout-content > .callout[data-callout~=infobox]:not(:hover):not(.is-collapsed) > .callout-title, .callout.callout[data-callout~=infobox]:is([data-callout-metadata~=show-title], [data-callout-metadata~=s-t]):not(:hover):not(.is-collapsed) > .callout-title {
+.callout.callout[data-callout~=infobox] .callout-content > .callout[data-callout~=infobox]:not(:hover):not(.is-collapsed) > .callout-title,
+.callout.callout[data-callout~=infobox]:is([data-callout-metadata~=show-title], [data-callout-metadata~=s-t]):not(:hover):not(.is-collapsed) > .callout-title {
   display: flex;
   gap: 0;
 }
 
-.callout.callout[data-callout~=infobox] .callout-content > .callout[data-callout~=infobox].is-collapsed .callout-title, .callout.callout[data-callout~=infobox]:is([data-callout-metadata~=show-title], [data-callout-metadata~=s-t]).is-collapsed .callout-title {
+.callout.callout[data-callout~=infobox] .callout-content > .callout[data-callout~=infobox].is-collapsed .callout-title,
+.callout.callout[data-callout~=infobox]:is([data-callout-metadata~=show-title],
+[data-callout-metadata~=s-t]).is-collapsed .callout-title {
   border: 1px solid var(--hr, var(--background-modifier-border));
   display: flex;
   align-items: center;
   align-content: center;
 }
 
-.callout.callout[data-callout~=infobox] .callout-content > .callout[data-callout~=infobox] .callout-title .callout-title-inner, .callout.callout[data-callout~=infobox]:is([data-callout-metadata~=show-title], [data-callout-metadata~=s-t]) .callout-title .callout-title-inner {
+.callout.callout[data-callout~=infobox] .callout-content > .callout[data-callout~=infobox] .callout-title .callout-title-inner,
+.callout.callout[data-callout~=infobox]:is([data-callout-metadata~=show-title], [data-callout-metadata~=s-t]) .callout-title .callout-title-inner {
   display: unset;
   align-items: center;
   align-content: center;
   padding: 5px 10px;
 }
 
-.callout.callout[data-callout~=infobox] .callout-content > .callout[data-callout~=infobox] .callout-fold, .callout.callout[data-callout~=infobox]:is([data-callout-metadata~=show-title], [data-callout-metadata~=s-t]) .callout-fold {
+.callout.callout[data-callout~=infobox] .callout-content > .callout[data-callout~=infobox] .callout-fold,
+.callout.callout[data-callout~=infobox]:is([data-callout-metadata~=show-title], [data-callout-metadata~=s-t]) .callout-fold {
   margin-top: auto;
   margin-bottom: auto;
 }
 
-.callout.callout[data-callout~=infobox] .callout-content > .callout[data-callout~=infobox].is-collapsed .callout-fold, .callout.callout[data-callout~=infobox]:is([data-callout-metadata~=show-title], [data-callout-metadata~=s-t]).is-collapsed .callout-fold {
+.callout.callout[data-callout~=infobox] .callout-content > .callout[data-callout~=infobox].is-collapsed .callout-fold,
+.callout.callout[data-callout~=infobox]:is([data-callout-metadata~=show-title],
+[data-callout-metadata~=s-t]).is-collapsed .callout-fold {
   border: 0;
 }
 
@@ -622,7 +538,8 @@
   background: var(--outer-bar, var(--background-secondary));
 }
 
-.callout.callout[data-callout~=infobox] .internal-embed, .callout.callout[data-callout~=infobox] img {
+.callout.callout[data-callout~=infobox] .internal-embed,
+.callout.callout[data-callout~=infobox] img {
   display: block;
   margin: auto;
   padding: auto;
@@ -869,7 +786,8 @@
   display: unset;
 }
 
-.callout[data-callout~=cards][data-callout-metadata~=dvl] .block-language-dataviewjs .dataview-result-list-li, .callout[data-callout~=cards][data-callout-metadata~=dvl] .list-view-ul li {
+.callout[data-callout~=cards][data-callout-metadata~=dvl] .block-language-dataviewjs .dataview-result-list-li,
+.callout[data-callout~=cards][data-callout-metadata~=dvl] .list-view-ul li {
   padding: 10px;
   background-color: var(--outer-bar, var(--background-secondary));
   box-shadow: var(--shadow-s, var(--input-shadow));
@@ -884,48 +802,39 @@
   padding-inline-start: unset;
 }
 
-.callout[data-callout~=cards][data-callout-metadata~="1"] :is(.dataview.table-view-table tbody,
-.callout-content) {
+.callout[data-callout~=cards][data-callout-metadata~="1"] :is(.dataview.table-view-table tbody, .callout-content) {
   grid-template-columns: repeat(1, 1fr);
 }
 
-.callout[data-callout~=cards][data-callout-metadata~="2"] :is(.dataview.table-view-table tbody,
-.callout-content) {
+.callout[data-callout~=cards][data-callout-metadata~="2"] :is(.dataview.table-view-table tbody, .callout-content) {
   grid-template-columns: repeat(2, 1fr);
 }
 
-.callout[data-callout~=cards][data-callout-metadata~="3"] :is(.dataview.table-view-table tbody,
-.callout-content) {
+.callout[data-callout~=cards][data-callout-metadata~="3"] :is(.dataview.table-view-table tbody, .callout-content) {
   grid-template-columns: repeat(3, 1fr);
 }
 
-.callout[data-callout~=cards][data-callout-metadata~="4"] :is(.dataview.table-view-table tbody,
-.callout-content) {
+.callout[data-callout~=cards][data-callout-metadata~="4"] :is(.dataview.table-view-table tbody, .callout-content) {
   grid-template-columns: repeat(4, 1fr);
 }
 
-.callout[data-callout~=cards][data-callout-metadata~="5"] :is(.dataview.table-view-table tbody,
-.callout-content) {
+.callout[data-callout~=cards][data-callout-metadata~="5"] :is(.dataview.table-view-table tbody, .callout-content) {
   grid-template-columns: repeat(5, 1fr);
 }
 
-.callout[data-callout~=cards][data-callout-metadata~="6"] :is(.dataview.table-view-table tbody,
-.callout-content) {
+.callout[data-callout~=cards][data-callout-metadata~="6"] :is(.dataview.table-view-table tbody, .callout-content) {
   grid-template-columns: repeat(6, 1fr);
 }
 
-.callout[data-callout~=cards][data-callout-metadata~="7"] :is(.dataview.table-view-table tbody,
-.callout-content) {
+.callout[data-callout~=cards][data-callout-metadata~="7"] :is(.dataview.table-view-table tbody, .callout-content) {
   grid-template-columns: repeat(7, 1fr);
 }
 
-.callout[data-callout~=cards][data-callout-metadata~="8"] :is(.dataview.table-view-table tbody,
-.callout-content) {
+.callout[data-callout~=cards][data-callout-metadata~="8"] :is(.dataview.table-view-table tbody, .callout-content) {
   grid-template-columns: repeat(8, 1fr);
 }
 
-.callout[data-callout~=cards][data-callout-metadata~="9"] :is(.dataview.table-view-table tbody,
-.callout-content) {
+.callout[data-callout~=cards][data-callout-metadata~="9"] :is(.dataview.table-view-table tbody, .callout-content) {
   grid-template-columns: repeat(9, 1fr);
 }
 
@@ -1058,8 +967,7 @@
 
 .callout.callout[data-callout-metadata~=table]:not([data-callout-metadata~=show-title],
 [data-callout-metadata~=s-t]) .callout-title,
-.callout.callout[data-callout~=table]:not([data-callout-metadata~=show-title],
-[data-callout-metadata~=s-t]) .callout-title {
+.callout.callout[data-callout~=table]:not([data-callout-metadata~=show-title], [data-callout-metadata~=s-t]) .callout-title {
   display: none;
 }
 
@@ -1071,7 +979,8 @@
   overflow-x: scroll;
 }
 
-.callout.callout[data-callout-metadata~=table] table th, .callout.callout[data-callout-metadata~=table] table td,
+.callout.callout[data-callout-metadata~=table] table th,
+.callout.callout[data-callout-metadata~=table] table td,
 .callout.callout[data-callout~=table] table th,
 .callout.callout[data-callout~=table] table td {
   white-space: nowrap;
@@ -1097,7 +1006,8 @@
   color: rgb(var(--callout-color));
 }
 
-.callout.callout[data-callout~=Metadata i]:not([data-callout-metadata~=no-strong], [data-callout-metadata~=no-str]) .callout-content strong {
+.callout.callout[data-callout~=Metadata i]:not([data-callout-metadata~=no-strong],
+[data-callout-metadata~=no-str]) .callout-content strong {
   color: rgb(var(--callout-color));
 }
 
@@ -1132,7 +1042,8 @@
   margin-top: 0;
 }
 
-.callout.callout[data-callout~=Metadata i] .callout-content, .callout.callout[data-callout~=Metadata i] ul {
+.callout.callout[data-callout~=Metadata i] .callout-content,
+.callout.callout[data-callout~=Metadata i] ul {
   margin: 0;
 }
 
@@ -1148,7 +1059,9 @@
   flex-direction: row-reverse;
 }
 
-.callout.callout[data-callout~=Metadata i][data-callout-metadata~=i-at]:not(.is-collapsible) .callout-title, .callout.callout[data-callout~=Metadata i][data-callout-metadata~=i-at] .callout-title-inner, .callout.callout[data-callout~=Metadata i][data-callout-metadata~=i-at]:not(.is-collapsed) .callout-icon {
+.callout.callout[data-callout~=Metadata i][data-callout-metadata~=i-at]:not(.is-collapsible) .callout-title,
+.callout.callout[data-callout~=Metadata i][data-callout-metadata~=i-at] .callout-title-inner,
+.callout.callout[data-callout~=Metadata i][data-callout-metadata~=i-at]:not(.is-collapsed) .callout-icon {
   display: none;
 }
 
@@ -1168,7 +1081,8 @@
   overflow-y: hidden;
 }
 
-.callout.callout[data-callout~=Metadata i]:is([data-callout-metadata~=tbl-cln], [data-callout-metadata~=table-clean]) table :is(td, tr, th) {
+.callout.callout[data-callout~=Metadata i]:is([data-callout-metadata~=tbl-cln],
+[data-callout-metadata~=table-clean]) table :is(td, tr, th) {
   background-color: transparent;
   border-color: transparent;
 }
@@ -1280,19 +1194,23 @@
   break-inside: avoid;
 }
 
-.callout[data-callout*=column][data-callout-metadata~=list-global] .callout > .callout-content, .callout[data-callout*=column][data-callout-metadata~=list] > .callout-content {
+.callout[data-callout*=column][data-callout-metadata~=list-global] .callout > .callout-content,
+.callout[data-callout*=column][data-callout-metadata~=list] > .callout-content {
   grid-template-columns: unset;
 }
 
-.callout[data-callout*=column][data-callout-metadata~=list-global] .callout > .callout-content > ul, .callout[data-callout*=column][data-callout-metadata~=list] > .callout-content > ul {
+.callout[data-callout*=column][data-callout-metadata~=list-global] .callout > .callout-content > ul,
+.callout[data-callout*=column][data-callout-metadata~=list] > .callout-content > ul {
   columns: var(--columns);
 }
 
-.callout[data-callout*=column][data-callout-metadata~=list-global] .callout > .callout-content > ul > li, .callout[data-callout*=column][data-callout-metadata~=list] > .callout-content > ul > li {
+.callout[data-callout*=column][data-callout-metadata~=list-global] .callout > .callout-content > ul > li,
+.callout[data-callout*=column][data-callout-metadata~=list] > .callout-content > ul > li {
   break-inside: avoid;
 }
 
-.callout[data-callout*=column][data-callout-metadata~=list-global] .callout > .callout-content > ul .list-bullet::after, .callout[data-callout*=column][data-callout-metadata~=list] > .callout-content > ul .list-bullet::after {
+.callout[data-callout*=column][data-callout-metadata~=list-global] .callout > .callout-content > ul .list-bullet::after,
+.callout[data-callout*=column][data-callout-metadata~=list] > .callout-content > ul .list-bullet::after {
   position: relative;
 }
 
@@ -1333,7 +1251,11 @@
   padding: 0;
 }
 
-.callout.callout[data-callout~=kanban] ul li::marker, .callout.callout[data-callout~=kanban] ul li::before, .callout.callout[data-callout~=kanban] .list-bullet, .callout.callout[data-callout~=kanban] ul::before, .callout.callout[data-callout~=kanban] :is(ul, ul ul) .list-collapse-indicator {
+.callout.callout[data-callout~=kanban] ul li::marker,
+.callout.callout[data-callout~=kanban] ul li::before,
+.callout.callout[data-callout~=kanban] .list-bullet,
+.callout.callout[data-callout~=kanban] ul::before,
+.callout.callout[data-callout~=kanban] :is(ul, ul ul) .list-collapse-indicator {
   list-style-type: none;
   color: transparent;
   display: none !important;
@@ -1441,7 +1363,8 @@
   z-index: 0;
 }
 
-.callout.callout[data-callout~=timeline][data-callout-metadata~=t-l] > .callout-title, .callout.callout[data-callout~=timeline][data-callout-metadata~=t-l] > .callout-content {
+.callout.callout[data-callout~=timeline][data-callout-metadata~=t-l] > .callout-title,
+.callout.callout[data-callout~=timeline][data-callout-metadata~=t-l] > .callout-content {
   box-shadow: -4px 4px 0 var(--timeline-shadow);
 }
 
@@ -1450,7 +1373,8 @@
   margin-left: var(--c-timeline);
 }
 
-.callout.callout[data-callout~=timeline][data-callout-metadata~=t-r] > .callout-title, .callout.callout[data-callout~=timeline][data-callout-metadata~=t-r] > .callout-content {
+.callout.callout[data-callout~=timeline][data-callout-metadata~=t-r] > .callout-title,
+.callout.callout[data-callout~=timeline][data-callout-metadata~=t-r] > .callout-content {
   box-shadow: 4px 4px 0 var(--timeline-shadow);
 }
 
@@ -1644,12 +1568,14 @@
   margin-right: 10px;
 }
 
-.callout.callout.callout[data-callout~=aside]:is([data-callout-metadata~=left], [data-callout-metadata~="p+l"])[data-callout-metadata~=tufte]:not(.is-collapsed) {
+.callout.callout.callout[data-callout~=aside]:is([data-callout-metadata~=left],
+[data-callout-metadata~="p+l"])[data-callout-metadata~=tufte]:not(.is-collapsed) {
   margin: unset;
   margin-left: -25em !important;
 }
 
-.callout.callout.callout[data-callout~=aside]:is([data-callout-metadata~=left], [data-callout-metadata~="p+l"])[data-callout-metadata~=tufte]:not(.is-collapsed) .callout-title {
+.callout.callout.callout[data-callout~=aside]:is([data-callout-metadata~=left],
+[data-callout-metadata~="p+l"])[data-callout-metadata~=tufte]:not(.is-collapsed) .callout-title {
   padding-top: 5px;
   flex-direction: row-reverse;
 }
@@ -1671,7 +1597,7 @@ body:not(.default-callout-quote) .callout.callout[data-callout=quote] {
   --callout-color: var(--color-accent);
   --callout-padding: 20px 30px;
   --callout-border-width: 0 0 0 4px;
-  --callout-border-opacity: .7;
+  --callout-border-opacity: 0.7;
   display: flex;
   flex-direction: column-reverse;
   box-shadow: var(--shadow-l);
@@ -1712,7 +1638,7 @@ body:not(.default-callout-quote) .callout.callout[data-callout=quote] > .callout
   --callout-color: var(--color-accent);
   --callout-padding: 20px 30px;
   --callout-border-width: 0 0 0 4px;
-  --callout-border-opacity: .7;
+  --callout-border-opacity: 0.7;
   display: flex;
   flex-direction: column-reverse;
   box-shadow: var(--shadow-l);
@@ -1769,8 +1695,7 @@ body:not(.default-callout-quote) .callout.callout[data-callout=quote] > .callout
 }
 
 .callout-original .callout,
-.callout:is([data-callout-metadata~=callout-original],
-[data-callout-metadata~=co-o]) {
+.callout:is([data-callout-metadata~=callout-original], [data-callout-metadata~=co-o]) {
   --callout-padding: 0;
   --callout-title-padding: 10px 15px;
   --callout-content-padding: 5px 15px;
@@ -1783,36 +1708,31 @@ body:not(.default-callout-quote) .callout.callout[data-callout=quote] > .callout
 }
 
 .callout-original .callout .callout-title,
-.callout:is([data-callout-metadata~=callout-original],
-[data-callout-metadata~=co-o]) .callout-title {
+.callout:is([data-callout-metadata~=callout-original], [data-callout-metadata~=co-o]) .callout-title {
   background: rgba(var(--callout-color), 0.1);
 }
 
 .callout-block .callout,
-.callout:is([data-callout-metadata~=callout-block],
-[data-callout-metadata~=co-block]) {
+.callout:is([data-callout-metadata~=callout-block], [data-callout-metadata~=co-block]) {
   --callout-padding: 0;
   --callout-content-padding: 0 10px;
   --callout-title-padding: 6px 10px;
   --callout-title-background: var(--callout-color);
-  --callout-border-opacity: .5;
+  --callout-border-opacity: 0.5;
 }
 
 .callout-block .callout .callout-title,
-.callout:is([data-callout-metadata~=callout-block],
-[data-callout-metadata~=co-block]) .callout-title {
+.callout:is([data-callout-metadata~=callout-block], [data-callout-metadata~=co-block]) .callout-title {
   background-color: rgba(var(--callout-title-background, var(--callout-color)), 0.2);
 }
 
 .callout-block .callout.is-collapsible:not(.is-collapsed) > .callout-content,
-.callout:is([data-callout-metadata~=callout-block],
-[data-callout-metadata~=co-block]).is-collapsible:not(.is-collapsed) > .callout-content {
+.callout:is([data-callout-metadata~=callout-block], [data-callout-metadata~=co-block]).is-collapsible:not(.is-collapsed) > .callout-content {
   border-bottom: 1px solid rgba(var(--callout-color), var(--callout-border-opacity));
 }
 
 .callout-side-icon .callout,
-.callout:is([data-callout-metadata~=callout-side-icon],
-[data-callout-metadata~=co-si]) {
+.callout:is([data-callout-metadata~=callout-side-icon], [data-callout-metadata~=co-si]) {
   --callout-title-padding: 0 0 0 20px;
   --callout-title-background: transparent;
   --callout-border-width: 0;
@@ -1822,8 +1742,7 @@ body:not(.default-callout-quote) .callout.callout[data-callout=quote] > .callout
 }
 
 .callout-side-icon .callout .callout-title-inner,
-.callout:is([data-callout-metadata~=callout-side-icon],
-[data-callout-metadata~=co-si]) .callout-title-inner {
+.callout:is([data-callout-metadata~=callout-side-icon], [data-callout-metadata~=co-si]) .callout-title-inner {
   display: none;
 }
 
@@ -1854,8 +1773,7 @@ body:not(.default-callout-quote) .callout.callout[data-callout=quote] > .callout
 }
 
 @media print {
-  .print.print .markdown-preview-view .callout:is([data-callout*=cards],
-  [data-callout*=column]) .callout-content {
+  .print.print .markdown-preview-view .callout:is([data-callout*=cards], [data-callout*=column]) .callout-content {
     display: grid !important;
   }
   .print.print .markdown-preview-view .callout:is([data-callout*=column][data-callout-metadata*=flex]) .callout-content {
@@ -1889,9 +1807,9 @@ body:not(.default-callout-quote) .callout.callout[data-callout=quote] > .callout
   --font-ui-small: 14px;
   --font-ui-medium: 15px;
   --font-ui-large: 20px;
-  --font-smallest:.88em;
-  --font-smaller:.9em;
-  --font-small: .95em;
+  --font-smallest: 0.88em;
+  --font-smaller: 0.9em;
+  --font-small: 0.95em;
   --icon-xs: 14px;
   --icon-s: 16px;
   --icon-m: 17px;
@@ -1905,9 +1823,9 @@ body:not(.default-callout-quote) .callout.callout[data-callout=quote] > .callout
   --font-ui-small: 12px;
   --font-ui-medium: 14px;
   --font-ui-large: 20px;
-  --font-smallest: .70em;
-  --font-smaller: .88em;
-  --font-small: .95em;
+  --font-smallest: 0.7em;
+  --font-smaller: 0.88em;
+  --font-small: 0.95em;
   --icon-xs: 12px;
   --icon-s: 13px;
   --icon-m: 14px;
@@ -2103,9 +2021,11 @@ body:not(.default-callout-quote) .callout.callout[data-callout=quote] > .callout
 .callout[data-callout*=success] {
   background: linear-gradient(45deg, rgba(64, 130, 54, 0.26), rgba(20, 82, 20, 0.23));
 }
+
 .callout[data-callout*=todo] {
   background: linear-gradient(45deg, rgba(107, 108, 180, 0.34), rgba(34, 20, 91, 0.57));
 }
+
 .callout.callout.callout.callout table thead * {
   -webkit-text-fill-color: unset !important;
   background: none !important;

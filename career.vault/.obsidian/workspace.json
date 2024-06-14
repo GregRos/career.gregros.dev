@@ -13,6 +13,18 @@
             "state": {
               "type": "markdown",
               "state": {
+                "file": "Skills/Software.md",
+                "mode": "source",
+                "source": false
+              }
+            }
+          },
+          {
+            "id": "3285ee08f602f574",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
                 "file": "Career.md",
                 "mode": "source",
                 "source": false
@@ -85,7 +97,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Career.md",
+                "file": "Skills/Software.md",
                 "collapseAll": true,
                 "extraContext": true,
                 "sortOrder": "alphabetical",
@@ -102,7 +114,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "Career.md",
+                "file": "Skills/Software.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -125,7 +137,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "Career.md"
+                "file": "Skills/Software.md"
               }
             }
           }
@@ -151,18 +163,19 @@
   },
   "active": "34e987c7b55321ce",
   "lastOpenFiles": [
-    "CV.pdf",
     "Career.md",
-    "Projects/Preszr.md",
     "Projects/Perdido.md",
+    "f.md",
+    "Skills/Software.md",
+    "Skills/Languages.md",
+    "CV.pdf",
+    "Projects/Preszr.md",
     "Projects/Patchwork.md",
     "Projects/Imms.md",
     "Projects/Parjs.md",
     "Projects/Wampus.md",
     "Skills/Architecture.md",
     "Skills/Infrastructure.md",
-    "Skills/Languages.md",
-    "Skills/Software.md",
     "Codebases/types programs.md",
     "Codebases/Untitled.loom",
     "Codebases/Untitled 1.md",
@@ -175,7 +188,6 @@
     "Projects/Micro/FieldEditor.md",
     "Templates/Projectbox.md",
     "StaticTimeline.png",
-    "Untitled.md",
     "Untitled 1.md",
     "draft_dataview_engine.md",
     "publish.js",

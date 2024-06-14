@@ -3325,9 +3325,11 @@ body:not(.default-callout-quote) .callout.callout[data-callout=quote] .callout-t
 .callout[data-callout*=success] {
   background: linear-gradient(45deg, rgba(64, 130, 54, 0.26), rgba(20, 82, 20, 0.23));
 }
+
 .callout[data-callout*=todo] {
   background: linear-gradient(45deg, rgba(107, 108, 180, 0.34), rgba(34, 20, 91, 0.57));
 }
+
 .callout.callout.callout.callout table thead * {
   -webkit-text-fill-color: unset !important;
   background: none !important;

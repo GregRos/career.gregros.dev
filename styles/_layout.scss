@@ -194,30 +194,16 @@ $last-gradient: linear-gradient(45deg, rgba(255, 88, 0, 0.34), rgba(57, 22, 2, 0
   }
 }
 
-.markdown-rendered {
-  p,
-  li {
-    code {
-    }
-  }
-}
-
 .markdown-source-view.markdown-source-view.markdown-source-view .HyperMD-quote {
   padding: 0;
 }
 
 .callout[data-callout*="success"] {
   background: $success-gradient;
-
-  .callout-title-inner {
-  }
 }
 
 .callout[data-callout*="todo"] {
   background: $todo-gradient;
-
-  .callout-title-inner {
-  }
 }
 
 .callout.callout.callout.callout {
