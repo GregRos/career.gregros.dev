@@ -1,0 +1,20 @@
+@use "utils";
+
+:not(.is-live-preview) {
+    @include utils.select-by-callout-metadata(3, "p+l", "left") {
+        float: left;
+        margin: unset;
+        margin-right: 8px;
+    }
+    @include utils.select-by-callout-metadata(2, "p+r", "right") {
+        float: right;
+        margin: unset;
+        margin-left: 8px;
+    }
+}
+
+@include utils.select-by-callout-metadata(3, "ctr", "center") {
+    display: block;
+    margin: auto;
+    float: unset;
+}

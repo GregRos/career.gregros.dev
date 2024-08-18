@@ -43,6 +43,7 @@
     "build:scss": "sass styles/publish.scss:career.vault/publish.css styles/electron.scss:career.vault/.obsidian/snippets/gregros.css",
     "watch:scss": "sass --watch styles/publish.scss:career.vault/publish.css styles/electron.scss:career.vault/.obsidian/snippets/gregros.css",
     "build:ts": "esbuild src/publish.tsx --bundle --minify --sourcemap=inline --sources-content=true --target=es2020 --outfile=career.vault/publish.js",
+    "watch:my_scss": "sass --watch styles/main/electron.scss:styles/main/royal-velvet.css",
     "build": "run-p build:scss build:ts",
     "watch:ts": "esbuild src/publish.tsx --bundle --minify --sourcemap=inline --sources-content=true --target=es2020 --outfile=career.vault/publish.js --watch",
     "watch": "run-p watch:scss watch:ts",

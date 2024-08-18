@@ -1,0 +1,48 @@
+@use "utils";
+@use "sass:string";
+
+@include utils.repeat-selector(".callout", 3) {
+    --callout-blue: 82, 139, 212;
+    --callout-green: 86, 179, 117;
+    --callout-orange: 230, 129, 63;
+    --callout-red: 193, 67, 67;
+    --callout-purple: 153, 97, 218;
+    --callout-gray: 166, 189, 197;
+    --callout-yellow: 208, 181, 48;
+    --callout-pink: 227, 107, 167;
+    --callout-brown: 161, 106, 73;
+    --callout-black: 0, 0, 0;
+    // --callout: rgb(227, 107, 167);
+}
+
+$callout-colors: (blue, green, orange, red, purple, gray, yellow, pink, brown, black);
+
+//Title Text Colors
+@each $color in $callout-colors {
+    $title-prefixes: (color-#{$color}, c-#{$color});
+    $bg-prefixes: (background-#{$color}, bg-#{$color});
+    $combined-prefixes: (background-color-#{$color}, bg-c-#{$color});
+
+    $title-prefixes: join($title-prefixes, $combined-prefixes);
+    $bg-prefixes: join($bg-prefixes, $combined-prefixes);
+
+    @include utils.select-by-callout-metadata(3, $title-prefixes...) {
+        & .callout-title {
+            --callout-color: var(--callout-#{$color});
+        }
+    }
+
+    @include utils.select-by-callout-metadata(3, $bg-prefixes...) {
+        // Background Colors
+        background-color: rgba(var(--callout-#{$color}), 10%);
+    }
+
+    @include utils.select-by-callout-metadata(3, $combined-prefixes...) {
+        --callout-color: var(--callout#{$color});
+    }
+}
+
+// For unmatched colors?
+@include utils.select-by-callout-metadata(3, "c-", "color-") {
+    --callout-color: var(--callout);
+}

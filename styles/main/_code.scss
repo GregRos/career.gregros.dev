@@ -1,0 +1,54 @@
+code {
+    span.cm-em.cm-inline-#{&},
+    .markdown-preview-view em > & {
+        @extend %em;
+    }
+
+    span.cm-inline-#{&}.cm-strong,
+    .markdown-preview-view strong > & {
+        @extend %strong;
+    }
+
+    .cm-em.cm-inline-#{&}.cm-strong,
+    .markdown-preview-view strong > em > & {
+        @extend %emstrong;
+    }
+
+    span.cm-inline-#{&}.cm-highlight,
+    .markdown-preview-view mark > & {
+        @extend %highlight;
+    }
+
+    span.cm-inline-#{&}.cm-strikethrough,
+    .markdown-preview-view del > & {
+        @extend %strikethrough_code;
+    }
+}
+
+.markdown-preview-view pre,
+.cm-s-obsidian .HyperMD-codeblock {
+    padding-left: 2ch;
+}
+
+.code-block-flair,
+.markdown-source-view.mod-cm6 .code-block-flair {
+    color: var(--orange);
+    padding-top: 1ch;
+}
+
+/* code block and indented code in editing mode */
+.markdown-source-view.mod-cm6 .cm-line.HyperMD-codeblock,
+.markdown-rendered pre code,
+.cm-s-obsidian span.cm-inline-code.cm-hmd-indented-code {
+    color: var(--text-muted);
+    font-size: var(--font-smaller);
+}
+
+.markdown-preview-view {
+    /*--inline code in headings--*/
+    @for $i from 1 through 6 {
+        h#{$i} code {
+            background-color: unset;
+        }
+    }
+}

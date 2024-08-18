@@ -1,0 +1,75 @@
+// STRONG
+%strong {
+    color: var(--pink);
+}
+%em {
+    color: var(--blue);
+}
+
+%emstrong {
+    color: var(--red);
+}
+// STRIKETHROUGH
+%strikethrough {
+    color: var(--on-layer-400);
+}
+
+%strikethrough_code {
+    color: var(--text-muted);
+}
+
+// STRONG
+strong {
+    @extend %strong;
+}
+
+.cm-s-obsidian .cm-strong {
+    @extend %strong;
+    &.cm-quote {
+        @extend %strong;
+    }
+}
+em {
+    @extend %em;
+}
+.cm-s-obsidian .cm-em {
+    @extend %em;
+    &.cm-quote {
+        @extend %em;
+    }
+}
+
+.cm-strong.cm-em,
+strong > em,
+em > strong {
+    @extend %emstrong;
+    &.cm-quote {
+        @extend %emstrong;
+    }
+}
+
+%highlight {
+    color: var(--yellow);
+    font-weight: 500;
+}
+
+.markdown-preview-view mark {
+    @extend %highlight;
+}
+/*Highlight*/
+.cm-s-obsidian {
+    .cm-highlight {
+        @extend %highlight;
+        &.cm-quote {
+            @extend %highlight;
+        }
+    }
+    .cm-formatting-highlight {
+        @extend %highlight;
+    }
+}
+
+.cm-strikethrough,
+del {
+    @extend %strikethrough;
+}

@@ -1,0 +1,65 @@
+.callout[data-callout="kith"] {
+    --callout-icon: user;
+    --callout-color: 115, 167, 202;
+
+    border-color: rgba(var(--callout-color), 0.7);
+
+    & .callout-title-inner {
+        font-weight: unset;
+        color: rgb(var(--callout-color));
+
+        //_Underscored Text_
+        & em {
+            display: block;
+            font-style: normal;
+            font-size: var(--font-small);
+            line-height: 12px;
+            font-weight: normal;
+
+            //_Double _em_ fix_
+            & em {
+                font-style: italic;
+                display: inline-block;
+            }
+        }
+    }
+
+    //Types
+    &[data-callout-metadata="family"] {
+        --callout-icon: users;
+    }
+
+    $callout-type-to-color: (
+        "friend": (
+            "color": (
+                115,
+                202,
+                144
+            ),
+            "icon": user-check
+        ),
+        "romantic": (
+            "color": (
+                202,
+                115,
+                180
+            ),
+            "icon": user-plus
+        ),
+        "antagonist": (
+            "color": (
+                241,
+                74,
+                74
+            ),
+            "icon": user-x
+        )
+    );
+
+    @each $type, $props in $callout-type-to-color {
+        &[data-callout-metadata="#{$type}"] {
+            --callout-icon: #{map-get($props, "icon")};
+            --callout-color: #{map-get($props, "color")};
+        }
+    }
+}

@@ -1,0 +1,47 @@
+.nav {
+    &-folder-title {
+        &-content {
+            @extend %rainbow-text;
+            background-image: linear-gradient(var(--gradientDegree), var(--pink) 0, var(--orange) 100%);
+            font-weight: 700;
+        }
+        &.is-active {
+            background-color: var(--yellow-100);
+            color: var(--yellow);
+            font-weight: bolder;
+        }
+        &:hover {
+            background-color: var(--yellow-100);
+            color: var(--yellow);
+            .nav-folder-collapse-indicator {
+                color: var(--pink);
+            }
+        }
+    }
+    &-file-title {
+        &.is-active {
+            background-color: var(--yellow-100);
+            color: var(--yellow);
+            font-weight: bolder;
+        }
+        &:hover {
+            background-color: var(--yellow-100);
+            color: var(--yellow);
+        }
+    }
+    &-file-title,
+    &-folder-title {
+        &:hover {
+            background-color: var(--yellow-100);
+            color: var(--yellow);
+        }
+    }
+}
+
+.menu-item-icon {
+    color: var(--green);
+}
+
+.collapse-icon:hover {
+    color: var(--pink);
+}

@@ -13,7 +13,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Skills/Software.md",
+                "file": "Career.md",
                 "mode": "source",
                 "source": false
               }
@@ -97,7 +97,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Skills/Software.md",
+                "file": "Career.md",
                 "collapseAll": true,
                 "extraContext": true,
                 "sortOrder": "alphabetical",
@@ -114,7 +114,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "Skills/Software.md",
+                "file": "Career.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -137,7 +137,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "Skills/Software.md"
+                "file": "Career.md"
               }
             }
           }
@@ -163,10 +163,10 @@
   },
   "active": "34e987c7b55321ce",
   "lastOpenFiles": [
+    "Skills/Software.md",
     "Career.md",
     "Projects/Perdido.md",
     "f.md",
-    "Skills/Software.md",
     "Skills/Languages.md",
     "CV.pdf",
     "Projects/Preszr.md",

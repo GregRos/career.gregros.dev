@@ -1,0 +1,20 @@
+.view-header {
+    /*Note Title Bar*/
+    .workspace-leaf & {
+        border-bottom: 5px solid var(--layer-2);
+    }
+    &-title {
+        color: var(--pinkSecondary);
+    }
+    .workspace-split.mod-root > .workspace-leaf:first-of-type:last-of-type & {
+        border-bottom: 5px solid var(--layer-2);
+    }
+
+    border-bottom: 5px solid var(--layer-2);
+
+    /*Active Note Titlebar*/
+    /*Note Title Bar: Text*/
+    .workspace-leaf.modactive &-title {
+        color: var(--pink);
+    }
+}

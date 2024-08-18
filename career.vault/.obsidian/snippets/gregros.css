@@ -147,10 +147,6 @@
   font-size: var(--font-text-size);
 }
 
-.callout.callout.callout:is([data-callout-metadata~=nbrd], [data-callout-metadata~=no-border]) {
-  border: 0;
-}
-
 .callout #vid {
   text-align: left;
 }
@@ -374,7 +370,7 @@
 }
 
 .callout.callout:is([data-callout-metadata~=wfit]) {
-  width: fit-content;
+  width: fit- content;
   max-width: min-content;
 }
 
@@ -409,7 +405,7 @@
   width: auto;
 }
 
-.callout.callout[data-callout~=infobox] {
+.callout.callout:is([data-callout~=infobox]) {
   --callout-color: var(--note, var(--background-primary));
   --callout-padding: 0;
   --callout-content-padding: 5px;
@@ -428,54 +424,65 @@
   float: right;
   border-radius: var(--radius-s);
 }
-
-.callout.callout[data-callout~=infobox] > .callout-title {
+.callout.callout:is([data-callout~=infobox]) > .callout-title {
+  display: flex;
+  gap: 0;
+  padding: 0;
+  border: 0;
+  background: var(--outer-bar, var(--background-secondary));
+  border-bottom: none;
   justify-content: center;
   align-items: center;
   align-self: center;
+  align-content: center;
+  margin: 0;
+  padding: 0;
+  border-radius: var(--radius-s);
 }
-
-.callout.callout[data-callout~=infobox] > .callout-title > .callout-icon {
+.callout.callout:is([data-callout~=infobox]) > .callout-title > .callout-icon {
   align-self: center;
 }
-
-.callout.callout[data-callout~=infobox]:not(.is-collapsed) > .callout-title {
-  padding: 0;
+.callout.callout:is([data-callout~=infobox]) > .callout-title .callout-icon {
+  height: 0;
 }
-
-.callout.callout[data-callout~=infobox] .callout-fold {
+.callout.callout:is([data-callout~=infobox]) > .callout-title .callout-title-inner {
+  display: none;
+}
+.callout.callout:is([data-callout~=infobox]):not(.is-collapsed) > .callout-title {
+  background-color: transparent;
+}
+.callout.callout:is([data-callout~=infobox]):not(.is-collapsed):not(:hover) .callout-title {
+  background-color: transparent;
+}
+.callout.callout:is([data-callout~=infobox]):not(.is-collapsed) > .callout-title {
+  background-color: transparent;
+}
+.callout.callout:is([data-callout~=infobox]):not(:hover):not(.is-collapsed) .callout-title {
+  background-color: transparent;
+}
+.callout.callout:is([data-callout~=infobox]) .callout-fold {
   padding-right: 0;
 }
-
-.callout.callout[data-callout~=infobox].is-collapsed .callout-fold {
+.callout.callout:is([data-callout~=infobox]).is-collapsed .callout-fold {
   border: 1px solid var(--hr, var(--background-modifier-border));
   border-radius: var(--radius-m);
 }
-
-.callout.callout[data-callout~=infobox] > .callout-title .callout-title-inner {
-  display: none;
-}
-
-.callout.callout[data-callout~=infobox] > .callout-title .callout-icon {
-  height: 0;
-}
-
-.callout.callout[data-callout~=infobox]:not([data-callout-metadata~=show-title],
+.callout.callout:is([data-callout~=infobox]):not([data-callout-metadata~=show-title],
 [data-callout-metadata~=s-t],
 [data-callout-metadata~=show-icon],
 [data-callout-metadata~=s-i]) .callout-icon svg {
   width: 0;
   height: 0;
 }
-
-.callout.callout[data-callout~=infobox]:not(:hover):not(.is-collapsed) .callout-title {
-  background-color: transparent;
-}
-
-.callout.callout[data-callout~=infobox] .callout-content > .callout[data-callout~=infobox]:not(:hover):not(.is-collapsed) > .callout-title,
-.callout.callout[data-callout~=infobox]:is([data-callout-metadata~=show-title], [data-callout-metadata~=s-t]):not(:hover):not(.is-collapsed) > .callout-title {
+.callout.callout:is([data-callout~=infobox]):is([data-callout-metadata~=show-title], [data-callout-metadata~=s-t]):not(:hover):not(.is-collapsed) > .callout-title {
   display: flex;
   gap: 0;
+}
+.callout.callout:is([data-callout~=infobox]) .callout-content > .callout.callout:is([data-callout~=infobox]) .callout-content.is-collapsed > .callout-title {
+  border: 1px solid var(--hr, var(--background-modifier-border));
+  display: flex;
+  align-items: center;
+  align-content: center;
 }
 
 .callout.callout[data-callout~=infobox] .callout-content > .callout[data-callout~=infobox].is-collapsed .callout-title,

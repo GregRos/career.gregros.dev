@@ -1,0 +1,42 @@
+%header1 {
+    background-image: linear-gradient(var(--gradientDegree), var(--pink) 0, var(--orange) 100%);
+}
+
+%header2 {
+    background-image: linear-gradient(var(--gradientDegree), var(--orange) 0, var(--yellow) 100%);
+}
+
+%header3 {
+    background-image: linear-gradient(var(--gradientDegree), var(--yellow) 0, var(--green) 100%);
+}
+
+%header4 {
+    background-image: linear-gradient(var(--gradientDegree), var(--green) 0, var(--blue) 100%);
+}
+
+%header5 {
+    background-image: linear-gradient(var(--gradientDegree), var(--blue) 0, var(--purple) 100%);
+}
+
+%header6 {
+    background-image: linear-gradient(var(--gradientDegree), var(--purple) 0, var(--pink) 100%);
+}
+
+@for $i from 1 through 6 {
+    h#{$i},
+    .cm-header-#{$i},
+    body.doc-title-h#{$i} .inline-title {
+        @extend %rainbow-text;
+        @extend %header#{$i};
+    }
+}
+
+/*--Headers/Headings--*/
+.inline-title {
+    body:not(.doc-title-disable) & {
+        @extend %rainbow-text;
+    }
+    body.doc-title-accent & {
+        background-image: $rbw_doc-title;
+    }
+}
