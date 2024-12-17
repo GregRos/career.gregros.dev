@@ -1,6 +1,6 @@
 # OR only to exclude workspace cache
-vaukt/.obsidian/workspace
-vault/.obsidian/plugins
+vault/.obsidian/workspace
+**/.obsidian/workspace.json
 # Exclude consultant specific files "personal"
 05*-*Personal/
 dist/
