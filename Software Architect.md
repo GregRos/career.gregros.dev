@@ -14,7 +14,7 @@ Software Architect
 - Enabled the acquisition of new clients, by:
   - Translating business requirements into research objectives
   - Leveraging IaC to expand into new regions.
-  - Deploying specific hotfixes directly into production.
+  - Participating in sales meetings with key clients as a technical expert.
 - Empowered developers to make architectural decisions through:
   - Translating domain-specific stakeholder concerns into software requirements.
   - Fostering open discussion about existing shortcomings, future needs, and possible technological solutions.
@@ -48,4 +48,33 @@ Software Architect
 - Accelerated development through an emphasis on DevEx...
 - 
 - 
+
+-----
+
+Project: Gregros.dev
+
+----
+
+**A technical blog that focuses on browser internals, programming languages, and software architecture.** 
+
+- A distinct and unique design that attempts emphasizes content and personal branding. 
+- 
+- 
+- 
+
+
+
+- No templates, no publishing platforms, no cloud.
+
+
+
+Devops.Gregros.dev
+
+----
+
+The backend of the blog. A Node.js server built with TypeScript, Next.js, and many of my own tools.
+
+- 
+
+
 

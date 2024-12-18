@@ -26,7 +26,7 @@
 \def\mailto@#1{\underline{\lowercase{\hyper@linkurl{\Hurl{#1}}{mailto:#1}}}}
 \makeatother
 
-\input{../utils/margins.tex}
+\input{../utils/_margins.tex}
 
 \urlstyle{same}
 
@@ -133,3 +133,9 @@
         }{%
     \end{itemList}%
 }
+\newenvironment*{education}[4]{%
+    \placeblock{#1}{#2}{#3}{#4}
+    \begin{itemList}
+        }{%
+    \end{itemList}
+}%

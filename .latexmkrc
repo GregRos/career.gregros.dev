@@ -19,7 +19,7 @@ $clean_ext = 'bbl lof lot out toc aux';
 $pdf_mode = 1;
 $pdflatex="pdflatex %O %S";
 
-@default_files = ('cv/src/gr.tex');
+@default_files = ('cv/src/cvs/nl.v1.tex');
 $out_dir = 'cv/dist';
 $aux_dir = 'cv/dist_aux';
 

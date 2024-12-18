@@ -1,0 +1,90 @@
+\documentclass[a4paper,11pt]{article}
+
+\input{../utils/_preamble.tex}
+\input{../utils/_names.tex}
+\newcommand{\eternitech}{Eternitech}
+\newcommand{\reflectiz}{Reflectiz}
+\newcommand{\appdome}{Appdome}
+\newcommand{\sentto}{v }
+
+\input{../utils/_eduenvs.tex}
+\input{../utils/_jobenvs.tex}
+\input{../points/_appdome.tex}
+\input{../points/_eternitech.tex}
+\input{../points/_ref.developer.tex}
+\input{../points/_ref.architect.tex}
+
+
+\begin{document}
+\header%
+\section{Experience}
+\begin{sectionList}
+
+    \begin{jobReflectizLead}
+        \ReffPivotalRole
+        \ReffArchitectureList
+        \ReffCommunicated
+        \ReffAcquisitionClients
+        \ReffEmpowered
+        \ReffHandsOnTools
+        \ReffIncidentShort
+        \ReffDocumentation
+    \end{jobReflectizLead}
+
+    \begin{jobAppdome}
+        \AppSummaryTechLead
+        \AppGuidedDevelopers
+        \AppComplexTechnical
+        \AppModernizedDevelopmentProcesses
+        \AppMajorRefactoring
+    \end{jobAppdome}
+
+    \begin{jobReflectizDev}
+        \RefDevFoundational
+        \RefDevDevelopment
+        \RefDevOptimized
+    \end{jobReflectizDev}
+    \begin{jobEternitech}
+        \EtrSPAsForClients
+        \EtrMaintainedExistingApps
+        \EtrRequirementsAndSpecifications
+    \end{jobEternitech}
+\end{sectionList}%
+
+
+%-----------PROJECTS-----------
+\section{Projects}
+\begin{sectionList}%
+    \begin{project}{\textbf{\gregrosdev} $|$ \emph{TypeScript, JavaScript, React, Next.js, SCSS} $|$ \https{\mywebsite}}{2024 -- Present}
+        \item A new technical blog about software development, client-side technologies, and architecture.
+        \item Posts are aimed at tackling complex topics through simple language, with a focus on clarity and depth.
+        \item Built as a Next.js app with a custom MDX-based blog engine hosted on Perdido (see below).
+        \item Uses a distinctive custom theme with an emphasis on readability and strong use of color.
+        \item I used many of my own libraries and tools in the development of this project.
+    \end{project}
+    \begin{project}{\textbf{\perdido} $|$ \emph{Bash, Python, nginx, Linux, ...}}{2022 -- Present}
+        \item Dedicated, physical Linux server for my personal projects, hosted at nforce.
+        \item Completely self-managed and configured, down to the bootloader.
+        \item Hosts multiple services, including my technical blog, on a single-node MicroK8s cluster.
+        \item Code for services is hosted on a self-hosted GitLab, complete with CI/CD pipelines.
+        \item Hardened using fail2ban, UFW, PoLP permissions, SSL certificates, strong passwords, etc.
+    \end{project}
+    \begin{project}{\textbf{\parjs} $|$ \emph{TypeScript, JavaScript} $|$ \https{\mycareersite/parjs}}{2018 -- Present}
+        \item Developed parser building library following the parser combinator pattern, e.g. Parsec (Haskell).
+        \item Hand-wrote 50+ parsers and combinators, plus a separate package for Unicode char recognition.
+        \item Library is popular in its domain with 16K+ monthly downloads and multiple active contributors.
+    \end{project}
+    \begin{project}{\textbf{\imms} $|$ \emph{\sharplang{C}, \sharplang{F}} $|$ \https{\mycareersite/imms}}{2012 -- 2016}
+        \item High performance immutable/persistent collection library in \sharplang{C}, rigorously tested in \sharplang{F}.
+        \item Achieved optimal complexity by taking data structures and algorithms from research papers.
+        \item Maximized performance using low-level optimizations guided by profiling and benchmarking.
+    \end{project}
+\end{sectionList}%
+
+\section{Education}
+\begin{sectionList}
+    \begin{eduTechnion}
+    \end{eduTechnion}
+\end{sectionList}%
+%-------------------------------------------
+\end{document}%
