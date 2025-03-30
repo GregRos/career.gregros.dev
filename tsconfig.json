@@ -7,21 +7,12 @@
     "rootDir": "src",
     "noEmit": true,
 
-    "lib": [
-      "ES2022",
-      "DOM"
-    ],
+    "lib": ["ES2022", "DOM"],
     "strict": false,
     "jsx": "react",
     "sourceMap": true,
     "esModuleInterop": true
   },
-  "include": [
-    "src/**/*.ts",
-    "src/**/*.tsx",
-    "src/**/*.mts"
-  ],
-  "exclude": [
-    "dist"
-  ]
+  "include": ["src/**/*.ts", "src/**/*.tsx", "src/**/*.mts"],
+  "exclude": [".old/site/dist"]
 }
