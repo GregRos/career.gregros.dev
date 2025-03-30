@@ -13,8 +13,6 @@
 \input{../points/_eternitech.tex}
 \input{../points/_ref.developer.tex}
 \input{../points/_ref.architect.tex}
-
-
 \begin{document}
 \header%
 \section{Experience}
@@ -22,12 +20,14 @@
 
     \begin{jobReflectizLead}
         \ReffPivotalRole
+        \ReffScaling
         \ReffArchitectureList
         \ReffCommunicated
+        \ReffObservability
         \ReffAcquisitionClients
         \ReffEmpowered
-        \ReffHandsOnTools
         \ReffIncidentShort
+        \ReffAccelerated
         \ReffDocumentation
     \end{jobReflectizLead}
 
@@ -51,46 +51,73 @@
     \end{jobEternitech}
 \end{sectionList}%
 
-
-%-----------PROJECTS-----------
-\section{Projects}
-\begin{sectionList}%
-    \begin{project}{\textbf{\gregrosdev} $|$ \emph{TypeScript, JavaScript, React, Next.js, SCSS} $|$ \https{\mywebsite}}{2024 -- Present}
-        \item A new technical blog about software development, client-side technologies, and architecture.
-        \item Posts are aimed at tackling complex topics through simple language, with a focus on clarity and depth.
-        \item Built as a Next.js app with a custom MDX-based blog engine hosted on Perdido (see below).
-        \item Uses a distinctive custom theme with an emphasis on readability and strong use of color.
-        \item Used my own libraries and tools in the development of this project.
-    \end{project}
-    \begin{project}{\textbf{\perdido} $|$ \emph{Bash, Python, nginx, Linux, ...}}{2022 -- Present}
-        \item Dedicated, physical Linux server for my personal projects, hosted at nforce.
-        \item Completely self-managed and configured, down to the bootloader.
-        \item Hosts multiple services, including my technical blog, on a single-node MicroK8s cluster.
-        \item Code for services is hosted on a self-hosted GitLab, complete with CI/CD pipelines.
-        \item Hardened using fail2ban, UFW, PoLP permissions, SSL certificates, strong passwords, etc.
-    \end{project}
-    \begin{project}{\textbf{\parjs} $|$ \emph{TypeScript, JavaScript} $|$ \https{\mycareersite/parjs}}{2018 -- Present}
-        \item Developed parser building library following the parser combinator pattern, e.g. Parsec (Haskell).
-        \item Hand-wrote 50+ parsers and combinators, plus a separate package for Unicode char recognition.
-        \item Library is popular in its domain with 16K+ monthly downloads and multiple active contributors.
-    \end{project}
-    \begin{project}{\textbf{\imms} $|$ \emph{\sharplang{C}, \sharplang{F}} $|$ \https{\mycareersite/imms}}{2012 -- 2016}
-        \item High performance immutable/persistent collection library in \sharplang{C}, rigorously tested in \sharplang{F}.
-        \item Achieved optimal complexity by taking data structures and algorithms from research papers.
-        \item Maximized performance using low-level optimizations guided by profiling and benchmarking.
-    \end{project}
-\end{sectionList}%
-
 \section{Education}
 \begin{sectionList}
     \begin{eduTechnion}
     \end{eduTechnion}
 \end{sectionList}%
+%-----------PROJECTS-----------
+\section{Own Work}
+\begin{sectionList}
+    \begin{project}{\textbf{\gregrosdev} $f|$ Blog $|$ \https{\mywebsite}}{2024 -- Present}
+        \item Personal blog about web technology, software architecture, API design, and more.
+        \item Conveys highly technical topics using an accessible and informal tone.
+        \item Demonstrates deep understanding of software architecture and API design.
+        \item Used marketing principles to grow readership and engagement.
+        \item Hosted on [Platform]
+    \end{project}
+    \begin{project}{\textbf{\gregrosdev} $|$ Platform $|$ \https{\mywebsite}}{2024 -- Present}
+        \item Extensible and performant content platform built using Next.js and other leading web techs.
+        \item Achieved by learning modern libraries, tools, and frameworks on the spot.
+        \item Integrated marketing staples like Google Analytics, SEO, and social.
+        \item Deployed via CD on Perdido K8S cluster.
+    \end{project}    
+    \begin{project}{\textbf{perdido}}{2022 -- Present}
+        \item Enterprise-grade, self-operated, dedicated server at NFOrce. Orchestrated, not virtualized.
+        \item Ensured reliability, resilience, and performance through advanced linux features and Kernel-level tweaks.
+        \item Managed deployment, resource allocation, and scalability by setting up MicroK8s cluster.
+        \item Guaranteed security through firewall, IDS, IP whitelisting, PoLP, and auditing tools.    
+        \item Implemented observability on system and service levels through monitoring, alerts, and dashboards.
+        \item Averted impending hardware failures using low-level server metrics such as SMART data.
+    \end{project}
+\end{sectionList}
+\section{Open-source Work}
+\begin{itemList}
+\item Founded multiple popular libraries and frameworks with contributors and strong userbases.
+\item Mastered numerous problem domains ranging from parsing to algorithms to patching executables.
+\item Ensured DevEx through strong API design, embraced by countless developers.
+\item Achieved test coverage by building domain-specific test tools, as well as staples like mocking.
+\item Implemented CI/CD pipelines and advanced repository and package configurations.
+\item Maintained complex dependency trees and ensured compatibility across multiple versions.
+\item Adminstered multiple repositories, managed contributions, and maintained quality standards.
+\item Wrote comprehensive documentation, including tutorials, guides, and examples.
+\end{itemList}
+\begin{sectionList}
+    \begin{project}{\textbf{\parjs} $|$ \emph{TypeScript, JavaScript} $|$ \https{\mycareersite/parjs}}{2018 -- Present}
+        \item STATS LINE
+        \item Translated Parsec's Haskell API to TypeScript, but tailored for the JS/TS ecosystem.
+        \item Achieves DevEx using advanced TypeScript features and functional programming principles.
+        \item Used by thousands of developers, including in production systems.
+    \end{project}
+    \begin{project}{\textbf{\patchwork} $|$ \emph{\sharplang{C}} $|$ \https{\mycareersite/Patchwork}}{X -- X}
+        \item Framework for patching compiled .NET binaries for modding games that lack modding support.
+        \item Hides technical binary transformations behind a friendly API.
+        \item Enabled the development of countless mods by non-expert developers.
+        \item The first of its kind, used as a model for contemporary tools.
+        \item Peak userbase of 100+ developers, 100K+ end-users.
+    \end{project}
+\end{sectionList}
+\section{Visa Notice}
+\begin{itemList}
+    \item I am an Israeli national. I seek to immigrate to the Netherlands due to political reasons.
+    \item \textbf{I require a visa sponsorship} to work in the Netherlands.
+    \item My intent is to permanently settle in the Netherlands with my partner and eventually naturalize.
+\end{itemList}
 \section{Languages}
 \begin{itemList}
-    \item \textbf{English:} Native proficiency.
+    \item \textbf{English:} Native-level proficiency.
     \item \textbf{Hebrew:} Native proficiency.
-    \item \textbf{Russian:} Native proficiency, but a little rusty.
+    \item \textbf{Russian:} Native language, but somewhat rusty.
 \end{itemList}
 %-------------------------------------------
 \end{document}%

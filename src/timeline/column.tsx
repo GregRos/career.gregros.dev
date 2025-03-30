@@ -23,7 +23,7 @@ export function TimelineEventColumn(props: {
         return {
             element: (
                 <a
-                    href={`https://gregros.dev/${event.location.replace(".md", "")}`}
+                    href={`https://career.gregros.dev/${event.location.replace(".md", "")}`}
                     onClick={e => {
                         e.preventDefault();
                         navigateTo(event.location);
