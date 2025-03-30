@@ -19,16 +19,54 @@
 \begin{sectionList}
 
     \begin{jobReflectizLead}
-        \ReffPivotalRole
-        \ReffScaling
-        \ReffArchitectureList
-        \ReffCommunicated
-        \ReffObservability
-        \ReffAcquisitionClients
-        \ReffEmpowered
-        \ReffIncidentShort
-        \ReffAccelerated
-        \ReffDocumentation
+        \item Pivotal technical leadership position in a successful, rapidly growing client-side security company.
+        \item Took charge of a monolithic system and scaled it to 100+ instances spread across 7 regions.
+        \item Designed highly scalable and cost-effective systems based on input from key stakeholders, including:
+        \begin{itemize}
+            \item Cost-effective data pipeline processing over 300 MB/s of graph data.
+            \item Development and automation platform used by a team of developers.
+            \item A network of interdependent packages that accelerated development times.
+        \end{itemize}
+        \item Effectively communicated complex architectural characteristics to cross-functional teams.
+        \item Accelerated development by:
+        \begin{itemize}
+            \item Increasing code reuse through refactoring existing codebases into a package architecture.
+            \item Indentifying dev bottlenecks and writing automation tools to overcome them.
+            \item Reviewing feature designs and specifications with an eye towards maintainability and scalability.
+        \end{itemize}
+        \item Used observability to ensure system performance and integrity by:
+        \begin{itemize}
+            \item Deploying a system-wide tracing solution, allowing for rapid incident response.
+            \item Designing a suite of domain-specific system-wide metrics to monitor system health and performance.
+            \item Building an accessible Grafana dashboard for cross-functional teams.
+        \end{itemize}       
+        \item Enabled the acquisition of new clients by:
+        \begin{itemize}
+            \item Translating client demands into business requiments and research objectives.
+            \item Leveraging IaC to expand into new regions.
+            \item Participating in sales meetings with key clients as a technical expert.
+        \end{itemize}       
+        \item Empowered developers to make architectural decisions by:
+        \begin{itemize}
+            \item Translating domain-specific stakeholder concerns into software requirements.
+            \item Fostering open discussion about existing shortcomings, future needs, and potential solutions.
+            \item Providing technical guidance and mentoring.
+        \end{itemize}
+        \item Research into incidents post-mortem, including:
+        \begin{itemize}
+            \item Root cause analysis and remediation.
+            \item Translating highly technical information into actionable items for cross-functional teams. 
+            \item Drafted research findings for stakeholders and leaders -- with an eye towards promotional material.
+        \end{itemize}        
+        \item Set up CI/CD platforms and pipelines following GitOps principles:
+        \begin{itemize}
+            \item Deploying a system-wide tracing solution, allowing for rapid incident response.
+            \item Designing a suite of domain-specific system-wide metrics to monitor system health and performance.
+            \item Building an accessible Grafana dashboard for cross-functional teams.
+            \item Research into incidents post-mortem, including root cause analysis and remediation.
+        \end{itemize}
+        \item Research into incidents post-mortem, including root cause analysis and remediation.
+        \item Optimized RDBMS architecture using indexing and partitioning.
     \end{jobReflectizLead}
 
     \begin{jobAppdome}
@@ -59,26 +97,35 @@
 %-----------PROJECTS-----------
 \section{Own Work}
 \begin{sectionList}
-    \begin{project}{\textbf{\gregrosdev} $f|$ Blog $|$ \https{\mywebsite}}{2024 -- Present}
-        \item Personal blog about web technology, software architecture, API design, and more.
-        \item Conveys highly technical topics using an accessible and informal tone.
-        \item Demonstrates deep understanding of software architecture and API design.
-        \item Used marketing principles to grow readership and engagement.
-        \item Hosted on [Platform]
+    \begin{project}{\textbf{\gregrosdev} $|$ Blog $|$ \https{\mywebsite}}{2024 -- Present}
+        \item A software development and architecture blog.
+        \item Posta about web technologies, JS engines, API design, and architecture.
+        \item Conveys complex ideas using a simple and informal tone.
+        \item Grew readership and engagement using marketing principles.
+        \item Hosted on \textbf{gregros.dev (platform)}.
     \end{project}
-    \begin{project}{\textbf{\gregrosdev} $|$ Platform $|$ \https{\mywebsite}}{2024 -- Present}
-        \item Extensible and performant content platform built using Next.js and other leading web techs.
-        \item Achieved by learning modern libraries, tools, and frameworks on the spot.
+    \begin{project}{\textbf{\gregrosdev} $|$ Platform $|$ \textit{Next.js, React, TypeScript, SCSS}}{2024 -- Present}
+        \item Content platform built using industry-leading web technologies.
         \item Integrated marketing staples like Google Analytics, SEO, and social.
-        \item Deployed via CD on Perdido K8S cluster.
-    \end{project}    
-    \begin{project}{\textbf{perdido}}{2022 -- Present}
-        \item Enterprise-grade, self-operated, dedicated server at NFOrce. Orchestrated, not virtualized.
-        \item Ensured reliability, resilience, and performance through advanced linux features and Kernel-level tweaks.
-        \item Managed deployment, resource allocation, and scalability by setting up MicroK8s cluster.
-        \item Guaranteed security through firewall, IDS, IP whitelisting, PoLP, and auditing tools.    
-        \item Implemented observability on system and service levels through monitoring, alerts, and dashboards.
-        \item Averted impending hardware failures using low-level server metrics such as SMART data.
+        \item Deployed via CD pipeline on \textbf{Laniakea (Cluster)}.
+    \end{project}
+    \begin{project}{\textbf{\laniakea} $|$ Cluster $|$ \textit{k8s, OCI, Flux, k0s, MetalLB, GitOps Weave, Traefik, k8s Gateway}}{2023 -- Present}
+        \item Bare-metal k8s cluster (k0s) built with industry-leading open-source technologies.
+        \item Highly observable through dashboards (GitOps Weave, K8s dash) and tools (k9s, kubectl, kubeq).
+        \item Achieves high performance by avoiding virtualization overhead.
+        \item Hosts numerous services and platforms, including \textbf{gregros.dev}.
+        \item All resources managed in SCM following GitOps principles, reconciled using Flux.
+        \item Avoids vendor lock-in through pure k8s solutions, e.g. cutting-edge Gateway API.
+        \item Network exposure managed by industry-leading load balancing solutions (MetalLB, wg VPN)
+        \item Secured through namespaces, policy-based network isolation, and PoLP.
+        \item Deployed on \textbf{Laniakea (server)}.
+    \end{project}
+    \begin{project}{\textbf{\laniakea} $|$ Server $|$ \textit{Debian, Bash, SSH, iLO, }}{2022 -- Present}
+        \item Enterprise-grade, rack-mounted, dedicated server -- administered via SSH and HP iLO.
+        \item Tuned for high performance through advanced Linux features and Kernel-level tweaks.
+        \item Resiliency through RAID 1, regular backups, and system-level observability.
+        \item Hardened using FW, VPN (wg), IDS (Snort), auditing (NMap), PoLP.
+        \item Experienced and recovered from hardware failure and data loss.
     \end{project}
 \end{sectionList}
 \section{Open-source Work}
