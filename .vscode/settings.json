@@ -23,6 +23,7 @@
     }
   ],
 
+  "latex-workshop.formatting.tex-fmt.args": ["--wraplen", "200"],
   "latex-workshop.latex.watch.files.ignore": [
     "**/*.bbx",
     "**/*.bbl",
