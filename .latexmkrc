@@ -20,8 +20,8 @@ $pdflatex="pdflatex %O %S";
 
 
 @default_files = ('src/default.tex');
-$out_dir = 'cv/dist';
-$aux_dir = 'cv/dist_aux';
+$out_dir = 'dist';
+$aux_dir = 'dist_aux';
 
 # Set the default viewer to SumatraPDF
 $pdf_previewer = '"C:\Users\Greg\scoop\apps\sumatrapdf\3.5.2\SumatraPDF.exe"';

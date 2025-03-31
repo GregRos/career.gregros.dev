@@ -1,5 +1,6 @@
 QuoteStyle = Logical
 TabSize = 4
+MaxLine 200
 CmdLine
 {
     -n8 # ignore dash length
