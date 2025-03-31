@@ -13,15 +13,15 @@ $preview_continuous_mode_delay = 0.5;
 
 # Enable automatic cleanup of intermediate files
 $clean_ext = 'bbl lof lot out toc aux';
-@default_files = ('src/gr.tex');
 
 # Set the default compiler to pdflatex
 $pdf_mode = 1;
 $pdflatex="pdflatex %O %S";
 
-@default_files = ('cv/src/cvs/nl.v1.tex');
+
+@default_files = ('src/default.tex');
 $out_dir = 'cv/dist';
 $aux_dir = 'cv/dist_aux';
 
 # Set the default viewer to SumatraPDF
-$pdf_previewer = 'C:\Users\Greg\AppData\Local\SumatraPDF\SumatraPDF.exe';
+$pdf_previewer = '"C:\Users\Greg\scoop\apps\sumatrapdf\3.5.2\SumatraPDF.exe"';
