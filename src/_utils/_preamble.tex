@@ -16,16 +16,16 @@
 \usepackage{graphicx}
 \usepackage{hyperref}
 \usepackage{enumitem}
+\usepackage{tabularx}
 \usepackage{xcolor}
+\usepackage{pgfkeys}
 \usepackage[sfdefault]{noto-sans}
-
 \makeatletter
 \DeclareRobustCommand*{\https}{\hyper@normalise\https@}
 \def\https@#1{\underline{\lowercase{\hyper@linkurl{\Hurl{#1}}{https://#1}}}}
 \DeclareRobustCommand*{\mailto}{\hyper@normalise\mailto@}
 \def\mailto@#1{\underline{\lowercase{\hyper@linkurl{\Hurl{#1}}{mailto:#1}}}}
 \makeatother
-
 \input{./_utils/_margins.tex}
 
 \urlstyle{same}
@@ -34,62 +34,116 @@
 \pdfgentounicode=1
 
 \newcommand{\sharplang}[1]{%
-    {\settoheight{\dimen0}{#1}#1\kern-.05em \resizebox{!}{\dimen0}{\raisebox{\depth}{\#}}}%
+  {\settoheight{\dimen0}{#1}#1\kern-.05em
+  \resizebox{!}{\dimen0}{\raisebox{\depth}{\#}}}%
 }
 \newlist{sectionList}{itemize}{1}%
 \setlist[sectionList]{%
-    leftmargin=0.15in,
-    label={}
+  leftmargin=0.15in,
+  label={}
 }%
 
 \newlist{itemList}{itemize}{1}%
 \setlist[itemList]{%
-    leftmargin=10pt,
-    before=\small,
-    after=\vspace{-5pt},
-    label={\textbullet},
-    itemsep=1pt
+  leftmargin=10pt,
+  before=\small,
+  after=\vspace{-5pt},
+  label={\textbullet},
+  itemsep=1pt
 }%
 
 \newlist{skillList}{description}{1}%
 \setlist[skillList]{%
-    itemsep=1pt,
-    labelindent=12pt,
-    parsep=0pt,
-    before=\small,
-    after=\vspace{-5pt}
+  itemsep=1pt,
+  labelindent=12pt,
+  parsep=0pt,
+  before=\small,
+  after=\vspace{-5pt}
+}
+\def\placeTechline{}
+\pgfkeys{
+  /placeblockx/.is family, /placeblockx,
+  position/.estore in = \placePosition,
+  startAt/.estore in = \placeStartAt,
+  endAt/.estore in = \placeEndAt,
+  place/.estore in = \placeName,
+  location/.estore in = \placeLocation,
+  techline/.code={\def\placeTechline{ #1}},
+}
+\newcommand{\placeblockx}[1]{%
+  \pgfkeys{/placeblockx, #1}%
+  \begin{tabularx}{0.97\textwidth}{@{}m{5em} |@{\;\;} X r}%
+    \multicolumn{2}{l}{\bfseries{\placePosition}} & \placeStartAt{}
+    -- \placeEndAt \\%
+    \textit{\small \placeName} & {\footnotesize \placeTechline} &%
+    \textit{\small\placeLocation} \\%
+  \end{tabularx}\vspace{-7pt}%
+}%
+
+\pgfkeys{
+  /projectblockx/.is family, /projectblockx,
+  name/.estore in = \projectName,
+  type/.estore in = \projectType,
+  url/.estore in = \projectUrl,
+  techline/.estore in = \projectTechline,
+  startAt/.estore in = \projectStartAt,
+  endAt/.estore in = \projectEndAt,
+}
+\newcommand{\projectblockx}[1]{%
+
+  \pgfkeys{/projectblockx, #1}%
+
+  \begin{tabularx}{0.97\textwidth}{@{}m{7em}  |%
+    @{\;\;}X r}%
+    \textbf{\projectName} & \small{\projectType}   &%
+    \projectStartAt{} -- \projectEndAt \\%
+    \small{\projectUrl} &
+    \multicolumn{2}{l}{\footnotesize{\textit{\projectTechline}}}\\
+  \end{tabularx}\vspace{-4pt}
+
+}%
+
+\newenvironment*{placex}[1]{%
+\item%
+  \placeblockx{#1}
+  \begin{itemList}
+  }{%
+  \end{itemList}
+}%
+
+\newenvironment{eduTechnion}{%
+\item \placeblockx{%
+    position = {B.Sc. Computer Science},
+    startAt = 2011,
+    endAt = 2015,
+    place = {Technion},
+    location = {Haifa, Israel}
+  }%
+}{
+  %
 }
 
-\newcommand{\placeblock}[4]{%
-    \vspace{-2pt}\item%
-    \begin{tabular*}{0.97\textwidth}[t]{l@{\extracolsep{\fill}}r}%
-        \textbf{#1} & #2 \\%
-        \textit{\small#3} & \textit{\small #4} \\%
-    \end{tabular*}\vspace{-7pt}%
-}%
-
-
-
-
-\newenvironment*{place}[4]{%
-    \placeblock{#1}{#2}{#3}{#4}
-    \begin{itemList}
-        }{%
-    \end{itemList}
-}%
-
-\newenvironment*{project}[2]{%
-    \item%
-    \begin{tabular*}{0.97\textwidth}{l@{\extracolsep{\fill}}r}%
-        \small#1 & #2 \\%
-    \end{tabular*}\vspace{-7pt}%
-    \begin{itemList}%
-        }{%
-    \end{itemList}%
+\newenvironment*{projectx}[1]{%
+\item%
+  \projectblockx{#1}
+  \begin{itemList}%
+  }{%
+  \end{itemList}%
 }
-\newenvironment*{education}[4]{%
-    \placeblock{#1}{#2}{#3}{#4}
-    \begin{itemList}
-        }{%
-    \end{itemList}
-}%
+\newcommand{\header}{%
+  \begin{center}
+    \textbf{\Huge \normalshape{} \myname} \\
+    \vspace{1pt}
+    \small \myphone{} $|$ \mailto{\myemail} $|$
+    \https{\mywebsite} $|$
+    \https{linkedin.com/in/greg-ros}
+  \end{center}%
+}
+
+\newcommand{\tagline}{%
+  \begin{center}
+    \vspace{-5pt}
+    \small \textit{I love building things.}
+    \vspace{-20pt}
+  \end{center}
+}

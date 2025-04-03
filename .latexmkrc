@@ -19,7 +19,7 @@ $pdf_mode = 1;
 $pdflatex="pdflatex %O %S";
 
 
-@default_files = ('src/default.tex');
+@default_files = ('src/gregros.tex');
 $out_dir = 'dist';
 $aux_dir = 'dist_aux';
 

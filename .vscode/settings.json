@@ -22,8 +22,15 @@
       "tools": ["latexmk"]
     }
   ],
-
-  "latex-workshop.formatting.tex-fmt.args": ["--wraplen", "200"],
+  "search.exclude": {
+    "**/node_modules": true,
+    "**/bower_components": true,
+    "**/*.code-search": true,
+    "**/.ruby-lsp": true,
+    ".old": true,
+    "notes": true
+  },
+  "latex-workshop.formatting.tex-fmt.args": [],
   "latex-workshop.latex.watch.files.ignore": [
     "**/*.bbx",
     "**/*.bbl",
